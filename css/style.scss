@@ -1,0 +1,117 @@
+$Main_purple : #301A4B;
+$Secondary_Cyan : #68FFFF;
+$Background_dark : #07060E;
+$Elements_Dark : #0A0817 ;
+$White_Light_shadow: #FFFFFF;
+$lightblue: #A5BBCB;
+
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    background-color: $Background_dark;
+    // Nav Bar //
+    header {
+        background-color: $Elements_Dark;
+        position: fixed;
+        width: 100%;
+        z-index: 100;
+        .MenuContainer {
+            margin: 0 9rem;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            .ReturnHome {
+                display: flex;
+                width: 5.1875rem;
+                height: 5.5rem;
+                padding: 0.75rem;
+                justify-content: center;
+                align-items: center;
+            }
+            .Menu {
+                
+                nav{
+                    display: flex;
+                    
+                    ul {
+                        display: flex;
+                        list-style-type: none;
+                        li {
+                            display: flex;
+                            padding: 14px;
+                            justify-content: flex-end;
+                            a {
+                                text-decoration: none;
+                                color: $lightblue;
+                                font-family: "Chakra Petch";
+                                font-weight: 500;
+                                font-size: 16px;
+                                color: $White_Light_shadow;
+                                
+                            }
+                            .home {
+                                background-color: $Main_purple;
+                                padding: 1.125rem 2rem;
+                                border-radius: 0.5rem;
+                            }
+                            .home:hover {
+                                border: 2px solid $Secondary_Cyan;
+                                color: $Secondary_Cyan;
+                            }
+                            .portfolio {
+                                padding: 1.125rem 2rem;
+                                border-radius: 0.5rem;
+                                color: $lightblue;
+                            }
+                            .portfolio:hover {
+                                border: 2px solid $Secondary_Cyan;
+                                color: $Secondary_Cyan;
+                            }
+
+                            .about {
+                                padding: 1.125rem 2rem;
+                                border-radius: 0.5rem;
+                                color: $lightblue;
+                            }
+                            .about:hover {
+                                border: 2px solid $Secondary_Cyan;
+                                color: $Secondary_Cyan;
+                            }
+                            .contact {
+                                padding: 1.125rem 2rem;
+                                border-radius: 0.5rem;
+                                color: $lightblue;
+                            }
+                            .contact:hover {
+                                border: 2px solid $Secondary_Cyan;
+                                color: $Secondary_Cyan;
+                            }
+                        }
+                        
+                    }
+                }
+            }
+        }
+            
+        }
+        // End of Nav Bar //
+
+        //Hero Section //
+        .Hero {
+            .HeroVideo {
+                video { 
+                    position:absolute;
+                    top:0;
+                    width: 100%; 
+                    height: 100vh;
+                    overflow: hidden;
+                    object-fit: cover;
+                    z-index: -10000; 
+                      }
+                }
+            }
+
+        }
+    
