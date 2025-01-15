@@ -11,28 +11,11 @@ $lightpurple: #9747FF;
     padding: 0;
 }
 
-/* Burger Menu CSS */
-.burger-menu {
-    width: 30px;
-    height: 25px;
-    cursor: pointer;
-    position: relative;
-    display: none; /* Hide by default */
-    flex-direction: column;
-    justify-content: space-between;
-  }
-  
-  .bar {
-    width: 100%;
-    height: 3px;
-    background-color: $White_Light_shadow;
-    transition: transform 0.3s ease;
-  }
   
   /* Media Query for Mobile */
-  @media (max-width: 1280px) {
+@media (max-width: 1280px) {
 
-    @keyframes slideDown {
+@keyframes slideDown {
         0% {
           transform: translateY(-100%); /* Start above the viewport */
           opacity: 0;
@@ -43,12 +26,19 @@ $lightpurple: #9747FF;
         }
       }
 body {
-
+    background-color: $Background_dark;
+    img {
+        width:40%;
+    }
+    hr {
+        width: 40%;
+    }
+    // Nav Bar //
     header {
         background-color: $Elements_Dark;
         position: fixed;
         z-index: 100;
-        width: 100%;   
+        width: 100%; 
         .MenuContainer {
             margin: auto;
             display: flex;
@@ -62,9 +52,9 @@ body {
                 justify-content: center;
                 align-items: center;
             }
-    
+        }
   
-    .Menu {
+        .Menu {
                 overflow: visible;  /* Add this to prevent clipping */
                 z-index: 2;
                 display: flex;
@@ -74,80 +64,227 @@ body {
                 justify-content: center;
                 align-items: center;
                 
-                
-        .burger-menu {
-            display: flex; /* Show burger menu on mobile */
-          }
-      nav {
-        display: none; /* Hide navigation menu by default on mobile */
-        flex-direction: column; /* Stack navigation items vertically */
-        position: absolute;
-        top: 100%;
-        left: 0;
-        background-color: $Elements_Dark;
-        width: 100%;
-        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-        animation: slideDown 1s ease-in-out;
-        ul {
-          flex-direction: column; /* Stack navigation items vertically */
-          align-items: center; /* Center navigation items */
-          justify-content: center;
-          border-bottom: 2px solid $Secondary_Cyan;
-          
-        li {
-          justify-content: center; /* Center navigation items */
-          text-align: center;
-          border-top: 2px solid $Secondary_Cyan;
-          position: relative;
-          width: 100%; /* Make navigation items full width */
-          a {
-            color: $lightblue;
-            text-decoration: none;
-            font-family:"Chakra Petch",sans-serif;
-            font-weight: 700;
-            display: block;
-            padding: 20px;
-          }
-          .home {
-            background-color:$Main_purple;
-            color: $White_Light_shadow;
-          }
+        /* Burger Menu CSS */
+            .burger-menu {
+                width: 1.875rem;
+                height: 1.5625rem;
+                cursor: pointer;
+                display: flex;
+                position: relative;
+                flex-direction: column;
+                justify-content: space-between;
+                    .bar {
+                        width: 100%;
+                        height: 0.1875rem;
+                        background-color: $White_Light_shadow;
+                        transition: transform 0.3s ease;
+                        } 
+            }
+            nav {
+                display: none; /* Hide navigation menu by default on mobile */
+                flex-direction: column; /* Stack navigation items vertically */
+                position: absolute;
+                top: 100%;
+                left: 0;
+                background-color: $Elements_Dark;
+                width: 100%;
+                box-shadow: 0 0.125rem 0.3125rem rgba(0, 0, 0, 0.2);
+                animation: slideDown 1s ease-in-out;
+                    ul {
+                    flex-direction: column; /* Stack navigation items vertically */
+                    align-items: center; /* Center navigation items */
+                    justify-content: center;
+                    border-bottom: 2px solid $Secondary_Cyan;
+                    
+                        li {
+                        justify-content: center; /* Center navigation items */
+                        text-align: center;
+                        border-top: 2px solid $Secondary_Cyan;
+                        position: relative;
+                        width: 100%; /* Make navigation items full width */
+                            a {
+                                color: $lightblue;
+                                text-decoration: none;
+                                font-family:"Chakra Petch",sans-serif;
+                                font-weight: 700;
+                                display: block;
+                                padding: 1.25rem;
+                            }
+                            .home {
+                                background-color:$Main_purple;
+                                color: $White_Light_shadow;
+                            }
+                        }
+                    }
+            }
+            /* Active State Styles */
+            .burger-menu.active {
+            justify-content: space-evenly;
+                .bar:nth-child(1) {
+                transform: rotate(45deg) translate(5px, 5px);
+                }
+                .bar:nth-child(2) {
+                opacity: 0;
+                }
+                .bar:nth-child(3) {
+                transform: rotate(-45deg) translate(5px, -5px);
+                }
+            }
+            nav.active {
+            display: flex; /* Show the menu when active */
+            }
         }
-        }
-      }
+
     }
-  }
-  
-  /* Active State Styles */
-  .burger-menu.active {
-    justify-content: space-evenly;
-    .bar:nth-child(1) {
-      transform: rotate(45deg) translate(5px, 5px);
-    }
-  
-    .bar:nth-child(2) {
-      opacity: 0;
-    }
-  
-    .bar:nth-child(3) {
-      transform: rotate(-45deg) translate(5px, -5px);
-    }
-  }
-  
-  .Menu {
-    nav.active {
-      display: flex; /* Show the menu when active */
+    // End of Nav Bar //
+
+    // Hero Section //
+    .Hero {
+        .HeroVideo {
+            video { 
+                display: none;
+                position:absolute;
+                top:0;
+                width: 100%;
+                height: 100dvh;
+                overflow: hidden;
+                object-fit: cover;
+                z-index: -10000; 
+            }
+            .TopHero {
+                height: 50vh;
+
+                .MainTitle {
+                    
+                    display: flex;
+                    flex-direction: column;
+                    padding: 160px;
+                    align-items: center;
+                    gap: 30px;;
+                    h1 {
+                        display: none;
+                        font-size: 4.5rem;
+                        font-family: "Chakra Petch";
+                        font-weight: 700;
+                        color: $White_Light_shadow;
+                    }
+                    h2 {
+                        display: none;
+                        color: $Secondary_Cyan;
+                        font-family: "Chakra Petch";
+                        font-weight: 700;
+                        font-size: 50px;
+                        text-shadow: 1px -2px 4.2px #FFF;
+
+                    }
+                }
+            }
+            .BottomHero {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: flex-end;
+                gap: 70px;
+                height: 50vh;
+                .SecondTitle {
+                    font-family: "Chakra Petch";
+                    font-weight: 700;
+                    p {
+                        color: $White_Light_shadow;
+                        font-size: 30px;
+                        text-align: center;
+                        padding: 0 144px;
+                    }
+                }
+                .TagsHero {
+                    padding: 0 0 60px 0;
+                    gap: 70px;
+                    display: flex;
+
+                    .UXUI {
+                        display: none;
+                        align-items: center;
+                        justify-content: center;
+                        color:$White_Light_shadow;
+                        border: 2px solid $White_Light_shadow;
+                        padding: 20px 80px;
+                        font-family: "Inter",sans-serif;
+                        font-size: 20px;
+                        font-weight: 600;
+                        border-radius: 360px;
+                        text-align: center;
+                    }
+                    .UXUI:hover {
+                        color:$Secondary_Cyan;
+                        border: 2px solid $Secondary_Cyan;
+                    }
+                    .Story {
+                        color:$White_Light_shadow;
+                        border: 2px solid $White_Light_shadow;
+                        padding: 20px 80px;
+                        font-family: "Inter",sans-serif;
+                        font-size: 20px;
+                        font-weight: 600;
+                        border-radius: 360px;
+                        text-align: center;
+                        display: none;
+                        align-items: center;
+                        justify-content: center;
+                    }
+                    .Story:hover {
+                        color:$lightpurple;
+                        border: 2px solid $lightpurple;
+                    }
+                    .FrontEnd {
+                        color:$White_Light_shadow;
+                        border: 2px solid $White_Light_shadow;
+                        padding: 20px 80px;
+                        font-family: "Inter",sans-serif;
+                        font-size: 20px;
+                        font-weight: 600;
+                        border-radius: 360px;
+                        text-align: center;
+                        display: none;
+                        align-items: center;
+                        justify-content: center;
+                    }
+                    .FrontEnd:hover {
+                        color:$Secondary_Cyan;
+                        border: 2px solid $Secondary_Cyan;
+                    }
+                    .Graphisme {
+                        color:$White_Light_shadow;
+                        border: 2px solid $White_Light_shadow;
+                        padding: 20px 80px;
+                        font-family: "Inter",sans-serif;
+                        font-size: 20px;
+                        font-weight: 600;
+                        border-radius: 360px;
+                        text-align: center;
+                        display: none;
+                        align-items: center;
+                        justify-content: center;
+                    }
+                    .Graphisme:hover {
+                        color:$lightpurple;
+                        border: 2px solid $lightpurple;
+                    }
+                }
             }
         }
     }
-  }
+    // End of Hero Section //
+
+
+
+}
 }
 
 @media (min-width: 1280px){
-body {
-    background-color: $Background_dark;
-    // Nav Bar //
-    header {
+    body {
+        background-color: $Background_dark;
+        // Nav Bar //
+        header {
         background-color: $Elements_Dark;
         position: fixed;
         width: 100%;
@@ -235,21 +372,20 @@ body {
         }
         // End of Nav Bar //
 
-        //Hero Section //
+        // Hero Section //
         .Hero {
             .HeroVideo {
                 video { 
                     position:absolute;
                     top:0;
-                    width: 100%; 
-                    height: 100vh;
+                    width: 100%;
+                    height: 100dvh;
                     overflow: hidden;
                     object-fit: cover;
                     z-index: -10000; 
-                      }
+                }
                 .TopHero {
                     height: 50vh;
-
                     .MainTitle {
                         display: flex;
                         flex-direction: column;
@@ -278,99 +414,99 @@ body {
                     align-items: center;
                     justify-content: flex-end;
                     gap: 70px;
-                    
-
                     height: 50vh;
-                        .SecondTitle {
+                    .SecondTitle {
                             font-family: "Chakra Petch";
                             font-weight: 700;
                             p {
-                            color: $White_Light_shadow;
-                            font-size: 30px;
-                            text-align: center;
-                            padding: 0 144px;
+                                color: $White_Light_shadow;
+                                font-size: 30px;
+                                text-align: center;
+                                padding: 0 144px;
                             }
-                        }
-                        .TagsHero {
-                            padding: 0 0 60px 0;
-                            gap: 70px;
+                    }
+                    .TagsHero {
+                        padding: 0 0 60px 0;
+                        gap: 70px;
+                        display: flex;
+                        .UXUI {
                             display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            color:$White_Light_shadow;
+                            border: 2px solid $White_Light_shadow;
+                            padding: 20px 80px;
+                            font-family: "Inter",sans-serif;
+                            font-size: 20px;
+                            font-weight: 600;
+                            border-radius: 360px;
+                            text-align: center;
 
-                            .UXUI {
-                                display: flex;
-                                align-items: center;
-                                justify-content: center;
-                                color:$White_Light_shadow;
-                                border: 2px solid $White_Light_shadow;
-                                padding: 20px 80px;
-                                font-family: "Inter",sans-serif;
-                                font-size: 20px;
-                                font-weight: 600;
-                                border-radius: 360px;
-                                text-align: center;
-
-                            }
-                            .UXUI:hover {
-                                color:$Secondary_Cyan;
-                                border: 2px solid $Secondary_Cyan;
-
-                            }
-                            .Story {
-                                color:$White_Light_shadow;
-                                border: 2px solid $White_Light_shadow;
-                                padding: 20px 80px;
-                                font-family: "Inter",sans-serif;
-                                font-size: 20px;
-                                font-weight: 600;
-                                border-radius: 360px;
-                                text-align: center;
-                                display: flex;
-                                align-items: center;
-                                justify-content: center;
-                            }
-                            .Story:hover {
-                                color:$lightpurple;
-                                border: 2px solid $lightpurple;
-                            }
-                            .FrontEnd {
-                                color:$White_Light_shadow;
-                                border: 2px solid $White_Light_shadow;
-                                padding: 20px 80px;
-                                font-family: "Inter",sans-serif;
-                                font-size: 20px;
-                                font-weight: 600;
-                                border-radius: 360px;
-                                text-align: center;
-                                display: flex;
-                                align-items: center;
-                                justify-content: center;
-                            }
-                            .FrontEnd:hover {
-                                color:$Secondary_Cyan;
-                                border: 2px solid $Secondary_Cyan;
-                            }
-                            .Graphisme {
-                                color:$White_Light_shadow;
-                                border: 2px solid $White_Light_shadow;
-                                padding: 20px 80px;
-                                font-family: "Inter",sans-serif;
-                                font-size: 20px;
-                                font-weight: 600;
-                                border-radius: 360px;
-                                text-align: center;
-                                display: flex;
-                                align-items: center;
-                                justify-content: center;
-                            }
-                            .Graphisme:hover {
-                                color:$lightpurple;
-                                border: 2px solid $lightpurple;
-                            }
+                        }
+                        .UXUI:hover {
+                            color:$Secondary_Cyan;
+                            border: 2px solid $Secondary_Cyan;
+                        }
+                        .Story {
+                            color:$White_Light_shadow;
+                            border: 2px solid $White_Light_shadow;
+                            padding: 20px 80px;
+                            font-family: "Inter",sans-serif;
+                            font-size: 20px;
+                            font-weight: 600;
+                            border-radius: 360px;
+                            text-align: center;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                        }
+                        .Story:hover {
+                            color:$lightpurple;
+                            border: 2px solid $lightpurple;
+                        }
+                        .FrontEnd {
+                            color:$White_Light_shadow;
+                            border: 2px solid $White_Light_shadow;
+                            padding: 20px 80px;
+                            font-family: "Inter",sans-serif;
+                            font-size: 20px;
+                            font-weight: 600;
+                            border-radius: 360px;
+                            text-align: center;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                        }
+                        .FrontEnd:hover {
+                            color:$Secondary_Cyan;
+                            border: 2px solid $Secondary_Cyan;
+                        }
+                        .Graphisme {
+                            color:$White_Light_shadow;
+                            border: 2px solid $White_Light_shadow;
+                            padding: 20px 80px;
+                            font-family: "Inter",sans-serif;
+                            font-size: 20px;
+                            font-weight: 600;
+                            border-radius: 360px;
+                            text-align: center;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                        }
+                        .Graphisme:hover {
+                            color:$lightpurple;
+                            border: 2px solid $lightpurple;
                         }
                     }
                 }
-                }
             }
-
         }
+        // End of Hero Section //
+
+
+        
+    }
+
+}
     
