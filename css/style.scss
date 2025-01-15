@@ -51,12 +51,14 @@ body {
                                 font-weight: 500;
                                 font-size: 16px;
                                 color: $White_Light_shadow;
+                                border: 2px solid $Elements_Dark;
                                 
                             }
                             .home {
                                 background-color: $Main_purple;
                                 padding: 1.125rem 2rem;
                                 border-radius: 0.5rem;
+                                
                             }
                             .home:hover {
                                 border: 2px solid $Secondary_Cyan;
@@ -162,6 +164,9 @@ body {
                             display: flex;
 
                             .UXUI {
+                                display: flex;
+                                align-items: center;
+                                justify-content: center;
                                 color:$White_Light_shadow;
                                 border: 2px solid $White_Light_shadow;
                                 padding: 20px 80px;
@@ -169,6 +174,7 @@ body {
                                 font-size: 20px;
                                 font-weight: 600;
                                 border-radius: 360px;
+                                text-align: center;
 
                             }
                             .UXUI:hover {
@@ -184,6 +190,10 @@ body {
                                 font-size: 20px;
                                 font-weight: 600;
                                 border-radius: 360px;
+                                text-align: center;
+                                display: flex;
+                                align-items: center;
+                                justify-content: center;
                             }
                             .Story:hover {
                                 color:$lightpurple;
@@ -197,6 +207,10 @@ body {
                                 font-size: 20px;
                                 font-weight: 600;
                                 border-radius: 360px;
+                                text-align: center;
+                                display: flex;
+                                align-items: center;
+                                justify-content: center;
                             }
                             .FrontEnd:hover {
                                 color:$Secondary_Cyan;
@@ -210,6 +224,10 @@ body {
                                 font-size: 20px;
                                 font-weight: 600;
                                 border-radius: 360px;
+                                text-align: center;
+                                display: flex;
+                                align-items: center;
+                                justify-content: center;
                             }
                             .Graphisme:hover {
                                 color:$lightpurple;

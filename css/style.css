@@ -46,6 +46,7 @@
     font-weight: 500;
     font-size: 16px;
     color: #FFFFFF;
+    border: 2px solid #0A0817;
   }
   body header .MenuContainer .Menu nav ul li .home {
     background-color: #301A4B;
@@ -139,6 +140,9 @@
     display: flex;
   }
   body .Hero .HeroVideo .BottomHero .TagsHero .UXUI {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     color: #FFFFFF;
     border: 2px solid #FFFFFF;
     padding: 20px 80px;
@@ -146,6 +150,7 @@
     font-size: 20px;
     font-weight: 600;
     border-radius: 360px;
+    text-align: center;
   }
   body .Hero .HeroVideo .BottomHero .TagsHero .UXUI:hover {
     color: #68FFFF;
@@ -159,6 +164,10 @@
     font-size: 20px;
     font-weight: 600;
     border-radius: 360px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
   body .Hero .HeroVideo .BottomHero .TagsHero .Story:hover {
     color: #9747FF;
@@ -172,6 +181,10 @@
     font-size: 20px;
     font-weight: 600;
     border-radius: 360px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
   body .Hero .HeroVideo .BottomHero .TagsHero .FrontEnd:hover {
     color: #68FFFF;
@@ -185,6 +198,10 @@
     font-size: 20px;
     font-weight: 600;
     border-radius: 360px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
   body .Hero .HeroVideo .BottomHero .TagsHero .Graphisme:hover {
     color: #9747FF;
