@@ -4,11 +4,13 @@ $Background_dark : #07060E;
 $Elements_Dark : #0A0817 ;
 $White_Light_shadow: #FFFFFF;
 $lightblue: #A5BBCB;
+$lightpurple: #9747FF;
 
 * {
     margin: 0;
     padding: 0;
 }
+@media (min-width: 1280px) {
 body {
     background-color: $Background_dark;
     // Nav Bar //
@@ -110,6 +112,112 @@ body {
                     object-fit: cover;
                     z-index: -10000; 
                       }
+                .TopHero {
+                    height: 50vh;
+
+                    .MainTitle {
+                        display: flex;
+                        flex-direction: column;
+                        padding: 160px;
+                        align-items: center;
+                        gap: 30px;;
+                        h1 {
+                            font-size: 4.5rem;
+                            font-family: "Chakra Petch";
+                            font-weight: 700;
+                            color: $White_Light_shadow;
+                        }
+                        h2 {
+                            color: $Secondary_Cyan;
+                            font-family: "Chakra Petch";
+                            font-weight: 700;
+                            font-size: 50px;
+                            text-shadow: 1px -2px 4.2px #FFF;
+
+                        }
+                    }
+                }
+                .BottomHero {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: flex-end;
+                    gap: 70px;
+                    
+
+                    height: 50vh;
+                        .SecondTitle {
+                            font-family: "Chakra Petch";
+                            font-weight: 700;
+                            p {
+                            color: $White_Light_shadow;
+                            font-size: 30px;
+                            text-align: center;
+                            padding: 0 144px;
+                            }
+                        }
+                        .TagsHero {
+                            padding: 0 0 60px 0;
+                            gap: 70px;
+                            display: flex;
+
+                            .UXUI {
+                                color:$White_Light_shadow;
+                                border: 2px solid $White_Light_shadow;
+                                padding: 20px 80px;
+                                font-family: "Inter",sans-serif;
+                                font-size: 20px;
+                                font-weight: 600;
+                                border-radius: 360px;
+
+                            }
+                            .UXUI:hover {
+                                color:$Secondary_Cyan;
+                                border: 2px solid $Secondary_Cyan;
+
+                            }
+                            .Story {
+                                color:$White_Light_shadow;
+                                border: 2px solid $White_Light_shadow;
+                                padding: 20px 80px;
+                                font-family: "Inter",sans-serif;
+                                font-size: 20px;
+                                font-weight: 600;
+                                border-radius: 360px;
+                            }
+                            .Story:hover {
+                                color:$lightpurple;
+                                border: 2px solid $lightpurple;
+                            }
+                            .FrontEnd {
+                                color:$White_Light_shadow;
+                                border: 2px solid $White_Light_shadow;
+                                padding: 20px 80px;
+                                font-family: "Inter",sans-serif;
+                                font-size: 20px;
+                                font-weight: 600;
+                                border-radius: 360px;
+                            }
+                            .FrontEnd:hover {
+                                color:$Secondary_Cyan;
+                                border: 2px solid $Secondary_Cyan;
+                            }
+                            .Graphisme {
+                                color:$White_Light_shadow;
+                                border: 2px solid $White_Light_shadow;
+                                padding: 20px 80px;
+                                font-family: "Inter",sans-serif;
+                                font-size: 20px;
+                                font-weight: 600;
+                                border-radius: 360px;
+                            }
+                            .Graphisme:hover {
+                                color:$lightpurple;
+                                border: 2px solid $lightpurple;
+                            }
+                        }
+                    }
+                }
                 }
             }
 

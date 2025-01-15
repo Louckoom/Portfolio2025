@@ -3,93 +3,193 @@
   padding: 0;
 }
 
-body {
-  background-color: #07060E;
-}
-body header {
-  background-color: #0A0817;
-  position: fixed;
-  width: 100%;
-  z-index: 100;
-}
-body header .MenuContainer {
-  margin: 0 9rem;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-body header .MenuContainer .ReturnHome {
-  display: flex;
-  width: 5.1875rem;
-  height: 5.5rem;
-  padding: 0.75rem;
-  justify-content: center;
-  align-items: center;
-}
-body header .MenuContainer .Menu nav {
-  display: flex;
-}
-body header .MenuContainer .Menu nav ul {
-  display: flex;
-  list-style-type: none;
-}
-body header .MenuContainer .Menu nav ul li {
-  display: flex;
-  padding: 14px;
-  justify-content: flex-end;
-}
-body header .MenuContainer .Menu nav ul li a {
-  text-decoration: none;
-  color: #A5BBCB;
-  font-family: "Chakra Petch";
-  font-weight: 500;
-  font-size: 16px;
-  color: #FFFFFF;
-}
-body header .MenuContainer .Menu nav ul li .home {
-  background-color: #301A4B;
-  padding: 1.125rem 2rem;
-  border-radius: 0.5rem;
-}
-body header .MenuContainer .Menu nav ul li .home:hover {
-  border: 2px solid #68FFFF;
-  color: #68FFFF;
-}
-body header .MenuContainer .Menu nav ul li .portfolio {
-  padding: 1.125rem 2rem;
-  border-radius: 0.5rem;
-  color: #A5BBCB;
-}
-body header .MenuContainer .Menu nav ul li .portfolio:hover {
-  border: 2px solid #68FFFF;
-  color: #68FFFF;
-}
-body header .MenuContainer .Menu nav ul li .about {
-  padding: 1.125rem 2rem;
-  border-radius: 0.5rem;
-  color: #A5BBCB;
-}
-body header .MenuContainer .Menu nav ul li .about:hover {
-  border: 2px solid #68FFFF;
-  color: #68FFFF;
-}
-body header .MenuContainer .Menu nav ul li .contact {
-  padding: 1.125rem 2rem;
-  border-radius: 0.5rem;
-  color: #A5BBCB;
-}
-body header .MenuContainer .Menu nav ul li .contact:hover {
-  border: 2px solid #68FFFF;
-  color: #68FFFF;
-}
-body .Hero .HeroVideo video {
-  position: absolute;
-  top: 0;
-  width: 100%;
-  height: 100vh;
-  overflow: hidden;
-  object-fit: cover;
-  z-index: -10000;
+@media (min-width: 1280px) {
+  body {
+    background-color: #07060E;
+  }
+  body header {
+    background-color: #0A0817;
+    position: fixed;
+    width: 100%;
+    z-index: 100;
+  }
+  body header .MenuContainer {
+    margin: 0 9rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  body header .MenuContainer .ReturnHome {
+    display: flex;
+    width: 5.1875rem;
+    height: 5.5rem;
+    padding: 0.75rem;
+    justify-content: center;
+    align-items: center;
+  }
+  body header .MenuContainer .Menu nav {
+    display: flex;
+  }
+  body header .MenuContainer .Menu nav ul {
+    display: flex;
+    list-style-type: none;
+  }
+  body header .MenuContainer .Menu nav ul li {
+    display: flex;
+    padding: 14px;
+    justify-content: flex-end;
+  }
+  body header .MenuContainer .Menu nav ul li a {
+    text-decoration: none;
+    color: #A5BBCB;
+    font-family: "Chakra Petch";
+    font-weight: 500;
+    font-size: 16px;
+    color: #FFFFFF;
+  }
+  body header .MenuContainer .Menu nav ul li .home {
+    background-color: #301A4B;
+    padding: 1.125rem 2rem;
+    border-radius: 0.5rem;
+  }
+  body header .MenuContainer .Menu nav ul li .home:hover {
+    border: 2px solid #68FFFF;
+    color: #68FFFF;
+  }
+  body header .MenuContainer .Menu nav ul li .portfolio {
+    padding: 1.125rem 2rem;
+    border-radius: 0.5rem;
+    color: #A5BBCB;
+  }
+  body header .MenuContainer .Menu nav ul li .portfolio:hover {
+    border: 2px solid #68FFFF;
+    color: #68FFFF;
+  }
+  body header .MenuContainer .Menu nav ul li .about {
+    padding: 1.125rem 2rem;
+    border-radius: 0.5rem;
+    color: #A5BBCB;
+  }
+  body header .MenuContainer .Menu nav ul li .about:hover {
+    border: 2px solid #68FFFF;
+    color: #68FFFF;
+  }
+  body header .MenuContainer .Menu nav ul li .contact {
+    padding: 1.125rem 2rem;
+    border-radius: 0.5rem;
+    color: #A5BBCB;
+  }
+  body header .MenuContainer .Menu nav ul li .contact:hover {
+    border: 2px solid #68FFFF;
+    color: #68FFFF;
+  }
+  body .Hero .HeroVideo video {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    object-fit: cover;
+    z-index: -10000;
+  }
+  body .Hero .HeroVideo .TopHero {
+    height: 50vh;
+  }
+  body .Hero .HeroVideo .TopHero .MainTitle {
+    display: flex;
+    flex-direction: column;
+    padding: 160px;
+    align-items: center;
+    gap: 30px;
+  }
+  body .Hero .HeroVideo .TopHero .MainTitle h1 {
+    font-size: 4.5rem;
+    font-family: "Chakra Petch";
+    font-weight: 700;
+    color: #FFFFFF;
+  }
+  body .Hero .HeroVideo .TopHero .MainTitle h2 {
+    color: #68FFFF;
+    font-family: "Chakra Petch";
+    font-weight: 700;
+    font-size: 50px;
+    text-shadow: 1px -2px 4.2px #FFF;
+  }
+  body .Hero .HeroVideo .BottomHero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 70px;
+    height: 50vh;
+  }
+  body .Hero .HeroVideo .BottomHero .SecondTitle {
+    font-family: "Chakra Petch";
+    font-weight: 700;
+  }
+  body .Hero .HeroVideo .BottomHero .SecondTitle p {
+    color: #FFFFFF;
+    font-size: 30px;
+    text-align: center;
+    padding: 0 144px;
+  }
+  body .Hero .HeroVideo .BottomHero .TagsHero {
+    padding: 0 0 60px 0;
+    gap: 70px;
+    display: flex;
+  }
+  body .Hero .HeroVideo .BottomHero .TagsHero .UXUI {
+    color: #FFFFFF;
+    border: 2px solid #FFFFFF;
+    padding: 20px 80px;
+    font-family: "Inter", sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    border-radius: 360px;
+  }
+  body .Hero .HeroVideo .BottomHero .TagsHero .UXUI:hover {
+    color: #68FFFF;
+    border: 2px solid #68FFFF;
+  }
+  body .Hero .HeroVideo .BottomHero .TagsHero .Story {
+    color: #FFFFFF;
+    border: 2px solid #FFFFFF;
+    padding: 20px 80px;
+    font-family: "Inter", sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    border-radius: 360px;
+  }
+  body .Hero .HeroVideo .BottomHero .TagsHero .Story:hover {
+    color: #9747FF;
+    border: 2px solid #9747FF;
+  }
+  body .Hero .HeroVideo .BottomHero .TagsHero .FrontEnd {
+    color: #FFFFFF;
+    border: 2px solid #FFFFFF;
+    padding: 20px 80px;
+    font-family: "Inter", sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    border-radius: 360px;
+  }
+  body .Hero .HeroVideo .BottomHero .TagsHero .FrontEnd:hover {
+    color: #68FFFF;
+    border: 2px solid #68FFFF;
+  }
+  body .Hero .HeroVideo .BottomHero .TagsHero .Graphisme {
+    color: #FFFFFF;
+    border: 2px solid #FFFFFF;
+    padding: 20px 80px;
+    font-family: "Inter", sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    border-radius: 360px;
+  }
+  body .Hero .HeroVideo .BottomHero .TagsHero .Graphisme:hover {
+    color: #9747FF;
+    border: 2px solid #9747FF;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
