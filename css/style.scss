@@ -27,6 +27,7 @@ $lightpurple: #9747FF;
       }
 body {
     background-color: $Background_dark;
+    width: 100%;
     img {
         width:40%;
     }
@@ -40,7 +41,6 @@ body {
         z-index: 100;
         width: 100%; 
         .MenuContainer {
-            margin: auto;
             display: flex;
             align-items: center;
             justify-content: space-between;
@@ -60,7 +60,7 @@ body {
                 display: flex;
                 width: 5.1875rem;
                 height: auto;
-                padding: 1.25rem;
+                padding: 0;
                 justify-content: center;
                 align-items: center;
                 
@@ -141,39 +141,40 @@ body {
     // Hero Section //
     .Hero {
         .HeroVideo {
-            video { 
-                display: none;
+            
+            video {
                 position:absolute;
                 top:0;
                 width: 100%;
-                height: 100dvh;
+                height: 140vh;
+                opacity: 60%;
                 overflow: hidden;
                 object-fit: cover;
                 z-index: -10000; 
             }
             .TopHero {
-                height: 50vh;
+                height: 80vh;
 
                 .MainTitle {
                     
                     display: flex;
                     flex-direction: column;
-                    padding: 160px;
+                    padding: 8.75rem 0.625rem;
                     align-items: center;
-                    gap: 30px;;
+                    gap: 1.875rem;
                     h1 {
-                        display: none;
-                        font-size: 4.5rem;
+                        font-size: 2.5rem;
+                        text-align: center;
                         font-family: "Chakra Petch";
                         font-weight: 700;
                         color: $White_Light_shadow;
                     }
                     h2 {
-                        display: none;
                         color: $Secondary_Cyan;
+                        text-align: center;
                         font-family: "Chakra Petch";
                         font-weight: 700;
-                        font-size: 50px;
+                        font-size: 1.875rem;
                         text-shadow: 1px -2px 4.2px #FFF;
 
                     }
@@ -184,25 +185,26 @@ body {
                 flex-direction: column;
                 align-items: center;
                 justify-content: flex-end;
-                gap: 70px;
+                gap: 4.375rem;
                 height: 50vh;
                 .SecondTitle {
                     font-family: "Chakra Petch";
                     font-weight: 700;
+                    padding: 0 2.5rem;
                     p {
                         color: $White_Light_shadow;
-                        font-size: 30px;
+                        font-size: 22px;
                         text-align: center;
-                        padding: 0 144px;
                     }
                 }
                 .TagsHero {
-                    padding: 0 0 60px 0;
-                    gap: 70px;
+                    padding: 0;
+                    gap: 40px;
                     display: flex;
+                    flex-direction: column;
+
 
                     .UXUI {
-                        display: none;
                         align-items: center;
                         justify-content: center;
                         color:$White_Light_shadow;
@@ -215,6 +217,7 @@ body {
                         text-align: center;
                     }
                     .UXUI:hover {
+                        display: none;
                         color:$Secondary_Cyan;
                         border: 2px solid $Secondary_Cyan;
                     }
@@ -227,11 +230,11 @@ body {
                         font-weight: 600;
                         border-radius: 360px;
                         text-align: center;
-                        display: none;
                         align-items: center;
                         justify-content: center;
                     }
                     .Story:hover {
+                        display: none;
                         color:$lightpurple;
                         border: 2px solid $lightpurple;
                     }
@@ -244,11 +247,11 @@ body {
                         font-weight: 600;
                         border-radius: 360px;
                         text-align: center;
-                        display: none;
                         align-items: center;
                         justify-content: center;
                     }
                     .FrontEnd:hover {
+                        display: none;
                         color:$Secondary_Cyan;
                         border: 2px solid $Secondary_Cyan;
                     }
@@ -261,11 +264,11 @@ body {
                         font-weight: 600;
                         border-radius: 360px;
                         text-align: center;
-                        display: none;
                         align-items: center;
                         justify-content: center;
                     }
                     .Graphisme:hover {
+                        display: none;
                         color:$lightpurple;
                         border: 2px solid $lightpurple;
                     }
@@ -280,6 +283,7 @@ body {
 }
 }
 
+/* Media Query for Desktop */
 @media (min-width: 1280px){
     body {
         background-color: $Background_dark;
