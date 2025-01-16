@@ -221,11 +221,7 @@ body {
                         border-radius: 360px;
                         text-align: center;
                     }
-                    .UXUI:hover {
-                        display: none;
-                        color:$Secondary_Cyan;
-                        border: 2px solid $Secondary_Cyan;
-                    }
+                    
                     .Story {
                         color:$White_Light_shadow;
                         border: 2px solid $White_Light_shadow;
@@ -237,11 +233,7 @@ body {
                         text-align: center;
                         align-items: center;
                         justify-content: center;
-                    }
-                    .Story:hover {
-                        display: none;
-                        color:$lightpurple;
-                        border: 2px solid $lightpurple;
+                    
                     }
                     .FrontEnd {
                         color:$White_Light_shadow;
@@ -255,11 +247,7 @@ body {
                         align-items: center;
                         justify-content: center;
                     }
-                    .FrontEnd:hover {
-                        display: none;
-                        color:$Secondary_Cyan;
-                        border: 2px solid $Secondary_Cyan;
-                    }
+                    
                     .Graphisme {
                         color:$White_Light_shadow;
                         border: 2px solid $White_Light_shadow;
@@ -271,11 +259,6 @@ body {
                         text-align: center;
                         align-items: center;
                         justify-content: center;
-                    }
-                    .Graphisme:hover {
-                        display: none;
-                        color:$lightpurple;
-                        border: 2px solid $lightpurple;
                     }
                 }
             }

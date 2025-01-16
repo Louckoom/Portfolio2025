@@ -202,11 +202,6 @@
     border-radius: 360px;
     text-align: center;
   }
-  body .Hero .HeroVideo .BottomHero .TagsHero .UXUI:hover {
-    display: none;
-    color: #68FFFF;
-    border: 2px solid #68FFFF;
-  }
   body .Hero .HeroVideo .BottomHero .TagsHero .Story {
     color: #FFFFFF;
     border: 2px solid #FFFFFF;
@@ -218,11 +213,6 @@
     text-align: center;
     align-items: center;
     justify-content: center;
-  }
-  body .Hero .HeroVideo .BottomHero .TagsHero .Story:hover {
-    display: none;
-    color: #9747FF;
-    border: 2px solid #9747FF;
   }
   body .Hero .HeroVideo .BottomHero .TagsHero .FrontEnd {
     color: #FFFFFF;
@@ -236,11 +226,6 @@
     align-items: center;
     justify-content: center;
   }
-  body .Hero .HeroVideo .BottomHero .TagsHero .FrontEnd:hover {
-    display: none;
-    color: #68FFFF;
-    border: 2px solid #68FFFF;
-  }
   body .Hero .HeroVideo .BottomHero .TagsHero .Graphisme {
     color: #FFFFFF;
     border: 2px solid #FFFFFF;
@@ -252,11 +237,6 @@
     text-align: center;
     align-items: center;
     justify-content: center;
-  }
-  body .Hero .HeroVideo .BottomHero .TagsHero .Graphisme:hover {
-    display: none;
-    color: #9747FF;
-    border: 2px solid #9747FF;
   }
   body .Projets .ProjetsContent .Title {
     display: flex;
