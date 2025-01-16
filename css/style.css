@@ -125,6 +125,7 @@
   body .Hero {
     height: 120vh;
     display: flex;
+    flex-direction: column;
   }
   body .Hero .HeroVideo {
     display: flex;
@@ -143,6 +144,8 @@
   }
   body .Hero .HeroVideo .TopHero {
     display: flex;
+    flex-direction: column;
+    justify-content: center;
   }
   body .Hero .HeroVideo .TopHero .MainTitle {
     display: flex;
@@ -822,7 +825,7 @@
   }
   body header .MenuContainer .Menu nav ul li .home:hover {
     border: 2px solid #68FFFF;
-    color: #68FFFF;
+    color: #FFFFFF;
   }
   body header .MenuContainer .Menu nav ul li .portfolio {
     padding: 1.125rem 2rem;
@@ -831,7 +834,7 @@
   }
   body header .MenuContainer .Menu nav ul li .portfolio:hover {
     border: 2px solid #68FFFF;
-    color: #68FFFF;
+    color: #FFFFFF;
   }
   body header .MenuContainer .Menu nav ul li .about {
     padding: 1.125rem 2rem;
@@ -840,7 +843,7 @@
   }
   body header .MenuContainer .Menu nav ul li .about:hover {
     border: 2px solid #68FFFF;
-    color: #68FFFF;
+    color: #FFFFFF;
   }
   body header .MenuContainer .Menu nav ul li .contact {
     padding: 1.125rem 2rem;
@@ -849,7 +852,7 @@
   }
   body header .MenuContainer .Menu nav ul li .contact:hover {
     border: 2px solid #68FFFF;
-    color: #68FFFF;
+    color: #FFFFFF;
   }
   body .Hero .HeroVideo video {
     position: absolute;
@@ -920,7 +923,7 @@
     text-align: center;
   }
   body .Hero .HeroVideo .BottomHero .TagsHero .UXUI:hover {
-    color: #68FFFF;
+    color: #FFFFFF;
     border: 2px solid #68FFFF;
   }
   body .Hero .HeroVideo .BottomHero .TagsHero .Story {
@@ -937,7 +940,7 @@
     justify-content: center;
   }
   body .Hero .HeroVideo .BottomHero .TagsHero .Story:hover {
-    color: #9747FF;
+    color: #FFFFFF;
     border: 2px solid #9747FF;
   }
   body .Hero .HeroVideo .BottomHero .TagsHero .FrontEnd {
@@ -954,7 +957,7 @@
     justify-content: center;
   }
   body .Hero .HeroVideo .BottomHero .TagsHero .FrontEnd:hover {
-    color: #68FFFF;
+    color: #FFFFFF;
     border: 2px solid #68FFFF;
   }
   body .Hero .HeroVideo .BottomHero .TagsHero .Graphisme {
@@ -971,7 +974,7 @@
     justify-content: center;
   }
   body .Hero .HeroVideo .BottomHero .TagsHero .Graphisme:hover {
-    color: #9747FF;
+    color: #FFFFFF;
     border: 2px solid #9747FF;
   }
 }
