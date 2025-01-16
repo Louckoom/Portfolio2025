@@ -282,6 +282,8 @@ body {
         }
     }
     // End of Hero Section //
+
+    // Projets Section //
     .Projets {
         .ProjetsContent {
             .Title {
@@ -294,6 +296,7 @@ body {
                     font-family: "Chakra Petch";
                     font-weight: 700;
                     text-align: center;
+                    font-size: 2.5rem;
                 }
             }
             .Cards {
@@ -613,7 +616,278 @@ body {
         }
 
 
-    }   
+    }
+    // End of Projets Section //
+    .separator {
+        display: flex;
+        flex-direction: column;
+        padding: 1.25rem 2.5rem;
+        hr {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            border: 1px solid $Secondary_Cyan;
+        }
+    }
+
+    // A Propos Section //
+    .Apropos {
+        .AproposContent {
+            display: flex;
+            flex-direction: column;
+            .Title {
+                display: flex;
+                align-items: flex-start;
+                justify-content: center;
+                padding: 2.5rem 0;
+                h1 {
+                    color: $Secondary_Cyan;
+                    font-family: "Chakra Petch";
+                    font-weight: 700;
+                    text-align: center;
+                    font-size: 2.5rem;
+                }
+            }
+            .Content{
+                .TextContent{
+                    display: flex;
+                    flex-direction: column;
+                    padding: 0 2.5rem;
+                    .TextSubTitle {
+                        display: flex;
+                        align-items: flex-start;
+                        justify-content: center;
+                        padding: 1.25rem 0;
+                        h2 {
+                            color: $lightpurple;
+                            font-family: "Chakra Petch";
+                            font-weight: 600;
+                            text-align: center;
+                            font-size: 1.5rem;
+                        }
+                    }
+                    .QuiSuisJeText {
+                        display: flex;
+                        flex-direction: column;
+                        gap: 1.25rem;
+                        align-items: flex-start;
+                        justify-content: center;
+                        padding: 2.5rem 0;
+                        p {
+                            color: $White_Light_shadow;
+                            font-family: "Chakra Petch";
+                            font-weight: 500;
+                            text-align: center;
+                            font-size: 0.875rem;
+                        }
+                    }
+                    .ButtonCV {
+                        display: flex;
+                flex-direction: column;
+                align-items: stretch;
+                margin: 1.875rem 0;
+                a {
+                    
+                    button {
+                       background-color: $Main_purple;
+                       padding: 1.5rem 1.5rem;
+                       width: 100%;
+                       border-radius: 0.5rem;
+                       border: 2px solid $Secondary_Cyan;
+                       color: $Secondary_Cyan;
+                       font-family: "Chakra Petch", sans-serif;
+                       font-weight: 700;
+                       font-size: 20px;       
+                    }
+                }
+                    }
+                }
+                .ProfilPic {
+                    a {
+                        display: flex;
+                        flex-direction: column;
+                        margin: 2.5rem;
+                        
+                        img {
+                            width: 100%;
+                            border-radius: 0.5rem;
+                            border: 0.25rem solid $lightpurple;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    // End of A Propos Section //
+
+    // Footer //
+    footer {
+        background-color: $Elements_Dark;
+        display: flex;
+        flex-direction: column;
+        .TopContentFooter {
+            .LeftContent {
+                .TopLeftContent {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                        .LogoFooter {
+                            display: flex;
+                            width: 5.1875rem;
+                            height: auto;
+                            padding: 1.25rem;
+                            justify-content: center;
+                            align-items: center;
+                        }
+                        .TextFooter {
+                            display: flex;
+                            flex-direction: column;
+                            text-align: center;
+                            margin: 1.25rem 2.5rem;
+                            p {
+                                color: $White_Light_shadow;
+                                font-family: "Inter";
+                                font-weight: 500;
+                                font-size: 0.75rem;
+                            }
+                        }
+                }
+                .SocialsIcons {
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+                    justify-content: space-between;
+                    margin: 20px 40px;
+                    a {
+                        .Bento {
+                            background-color: $Main_purple;
+                            padding: 20px;
+                            border-radius: 360px;
+                            border: 2px solid $Secondary_Cyan;
+                        }
+                    }
+                    a {
+                        .Behance {
+                            background-color: $Main_purple;
+                            padding: 20px;
+                            border-radius: 360px;
+                            border: 2px solid $Secondary_Cyan;
+                        }
+                    }
+                    a {
+                        .Linkedin {
+                            background-color: $Main_purple;
+                            padding: 20px;
+                            border-radius: 360px;
+                            border: 2px solid $Secondary_Cyan;
+                        }
+                    }
+                    a {
+                        .Github {
+                            background-color: $Main_purple;
+                            padding: 20px;
+                            border-radius: 360px;
+                            border: 2px solid $Secondary_Cyan;
+                        }
+                    }
+                    
+                }
+            }
+            .RightContent {
+                .Menu {
+                    padding: 20px 0;
+                    nav {
+                        ul  {
+                            display: flex;
+                            flex-direction: column;
+                            justify-content: center;
+                            align-items: center;
+                            gap: 20px;
+                            
+                            li {
+                                .Titlefooternav {
+                                    color: $White_Light_shadow;
+                                    font-family: "Chakra Petch";
+                                    font-weight: 700;
+                                }
+                                .homefooter {
+                                    color: $Secondary_Cyan;
+                                    font-family: "Chakra Petch";
+                                    font-weight: 500;
+                                    text-decoration: none;
+                                }
+                                .portfoliofooter {
+                                    color: $White_Light_shadow;
+                                    font-family: "Chakra Petch";
+                                    font-weight: 400;
+                                    text-decoration: none;
+                                }
+                                .aboutfooter {
+                                    color: $White_Light_shadow;
+                                    font-family: "Chakra Petch";
+                                    font-weight: 400;
+                                    text-decoration: none;
+                                }
+                                .contactfooter {
+                                    color: $White_Light_shadow;
+                                    font-family: "Chakra Petch";
+                                    font-weight: 400;
+                                    text-decoration: none;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .separatorfooter {
+                display: flex;
+                flex-direction: column;
+                padding: 2.5rem 2.5rem;
+                hr {
+                    display: flex;
+                    flex-direction: column;
+                    width: 100%;
+                    border: 1px solid $White_Light_shadow;
+                }
+        }
+        .BottomContentFooter {
+            .LegalMenu {
+                nav {
+                    ul {
+                       display: flex;
+                       flex-direction: column;
+                       gap: 1.25rem;
+                       justify-content: center;
+                       align-items: center;
+                        li {
+                            a {
+                                text-decoration: none;
+                                color: $White_Light_shadow;
+                                font-family: "Inter";
+                                font-weight: 400;
+                                font-size: 0.875rem;
+                            }
+                        }
+                    }
+                }
+            }
+            .Copyright {
+                display: flex;
+                       flex-direction: column;
+                       align-items: center;
+                       padding: 2.5rem;
+                p {
+                    color: $White_Light_shadow;
+                    text-align: center;
+                    font-family: "Inter";
+                    font-weight: 500;
+                    font-size: 16px;
+                }
+            }
+        }
+    }
+    // End of Footer //
 }
 }
 
