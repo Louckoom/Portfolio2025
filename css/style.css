@@ -122,18 +122,27 @@
   body header .Menu nav.active {
     display: flex; /* Show the menu when active */
   }
+  body .Hero {
+    height: 120vh;
+    display: flex;
+  }
+  body .Hero .HeroVideo {
+    display: flex;
+    flex-direction: column;
+    gap: 8.75rem;
+  }
   body .Hero .HeroVideo video {
     position: absolute;
     top: 0;
     width: 100%;
-    height: 140vh;
+    height: 120vh;
     opacity: 60%;
     overflow: hidden;
     object-fit: cover;
     z-index: -10000;
   }
   body .Hero .HeroVideo .TopHero {
-    height: 80vh;
+    display: flex;
   }
   body .Hero .HeroVideo .TopHero .MainTitle {
     display: flex;
@@ -248,6 +257,312 @@
     display: none;
     color: #9747FF;
     border: 2px solid #9747FF;
+  }
+  body .Projets .ProjetsContent .Title {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 3.75rem 0;
+  }
+  body .Projets .ProjetsContent .Title h1 {
+    color: #68FFFF;
+    font-family: "Chakra Petch";
+    font-weight: 700;
+    text-align: center;
+  }
+  body .Projets .ProjetsContent .Cards {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+  }
+  body .Projets .ProjetsContent .Cards .Cardlink01 {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    padding: 1.25rem 0;
+    margin: 0 2.5rem;
+    background-color: #301A4B;
+    text-decoration: none;
+    border-radius: 0.5rem;
+    border: 2px solid #68FFFF;
+  }
+  body .Projets .ProjetsContent .Cards .Cardlink01 .Card01 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px 20px;
+    justify-content: center;
+  }
+  body .Projets .ProjetsContent .Cards .Cardlink01 .Card01 .TitleCard h2 {
+    color: #FFFFFF;
+    font-family: "Chakra Petch";
+    font-weight: 600;
+  }
+  body .Projets .ProjetsContent .Cards .Cardlink01 .Card01 .ImageCard img {
+    width: 100%;
+  }
+  body .Projets .ProjetsContent .Cards .Cardlink01 .Card01 .TagsCards {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    gap: 1.25rem;
+    padding: 0.625rem 0 2.5rem 0;
+    text-align: center;
+  }
+  body .Projets .ProjetsContent .Cards .Cardlink01 .Card01 .TagsCards .Tag01 {
+    border: 2px solid #FFFFFF;
+    padding: 0.625rem 1.25rem;
+    border-radius: 22.5rem;
+  }
+  body .Projets .ProjetsContent .Cards .Cardlink01 .Card01 .TagsCards .Tag01 p {
+    color: #FFFFFF;
+    font-family: "Chakra Petch", sans-serif;
+    font-weight: 600;
+    font-size: 0.875rem;
+  }
+  body .Projets .ProjetsContent .Cards .Cardlink01 .Card01 .TagsCards .Tag02 {
+    border: 2px solid #FFFFFF;
+    padding: 0.625rem 1.25rem;
+    border-radius: 22.5rem;
+  }
+  body .Projets .ProjetsContent .Cards .Cardlink01 .Card01 .TagsCards .Tag02 p {
+    color: #FFFFFF;
+    font-family: "Chakra Petch", sans-serif;
+    font-weight: 600;
+    font-size: 0.875rem;
+  }
+  body .Projets .ProjetsContent .Cards .Cardlink01 .Card01 .TagsCards .Tag03 {
+    border: 2px solid #FFFFFF;
+    padding: 0.625rem 1.25rem;
+    border-radius: 22.5rem;
+  }
+  body .Projets .ProjetsContent .Cards .Cardlink01 .Card01 .TagsCards .Tag03 p {
+    color: #FFFFFF;
+    font-family: "Chakra Petch", sans-serif;
+    font-weight: 600;
+    font-size: 0.875rem;
+  }
+  body .Projets .ProjetsContent .Cards .Cardlink02 {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    padding: 1.25rem 0;
+    margin: 0 2.5rem;
+    background-color: #301A4B;
+    text-decoration: none;
+    border-radius: 0.5rem;
+    border: 2px solid #68FFFF;
+  }
+  body .Projets .ProjetsContent .Cards .Cardlink02 .Card02 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px 20px;
+    justify-content: center;
+  }
+  body .Projets .ProjetsContent .Cards .Cardlink02 .Card02 .TitleCard h2 {
+    color: #FFFFFF;
+    font-family: "Chakra Petch";
+    font-weight: 600;
+  }
+  body .Projets .ProjetsContent .Cards .Cardlink02 .Card02 .ImageCard img {
+    width: 100%;
+  }
+  body .Projets .ProjetsContent .Cards .Cardlink02 .Card02 .TagsCards {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    gap: 1.25rem;
+    padding: 0.625rem 0 2.5rem 0;
+    text-align: center;
+  }
+  body .Projets .ProjetsContent .Cards .Cardlink02 .Card02 .TagsCards .Tag01 {
+    border: 2px solid #FFFFFF;
+    padding: 0.625rem 1.25rem;
+    border-radius: 22.5rem;
+  }
+  body .Projets .ProjetsContent .Cards .Cardlink02 .Card02 .TagsCards .Tag01 p {
+    color: #FFFFFF;
+    font-family: "Chakra Petch", sans-serif;
+    font-weight: 600;
+    font-size: 0.875rem;
+  }
+  body .Projets .ProjetsContent .Cards .Cardlink02 .Card02 .TagsCards .Tag02 {
+    border: 2px solid #FFFFFF;
+    padding: 0.625rem 1.25rem;
+    border-radius: 22.5rem;
+  }
+  body .Projets .ProjetsContent .Cards .Cardlink02 .Card02 .TagsCards .Tag02 p {
+    color: #FFFFFF;
+    font-family: "Chakra Petch", sans-serif;
+    font-weight: 600;
+    font-size: 0.875rem;
+  }
+  body .Projets .ProjetsContent .Cards .Cardlink02 .Card02 .TagsCards .Tag03 {
+    border: 2px solid #FFFFFF;
+    padding: 0.625rem 1.25rem;
+    border-radius: 22.5rem;
+  }
+  body .Projets .ProjetsContent .Cards .Cardlink02 .Card02 .TagsCards .Tag03 p {
+    color: #FFFFFF;
+    font-family: "Chakra Petch", sans-serif;
+    font-weight: 600;
+    font-size: 0.875rem;
+  }
+  body .Projets .ProjetsContent .Cards .Cardlink03 {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    padding: 1.25rem 0;
+    margin: 0 2.5rem;
+    background-color: #301A4B;
+    text-decoration: none;
+    border-radius: 0.5rem;
+    border: 2px solid #68FFFF;
+  }
+  body .Projets .ProjetsContent .Cards .Cardlink03 .Card03 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px 20px;
+    justify-content: center;
+  }
+  body .Projets .ProjetsContent .Cards .Cardlink03 .Card03 .TitleCard h2 {
+    color: #FFFFFF;
+    font-family: "Chakra Petch";
+    font-weight: 600;
+  }
+  body .Projets .ProjetsContent .Cards .Cardlink03 .Card03 .ImageCard img {
+    width: 100%;
+  }
+  body .Projets .ProjetsContent .Cards .Cardlink03 .Card03 .TagsCards {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    gap: 1.25rem;
+    padding: 0.625rem 0 2.5rem 0;
+    text-align: center;
+  }
+  body .Projets .ProjetsContent .Cards .Cardlink03 .Card03 .TagsCards .Tag01 {
+    border: 2px solid #FFFFFF;
+    padding: 0.625rem 1.25rem;
+    border-radius: 22.5rem;
+  }
+  body .Projets .ProjetsContent .Cards .Cardlink03 .Card03 .TagsCards .Tag01 p {
+    color: #FFFFFF;
+    font-family: "Chakra Petch", sans-serif;
+    font-weight: 600;
+    font-size: 0.875rem;
+  }
+  body .Projets .ProjetsContent .Cards .Cardlink03 .Card03 .TagsCards .Tag02 {
+    border: 2px solid #FFFFFF;
+    padding: 0.625rem 1.25rem;
+    border-radius: 22.5rem;
+  }
+  body .Projets .ProjetsContent .Cards .Cardlink03 .Card03 .TagsCards .Tag02 p {
+    color: #FFFFFF;
+    font-family: "Chakra Petch", sans-serif;
+    font-weight: 600;
+    font-size: 0.875rem;
+  }
+  body .Projets .ProjetsContent .Cards .Cardlink03 .Card03 .TagsCards .Tag03 {
+    border: 2px solid #FFFFFF;
+    padding: 0.625rem 1.25rem;
+    border-radius: 22.5rem;
+  }
+  body .Projets .ProjetsContent .Cards .Cardlink03 .Card03 .TagsCards .Tag03 p {
+    color: #FFFFFF;
+    font-family: "Chakra Petch", sans-serif;
+    font-weight: 600;
+    font-size: 0.875rem;
+  }
+  body .Projets .ProjetsContent .Cards .Cardlink04 {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    padding: 1.25rem 0;
+    margin: 0 2.5rem;
+    background-color: #301A4B;
+    text-decoration: none;
+    border-radius: 0.5rem;
+    border: 2px solid #68FFFF;
+  }
+  body .Projets .ProjetsContent .Cards .Cardlink04 .Card04 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px 20px;
+    justify-content: center;
+  }
+  body .Projets .ProjetsContent .Cards .Cardlink04 .Card04 .TitleCard h2 {
+    color: #FFFFFF;
+    font-family: "Chakra Petch";
+    font-weight: 600;
+  }
+  body .Projets .ProjetsContent .Cards .Cardlink04 .Card04 .ImageCard img {
+    width: 100%;
+  }
+  body .Projets .ProjetsContent .Cards .Cardlink04 .Card04 .TagsCards {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    gap: 1.25rem;
+    padding: 0.625rem 0 2.5rem 0;
+    text-align: center;
+  }
+  body .Projets .ProjetsContent .Cards .Cardlink04 .Card04 .TagsCards .Tag01 {
+    border: 2px solid #FFFFFF;
+    padding: 0.625rem 1.25rem;
+    border-radius: 22.5rem;
+  }
+  body .Projets .ProjetsContent .Cards .Cardlink04 .Card04 .TagsCards .Tag01 p {
+    color: #FFFFFF;
+    font-family: "Chakra Petch", sans-serif;
+    font-weight: 600;
+    font-size: 0.875rem;
+  }
+  body .Projets .ProjetsContent .Cards .Cardlink04 .Card04 .TagsCards .Tag02 {
+    border: 2px solid #FFFFFF;
+    padding: 0.625rem 1.25rem;
+    border-radius: 22.5rem;
+  }
+  body .Projets .ProjetsContent .Cards .Cardlink04 .Card04 .TagsCards .Tag02 p {
+    color: #FFFFFF;
+    font-family: "Chakra Petch", sans-serif;
+    font-weight: 600;
+    font-size: 0.875rem;
+  }
+  body .Projets .ProjetsContent .Cards .Cardlink04 .Card04 .TagsCards .Tag03 {
+    border: 2px solid #FFFFFF;
+    padding: 0.625rem 1.25rem;
+    border-radius: 22.5rem;
+  }
+  body .Projets .ProjetsContent .Cards .Cardlink04 .Card04 .TagsCards .Tag03 p {
+    color: #FFFFFF;
+    font-family: "Chakra Petch", sans-serif;
+    font-weight: 600;
+    font-size: 0.875rem;
+  }
+  body .Projets .ProjetsContent .ButtonPortfolio {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    margin: 1.875rem 2.5rem;
+  }
+  body .Projets .ProjetsContent .ButtonPortfolio a button {
+    background-color: #301A4B;
+    padding: 1.5rem 1.5rem;
+    width: 100%;
+    border-radius: 0.5rem;
+    border: 2px solid #68FFFF;
+    color: #68FFFF;
+    font-family: "Chakra Petch", sans-serif;
+    font-weight: 700;
+    font-size: 20px;
   }
 }
 /* Media Query for Desktop */
