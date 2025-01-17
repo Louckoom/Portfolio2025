@@ -1389,6 +1389,7 @@ body {
                                     font-family: "Chakra Petch";
                                     font-weight: 600;
                                     font-size: 40px;
+                                    text-align: center;
                                 }
                             }
                             .ImageCard {
@@ -1507,20 +1508,24 @@ body {
                     }
                 }
                 .Content{
+                    display: flex;
+                    flex-direction: row;
+                    margin: 4rem 9rem;
+                    gap: 200px;
+                    align-items: center;
                     .TextContent{
                         display: flex;
                         flex-direction: column;
-                        padding: 0 2.5rem;
+                        gap: 2rem;
                         .TextSubTitle {
                             display: flex;
                             align-items: flex-start;
-                            justify-content: center;
+                            
                             padding: 1.25rem 0;
                             h2 {
                                 color: $lightpurple;
                                 font-family: "Chakra Petch";
                                 font-weight: 600;
-                                text-align: center;
                                 font-size: 1.5rem;
                             }
                         }
@@ -1528,21 +1533,19 @@ body {
                             display: flex;
                             flex-direction: column;
                             gap: 1.25rem;
-                            align-items: flex-start;
-                            justify-content: center;
-                            padding: 2.5rem 0;
+                            margin: 0 6rem 0 0;
                             p {
                                 color: $White_Light_shadow;
                                 font-family: "Chakra Petch";
                                 font-weight: 500;
-                                text-align: center;
+                                
                                 font-size: 0.875rem;
                             }
                         }
                         .ButtonCV {
                             display: flex;
                     flex-direction: column;
-                    align-items: stretch;
+                    align-items: flex-start;
                     margin: 1.875rem 0;
                     a {
                         
@@ -1551,26 +1554,30 @@ body {
                         padding: 1.5rem 1.5rem;
                         width: 100%;
                         border-radius: 0.5rem;
-                        border: 2px solid $Secondary_Cyan;
-                        color: $Secondary_Cyan;
+                        border: 2px solid $Background_dark;
+                        color: $lightblue;
                         font-family: "Chakra Petch", sans-serif;
                         font-weight: 700;
-                        font-size: 20px;       
+                        font-size: 20px;
+                        }
+                        button:hover {
+                            border: 2px solid $Secondary_Cyan;
+                            color: $White_Light_shadow;
                         }
                     }
                         }
                     }
                     .ProfilPic {
                         a {
-                            display: flex;
-                            flex-direction: column;
-                            margin: 2.5rem;
-                            
                             img {
                                 width: 100%;
                                 border-radius: 0.5rem;
-                                border: 0.25rem solid $lightpurple;
+                                border: 0.25rem solid $Background_dark;
+                                
                             }
+                        }
+                        img:hover {
+                            border: 0.25rem solid $lightpurple;
                         }
                     }
                 }
