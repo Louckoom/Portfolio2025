@@ -796,6 +796,8 @@
     display: flex;
     width: 5.1875rem;
     height: 5.5rem;
+    padding: 0.75rem;
+    justify-content: center;
     align-items: center;
   }
   body header .MenuContainer .Menu nav ul {
@@ -1424,19 +1426,24 @@
     background-color: #0A0817;
     display: flex;
     flex-direction: column;
+    flex-wrap: wrap;
   }
   body footer .TopContentFooter {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    margin: 0 9rem;
-    gap: 16rem;
+    margin: 4rem 9rem;
+  }
+  body footer .TopContentFooter .LeftContent {
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+    justify-content: center;
   }
   body footer .TopContentFooter .LeftContent .TopLeftContent {
     display: flex;
     flex-direction: row;
     align-items: center;
-    margin: 4rem 0;
   }
   body footer .TopContentFooter .LeftContent .TopLeftContent .LogoFooter {
     display: flex;
@@ -1448,7 +1455,7 @@
   body footer .TopContentFooter .LeftContent .TopLeftContent .TextFooter {
     display: flex;
     flex-direction: column;
-    margin: 1.25rem 4rem;
+    margin: 0 4rem;
   }
   body footer .TopContentFooter .LeftContent .TopLeftContent .TextFooter p {
     color: #FFFFFF;
@@ -1461,7 +1468,6 @@
     flex-direction: row;
     align-items: center;
     justify-content: flex-start;
-    margin: 20px 0;
     gap: 4rem;
   }
   body footer .TopContentFooter .LeftContent .SocialsIcons a .Bento {
@@ -1511,9 +1517,6 @@
     padding: 20px;
     border-radius: 360px;
     border: 2px solid #68FFFF;
-  }
-  body footer .TopContentFooter .RightContent .Menu {
-    margin: 4rem 0;
   }
   body footer .TopContentFooter .RightContent .Menu nav ul {
     display: flex;
@@ -1581,8 +1584,10 @@
     display: flex;
     flex-direction: row;
     align-items: center;
+    flex-wrap: wrap;
     margin: 0 9rem;
     padding: 2.5rem 0;
+    gap: 2rem;
     justify-content: space-between;
   }
   body footer .BottomContentFooter .LegalMenu nav ul {

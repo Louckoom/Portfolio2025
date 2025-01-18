@@ -896,6 +896,8 @@ body {
                 display: flex;
                 width: 5.1875rem;
                 height: 5.5rem;
+                padding: 0.75rem;
+                justify-content: center;
                 align-items: center;
             }
             .Menu {
@@ -1588,18 +1590,21 @@ body {
             background-color: $Elements_Dark;
             display: flex;
             flex-direction: column;
+            flex-wrap: wrap;
             .TopContentFooter {
                 display: flex;
                 flex-direction: row;
                 justify-content: space-between;
-                margin: 0 9rem;
-                gap: 16rem;
+                margin: 4rem 9rem;
                 .LeftContent {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 4rem;
+                    justify-content: center;
                     .TopLeftContent {
                         display: flex;
                         flex-direction: row;
                         align-items: center;
-                        margin: 4rem 0;
                             .LogoFooter {
                                 display: flex;
                                 width: 5.1875rem;
@@ -1610,7 +1615,7 @@ body {
                             .TextFooter {
                                 display: flex;
                                 flex-direction: column;
-                                margin: 1.25rem 4rem;
+                                margin: 0 4rem;
                                 p {
                                     color: $White_Light_shadow;
                                     font-family: "Inter";
@@ -1624,7 +1629,6 @@ body {
                         flex-direction: row;
                         align-items: center;
                         justify-content: flex-start;
-                        margin: 20px 0;
                         gap: 4rem;
                         a {
                             .Bento {
@@ -1687,7 +1691,6 @@ body {
                 }
                 .RightContent {
                     .Menu {
-                        margin: 4rem 0;
                         nav {
                             ul  {
                                 display: flex;
@@ -1762,8 +1765,10 @@ body {
                 display: flex;
                 flex-direction: row;
                 align-items: center;
+                flex-wrap: wrap;
                 margin: 0 9rem;
                 padding: 2.5rem 0;
+                gap: 2rem;
                 justify-content: space-between;
                 .LegalMenu {
                     nav {
