@@ -1,0 +1,1446 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* Media Query for Mobile */
+@media (max-width: 768px) {
+  @keyframes slideDown {
+    0% {
+      transform: translateY(-100%); /* Start above the viewport */
+      opacity: 0;
+    }
+    100% {
+      transform: translateY(0); /* End at its normal position */
+      opacity: 1;
+    }
+  }
+  body {
+    background-color: #07060E;
+    width: 100%;
+  }
+  body img {
+    width: 40%;
+  }
+  body hr {
+    width: 40%;
+  }
+  body header {
+    background-color: #0A0817;
+    position: fixed;
+    z-index: 100;
+    width: 100%;
+  }
+  body header .MenuContainer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  body header .MenuContainer .ReturnHome {
+    display: flex;
+    width: 5.1875rem;
+    height: auto;
+    padding: 1.25rem;
+    justify-content: center;
+    align-items: center;
+  }
+  body header .Menu {
+    overflow: visible; /* Add this to prevent clipping */
+    z-index: 2;
+    display: flex;
+    width: 5.1875rem;
+    height: auto;
+    padding: 0;
+    justify-content: center;
+    align-items: center;
+    /* Burger Menu CSS */
+    /* Active State Styles */
+  }
+  body header .Menu .burger-menu {
+    width: 1.875rem;
+    height: 1.5625rem;
+    cursor: pointer;
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  body header .Menu .burger-menu .bar {
+    width: 100%;
+    height: 0.1875rem;
+    background-color: #FFFFFF;
+    transition: transform 0.3s ease;
+  }
+  body header .Menu nav {
+    display: none; /* Hide navigation menu by default on mobile */
+    flex-direction: column; /* Stack navigation items vertically */
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #0A0817;
+    width: 100%;
+    box-shadow: 0 0.125rem 0.3125rem rgba(0, 0, 0, 0.2);
+    animation: slideDown 1s ease-in-out;
+  }
+  body header .Menu nav ul {
+    flex-direction: column; /* Stack navigation items vertically */
+    align-items: center; /* Center navigation items */
+    justify-content: center;
+    border-bottom: 2px solid #68FFFF;
+  }
+  body header .Menu nav ul li {
+    justify-content: center; /* Center navigation items */
+    text-align: center;
+    border-top: 2px solid #68FFFF;
+    position: relative;
+    width: 100%; /* Make navigation items full width */
+  }
+  body header .Menu nav ul li a {
+    color: #A5BBCB;
+    text-decoration: none;
+    font-family: "Chakra Petch", sans-serif;
+    font-weight: 700;
+    display: block;
+    padding: 1.25rem;
+  }
+  body header .Menu nav ul li .portfolio {
+    background-color: #301A4B;
+    color: #FFFFFF;
+  }
+  body header .Menu .burger-menu.active {
+    justify-content: space-evenly;
+  }
+  body header .Menu .burger-menu.active .bar:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 5px);
+  }
+  body header .Menu .burger-menu.active .bar:nth-child(2) {
+    opacity: 0;
+  }
+  body header .Menu .burger-menu.active .bar:nth-child(3) {
+    transform: rotate(-45deg) translate(5px, -5px);
+  }
+  body header .Menu nav.active {
+    display: flex; /* Show the menu when active */
+  }
+  body .Hero {
+    height: 120vh;
+    display: flex;
+    flex-direction: column;
+  }
+  body .Hero .HeroContent .HeroContent .Title {
+    display: flex;
+    flex-direction: column;
+    padding: 8.75rem 0.625rem;
+    align-items: center;
+    gap: 1.875rem;
+  }
+  body .Hero .HeroContent .HeroContent .Title h1 {
+    font-size: 2.5rem;
+    text-align: center;
+    font-family: "Chakra Petch";
+    font-weight: 700;
+    color: #FFFFFF;
+  }
+  body .Projets .ProjetsContent .Title {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 3.75rem 0;
+  }
+  body .Projets .ProjetsContent .Title h1 {
+    color: #68FFFF;
+    font-family: "Chakra Petch";
+    font-weight: 700;
+    text-align: center;
+    font-size: 2.5rem;
+  }
+  body .Projets .ProjetsContent .Cards {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+  }
+  body .Projets .ProjetsContent .Cards .Cardlink01 {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    padding: 1.25rem 0;
+    margin: 0 2.5rem;
+    background-color: #301A4B;
+    text-decoration: none;
+    border-radius: 0.5rem;
+    border: 2px solid #68FFFF;
+  }
+  body .Projets .ProjetsContent .Cards .Cardlink01 .Card01 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px 20px;
+    justify-content: center;
+  }
+  body .Projets .ProjetsContent .Cards .Cardlink01 .Card01 .TitleCard h2 {
+    color: #FFFFFF;
+    font-family: "Chakra Petch";
+    font-weight: 600;
+  }
+  body .Projets .ProjetsContent .Cards .Cardlink01 .Card01 .ImageCard img {
+    width: 100%;
+  }
+  body .Projets .ProjetsContent .Cards .Cardlink01 .Card01 .TagsCards {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    gap: 1.25rem;
+    padding: 0.625rem 0 2.5rem 0;
+    text-align: center;
+  }
+  body .Projets .ProjetsContent .Cards .Cardlink01 .Card01 .TagsCards .Tag01 {
+    border: 2px solid #FFFFFF;
+    padding: 0.625rem 1.25rem;
+    border-radius: 22.5rem;
+  }
+  body .Projets .ProjetsContent .Cards .Cardlink01 .Card01 .TagsCards .Tag01 p {
+    color: #FFFFFF;
+    font-family: "Chakra Petch", sans-serif;
+    font-weight: 600;
+    font-size: 0.875rem;
+  }
+  body .Projets .ProjetsContent .Cards .Cardlink01 .Card01 .TagsCards .Tag02 {
+    border: 2px solid #FFFFFF;
+    padding: 0.625rem 1.25rem;
+    border-radius: 22.5rem;
+  }
+  body .Projets .ProjetsContent .Cards .Cardlink01 .Card01 .TagsCards .Tag02 p {
+    color: #FFFFFF;
+    font-family: "Chakra Petch", sans-serif;
+    font-weight: 600;
+    font-size: 0.875rem;
+  }
+  body .Projets .ProjetsContent .Cards .Cardlink01 .Card01 .TagsCards .Tag03 {
+    border: 2px solid #FFFFFF;
+    padding: 0.625rem 1.25rem;
+    border-radius: 22.5rem;
+  }
+  body .Projets .ProjetsContent .Cards .Cardlink01 .Card01 .TagsCards .Tag03 p {
+    color: #FFFFFF;
+    font-family: "Chakra Petch", sans-serif;
+    font-weight: 600;
+    font-size: 0.875rem;
+  }
+  body .Projets .ProjetsContent .Cards .Cardlink02 {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    padding: 1.25rem 0;
+    margin: 0 2.5rem;
+    background-color: #301A4B;
+    text-decoration: none;
+    border-radius: 0.5rem;
+    border: 2px solid #68FFFF;
+  }
+  body .Projets .ProjetsContent .Cards .Cardlink02 .Card02 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px 20px;
+    justify-content: center;
+  }
+  body .Projets .ProjetsContent .Cards .Cardlink02 .Card02 .TitleCard h2 {
+    color: #FFFFFF;
+    font-family: "Chakra Petch";
+    font-weight: 600;
+  }
+  body .Projets .ProjetsContent .Cards .Cardlink02 .Card02 .ImageCard img {
+    width: 100%;
+  }
+  body .Projets .ProjetsContent .Cards .Cardlink02 .Card02 .TagsCards {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    gap: 1.25rem;
+    padding: 0.625rem 0 2.5rem 0;
+    text-align: center;
+  }
+  body .Projets .ProjetsContent .Cards .Cardlink02 .Card02 .TagsCards .Tag01 {
+    border: 2px solid #FFFFFF;
+    padding: 0.625rem 1.25rem;
+    border-radius: 22.5rem;
+  }
+  body .Projets .ProjetsContent .Cards .Cardlink02 .Card02 .TagsCards .Tag01 p {
+    color: #FFFFFF;
+    font-family: "Chakra Petch", sans-serif;
+    font-weight: 600;
+    font-size: 0.875rem;
+  }
+  body .Projets .ProjetsContent .Cards .Cardlink02 .Card02 .TagsCards .Tag02 {
+    border: 2px solid #FFFFFF;
+    padding: 0.625rem 1.25rem;
+    border-radius: 22.5rem;
+  }
+  body .Projets .ProjetsContent .Cards .Cardlink02 .Card02 .TagsCards .Tag02 p {
+    color: #FFFFFF;
+    font-family: "Chakra Petch", sans-serif;
+    font-weight: 600;
+    font-size: 0.875rem;
+  }
+  body .Projets .ProjetsContent .Cards .Cardlink02 .Card02 .TagsCards .Tag03 {
+    border: 2px solid #FFFFFF;
+    padding: 0.625rem 1.25rem;
+    border-radius: 22.5rem;
+  }
+  body .Projets .ProjetsContent .Cards .Cardlink02 .Card02 .TagsCards .Tag03 p {
+    color: #FFFFFF;
+    font-family: "Chakra Petch", sans-serif;
+    font-weight: 600;
+    font-size: 0.875rem;
+  }
+  body .Projets .ProjetsContent .Cards .Cardlink03 {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    padding: 1.25rem 0;
+    margin: 0 2.5rem;
+    background-color: #301A4B;
+    text-decoration: none;
+    border-radius: 0.5rem;
+    border: 2px solid #68FFFF;
+  }
+  body .Projets .ProjetsContent .Cards .Cardlink03 .Card03 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px 20px;
+    justify-content: center;
+  }
+  body .Projets .ProjetsContent .Cards .Cardlink03 .Card03 .TitleCard h2 {
+    color: #FFFFFF;
+    font-family: "Chakra Petch";
+    font-weight: 600;
+  }
+  body .Projets .ProjetsContent .Cards .Cardlink03 .Card03 .ImageCard img {
+    width: 100%;
+  }
+  body .Projets .ProjetsContent .Cards .Cardlink03 .Card03 .TagsCards {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    gap: 1.25rem;
+    padding: 0.625rem 0 2.5rem 0;
+    text-align: center;
+  }
+  body .Projets .ProjetsContent .Cards .Cardlink03 .Card03 .TagsCards .Tag01 {
+    border: 2px solid #FFFFFF;
+    padding: 0.625rem 1.25rem;
+    border-radius: 22.5rem;
+  }
+  body .Projets .ProjetsContent .Cards .Cardlink03 .Card03 .TagsCards .Tag01 p {
+    color: #FFFFFF;
+    font-family: "Chakra Petch", sans-serif;
+    font-weight: 600;
+    font-size: 0.875rem;
+  }
+  body .Projets .ProjetsContent .Cards .Cardlink03 .Card03 .TagsCards .Tag02 {
+    border: 2px solid #FFFFFF;
+    padding: 0.625rem 1.25rem;
+    border-radius: 22.5rem;
+  }
+  body .Projets .ProjetsContent .Cards .Cardlink03 .Card03 .TagsCards .Tag02 p {
+    color: #FFFFFF;
+    font-family: "Chakra Petch", sans-serif;
+    font-weight: 600;
+    font-size: 0.875rem;
+  }
+  body .Projets .ProjetsContent .Cards .Cardlink03 .Card03 .TagsCards .Tag03 {
+    border: 2px solid #FFFFFF;
+    padding: 0.625rem 1.25rem;
+    border-radius: 22.5rem;
+  }
+  body .Projets .ProjetsContent .Cards .Cardlink03 .Card03 .TagsCards .Tag03 p {
+    color: #FFFFFF;
+    font-family: "Chakra Petch", sans-serif;
+    font-weight: 600;
+    font-size: 0.875rem;
+  }
+  body .Projets .ProjetsContent .Cards .Cardlink04 {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    padding: 1.25rem 0;
+    margin: 0 2.5rem;
+    background-color: #301A4B;
+    text-decoration: none;
+    border-radius: 0.5rem;
+    border: 2px solid #68FFFF;
+  }
+  body .Projets .ProjetsContent .Cards .Cardlink04 .Card04 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px 20px;
+    justify-content: center;
+  }
+  body .Projets .ProjetsContent .Cards .Cardlink04 .Card04 .TitleCard h2 {
+    color: #FFFFFF;
+    font-family: "Chakra Petch";
+    font-weight: 600;
+  }
+  body .Projets .ProjetsContent .Cards .Cardlink04 .Card04 .ImageCard img {
+    width: 100%;
+  }
+  body .Projets .ProjetsContent .Cards .Cardlink04 .Card04 .TagsCards {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    gap: 1.25rem;
+    padding: 0.625rem 0 2.5rem 0;
+    text-align: center;
+  }
+  body .Projets .ProjetsContent .Cards .Cardlink04 .Card04 .TagsCards .Tag01 {
+    border: 2px solid #FFFFFF;
+    padding: 0.625rem 1.25rem;
+    border-radius: 22.5rem;
+  }
+  body .Projets .ProjetsContent .Cards .Cardlink04 .Card04 .TagsCards .Tag01 p {
+    color: #FFFFFF;
+    font-family: "Chakra Petch", sans-serif;
+    font-weight: 600;
+    font-size: 0.875rem;
+  }
+  body .Projets .ProjetsContent .Cards .Cardlink04 .Card04 .TagsCards .Tag02 {
+    border: 2px solid #FFFFFF;
+    padding: 0.625rem 1.25rem;
+    border-radius: 22.5rem;
+  }
+  body .Projets .ProjetsContent .Cards .Cardlink04 .Card04 .TagsCards .Tag02 p {
+    color: #FFFFFF;
+    font-family: "Chakra Petch", sans-serif;
+    font-weight: 600;
+    font-size: 0.875rem;
+  }
+  body .Projets .ProjetsContent .Cards .Cardlink04 .Card04 .TagsCards .Tag03 {
+    border: 2px solid #FFFFFF;
+    padding: 0.625rem 1.25rem;
+    border-radius: 22.5rem;
+  }
+  body .Projets .ProjetsContent .Cards .Cardlink04 .Card04 .TagsCards .Tag03 p {
+    color: #FFFFFF;
+    font-family: "Chakra Petch", sans-serif;
+    font-weight: 600;
+    font-size: 0.875rem;
+  }
+  body .Projets .ProjetsContent .ButtonPortfolio {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    margin: 1.875rem 2.5rem;
+  }
+  body .Projets .ProjetsContent .ButtonPortfolio a button {
+    background-color: #301A4B;
+    padding: 1.5rem 1.5rem;
+    width: 100%;
+    border-radius: 0.5rem;
+    border: 2px solid #68FFFF;
+    color: #68FFFF;
+    font-family: "Chakra Petch", sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+  }
+  body .separator {
+    display: flex;
+    flex-direction: column;
+    padding: 1.25rem 2.5rem;
+  }
+  body .separator hr {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    border: 1px solid #68FFFF;
+  }
+  body footer {
+    background-color: #0A0817;
+    display: flex;
+    flex-direction: column;
+  }
+  body footer .TopContentFooter .LeftContent .TopLeftContent {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  body footer .TopContentFooter .LeftContent .TopLeftContent .LogoFooter {
+    display: flex;
+    width: 5.1875rem;
+    height: auto;
+    padding: 1.25rem;
+    justify-content: center;
+    align-items: center;
+  }
+  body footer .TopContentFooter .LeftContent .TopLeftContent .TextFooter {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin: 1.25rem 2.5rem;
+  }
+  body footer .TopContentFooter .LeftContent .TopLeftContent .TextFooter p {
+    color: #FFFFFF;
+    font-family: "Inter";
+    font-weight: 500;
+    font-size: 0.75rem;
+  }
+  body footer .TopContentFooter .LeftContent .SocialsIcons {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin: 20px 40px;
+  }
+  body footer .TopContentFooter .LeftContent .SocialsIcons a .Bento {
+    background-color: #301A4B;
+    padding: 20px;
+    border-radius: 360px;
+    border: 2px solid #68FFFF;
+  }
+  body footer .TopContentFooter .LeftContent .SocialsIcons a .Behance {
+    background-color: #301A4B;
+    padding: 20px;
+    border-radius: 360px;
+    border: 2px solid #68FFFF;
+  }
+  body footer .TopContentFooter .LeftContent .SocialsIcons a .Linkedin {
+    background-color: #301A4B;
+    padding: 20px;
+    border-radius: 360px;
+    border: 2px solid #68FFFF;
+  }
+  body footer .TopContentFooter .LeftContent .SocialsIcons a .Github {
+    background-color: #301A4B;
+    padding: 20px;
+    border-radius: 360px;
+    border: 2px solid #68FFFF;
+  }
+  body footer .TopContentFooter .RightContent .Menu {
+    padding: 20px 0;
+  }
+  body footer .TopContentFooter .RightContent .Menu nav ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+  }
+  body footer .TopContentFooter .RightContent .Menu nav ul li .Titlefooternav {
+    color: #FFFFFF;
+    font-family: "Chakra Petch";
+    font-weight: 700;
+  }
+  body footer .TopContentFooter .RightContent .Menu nav ul li .homefooter {
+    color: #68FFFF;
+    font-family: "Chakra Petch";
+    font-weight: 500;
+    text-decoration: none;
+  }
+  body footer .TopContentFooter .RightContent .Menu nav ul li .portfoliofooter {
+    color: #FFFFFF;
+    font-family: "Chakra Petch";
+    font-weight: 400;
+    text-decoration: none;
+  }
+  body footer .TopContentFooter .RightContent .Menu nav ul li .aboutfooter {
+    color: #FFFFFF;
+    font-family: "Chakra Petch";
+    font-weight: 400;
+    text-decoration: none;
+  }
+  body footer .TopContentFooter .RightContent .Menu nav ul li .contactfooter {
+    color: #FFFFFF;
+    font-family: "Chakra Petch";
+    font-weight: 400;
+    text-decoration: none;
+  }
+  body footer .separatorfooter {
+    display: flex;
+    flex-direction: column;
+    padding: 2.5rem 2.5rem;
+  }
+  body footer .separatorfooter hr {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    border: 1px solid #FFFFFF;
+  }
+  body footer .BottomContentFooter .LegalMenu nav ul {
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+    justify-content: center;
+    align-items: center;
+  }
+  body footer .BottomContentFooter .LegalMenu nav ul li a {
+    text-decoration: none;
+    color: #FFFFFF;
+    font-family: "Inter";
+    font-weight: 400;
+    font-size: 0.875rem;
+  }
+  body footer .BottomContentFooter .Copyright {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2.5rem;
+  }
+  body footer .BottomContentFooter .Copyright p {
+    color: #FFFFFF;
+    text-align: center;
+    font-family: "Inter";
+    font-weight: 500;
+    font-size: 16px;
+  }
+}
+/* Media Query for Desktop */
+@media (min-width: 769px) {
+  body {
+    background-color: #07060E;
+  }
+  body header {
+    background-color: #0A0817;
+    position: fixed;
+    width: 100%;
+    z-index: 100;
+  }
+  body header .MenuContainer {
+    margin: 0 9rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  body header .MenuContainer .ReturnHome {
+    display: flex;
+    width: 5.1875rem;
+    height: 5.5rem;
+    padding: 0.75rem;
+    justify-content: center;
+    align-items: center;
+  }
+  body header .MenuContainer .Menu nav ul {
+    display: flex;
+    list-style-type: none;
+  }
+  body header .MenuContainer .Menu nav ul li {
+    display: flex;
+    padding: 14px;
+    justify-content: flex-end;
+    align-items: center;
+  }
+  body header .MenuContainer .Menu nav ul li a {
+    text-decoration: none;
+    color: #A5BBCB;
+    text-align: center;
+    font-family: "Chakra Petch";
+    font-weight: 500;
+    font-size: 16px;
+    color: #FFFFFF;
+    border: 2px solid #0A0817;
+  }
+  body header .MenuContainer .Menu nav ul li .home {
+    background-color: #301A4B;
+    padding: 1.125rem 2rem;
+    border-radius: 0.5rem;
+  }
+  body header .MenuContainer .Menu nav ul li .home:hover {
+    border: 2px solid #68FFFF;
+    color: #FFFFFF;
+  }
+  body header .MenuContainer .Menu nav ul li .portfolio {
+    padding: 1.125rem 2rem;
+    border-radius: 0.5rem;
+    color: #A5BBCB;
+  }
+  body header .MenuContainer .Menu nav ul li .portfolio:hover {
+    border: 2px solid #68FFFF;
+    color: #FFFFFF;
+  }
+  body header .MenuContainer .Menu nav ul li .about {
+    padding: 1.125rem 2rem;
+    border-radius: 0.5rem;
+    color: #A5BBCB;
+  }
+  body header .MenuContainer .Menu nav ul li .about:hover {
+    border: 2px solid #68FFFF;
+    color: #FFFFFF;
+  }
+  body header .MenuContainer .Menu nav ul li .contact {
+    padding: 1.125rem 2rem;
+    border-radius: 0.5rem;
+    color: #A5BBCB;
+  }
+  body header .MenuContainer .Menu nav ul li .contact:hover {
+    border: 2px solid #68FFFF;
+    color: #FFFFFF;
+  }
+  body .Hero .HeroVideo {
+    display: flex;
+    flex-direction: column;
+    gap: auto;
+  }
+  body .Hero .HeroVideo video {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100dvh;
+    overflow: hidden;
+    object-fit: cover;
+    z-index: -10000;
+  }
+  body .Hero .HeroVideo .TopHero {
+    height: 50vh;
+  }
+  body .Hero .HeroVideo .TopHero .MainTitle {
+    display: flex;
+    flex-direction: column;
+    padding: 9rem;
+    align-items: center;
+    gap: 30px;
+  }
+  body .Hero .HeroVideo .TopHero .MainTitle h1 {
+    font-size: 4.5rem;
+    font-family: "Chakra Petch";
+    font-weight: 700;
+    color: #FFFFFF;
+    text-align: center;
+  }
+  body .Hero .HeroVideo .TopHero .MainTitle h2 {
+    color: #68FFFF;
+    font-family: "Chakra Petch";
+    font-weight: 700;
+    font-size: 50px;
+    text-shadow: 1px -2px 4.2px #FFF;
+    text-align: center;
+  }
+  body .Hero .HeroVideo .BottomHero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 70px;
+    height: 50vh;
+  }
+  body .Hero .HeroVideo .BottomHero .SecondTitle {
+    font-family: "Chakra Petch";
+    font-weight: 700;
+  }
+  body .Hero .HeroVideo .BottomHero .SecondTitle p {
+    color: #FFFFFF;
+    font-size: 30px;
+    text-align: center;
+    padding: 0 9rem;
+  }
+  body .Hero .HeroVideo .BottomHero .TagsHero {
+    gap: 70px;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: center;
+    margin: 1.25rem 9rem;
+  }
+  body .Hero .HeroVideo .BottomHero .TagsHero .UXUI {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #FFFFFF;
+    border: 2px solid #FFFFFF;
+    padding: 20px 80px;
+    font-family: "Inter", sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    border-radius: 360px;
+    text-align: center;
+  }
+  body .Hero .HeroVideo .BottomHero .TagsHero .UXUI:hover {
+    color: #FFFFFF;
+    border: 2px solid #68FFFF;
+  }
+  body .Hero .HeroVideo .BottomHero .TagsHero .Story {
+    color: #FFFFFF;
+    border: 2px solid #FFFFFF;
+    padding: 20px 80px;
+    font-family: "Inter", sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    border-radius: 360px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  body .Hero .HeroVideo .BottomHero .TagsHero .Story:hover {
+    color: #FFFFFF;
+    border: 2px solid #9747FF;
+  }
+  body .Hero .HeroVideo .BottomHero .TagsHero .FrontEnd {
+    color: #FFFFFF;
+    border: 2px solid #FFFFFF;
+    padding: 20px 80px;
+    font-family: "Inter", sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    border-radius: 360px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  body .Hero .HeroVideo .BottomHero .TagsHero .FrontEnd:hover {
+    color: #FFFFFF;
+    border: 2px solid #68FFFF;
+  }
+  body .Hero .HeroVideo .BottomHero .TagsHero .Graphisme {
+    color: #FFFFFF;
+    border: 2px solid #FFFFFF;
+    padding: 20px 80px;
+    font-family: "Inter", sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    border-radius: 360px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  body .Hero .HeroVideo .BottomHero .TagsHero .Graphisme:hover {
+    color: #FFFFFF;
+    border: 2px solid #9747FF;
+  }
+  body .Projets .ProjetsContent {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    margin: 0 9rem;
+  }
+  body .Projets .ProjetsContent .Title {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 3.75rem 0;
+  }
+  body .Projets .ProjetsContent .Title h1 {
+    color: #68FFFF;
+    font-family: "Chakra Petch";
+    font-weight: 700;
+    text-align: center;
+    font-size: 2.5rem;
+  }
+  body .Projets .ProjetsContent .Cards {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 60px;
+  }
+  body .Projets .ProjetsContent .Cards .Cardlink01 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 45%;
+    background-color: #301A4B;
+    text-decoration: none;
+    border-radius: 0.5rem;
+    border: 2px solid #07060E;
+  }
+  body .Projets .ProjetsContent .Cards .Cardlink01 .Card01 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  body .Projets .ProjetsContent .Cards .Cardlink01 .Card01 .TitleCard h2 {
+    color: #FFFFFF;
+    font-family: "Chakra Petch";
+    font-weight: 600;
+    font-size: 40px;
+  }
+  body .Projets .ProjetsContent .Cards .Cardlink01 .Card01 .ImageCard img {
+    width: 100%;
+  }
+  body .Projets .ProjetsContent .Cards .Cardlink01 .Card01 .TagsCards {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    gap: 1.25rem;
+    padding: 0.625rem 0 0.625rem 0;
+    text-align: center;
+  }
+  body .Projets .ProjetsContent .Cards .Cardlink01 .Card01 .TagsCards .Tag01 {
+    border: 2px solid #FFFFFF;
+    padding: 0.625rem 1.25rem;
+    border-radius: 22.5rem;
+  }
+  body .Projets .ProjetsContent .Cards .Cardlink01 .Card01 .TagsCards .Tag01 p {
+    color: #FFFFFF;
+    font-family: "Chakra Petch", sans-serif;
+    font-weight: 600;
+    font-size: 1.5rem;
+  }
+  body .Projets .ProjetsContent .Cards .Cardlink01 .Card01 .TagsCards .Tag02 {
+    border: 2px solid #FFFFFF;
+    padding: 0.625rem 1.25rem;
+    border-radius: 22.5rem;
+  }
+  body .Projets .ProjetsContent .Cards .Cardlink01 .Card01 .TagsCards .Tag02 p {
+    color: #FFFFFF;
+    font-family: "Chakra Petch", sans-serif;
+    font-weight: 600;
+    font-size: 1.5rem;
+  }
+  body .Projets .ProjetsContent .Cards .Cardlink01 .Card01 .TagsCards .Tag03 {
+    border: 2px solid #FFFFFF;
+    padding: 0.625rem 1.25rem;
+    border-radius: 22.5rem;
+  }
+  body .Projets .ProjetsContent .Cards .Cardlink01 .Card01 .TagsCards .Tag03 p {
+    color: #FFFFFF;
+    font-family: "Chakra Petch", sans-serif;
+    font-weight: 600;
+    font-size: 1.5rem;
+  }
+  body .Projets .ProjetsContent .Cards .Cardlink01 .Card01 .arrowclick {
+    display: none;
+  }
+  body .Projets .ProjetsContent .Cards .Cardlink01:hover {
+    border: 2px solid #68FFFF;
+  }
+  body .Projets .ProjetsContent .Cards .Cardlink02 {
+    display: flex;
+    flex-direction: column;
+    background-color: #301A4B;
+    text-decoration: none;
+    border-radius: 0.5rem;
+    width: 45%;
+    border: 2px solid #07060E;
+  }
+  body .Projets .ProjetsContent .Cards .Cardlink02 .Card02 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 40px;
+  }
+  body .Projets .ProjetsContent .Cards .Cardlink02 .Card02 .TitleCard h2 {
+    color: #FFFFFF;
+    font-family: "Chakra Petch";
+    font-weight: 600;
+    font-size: 2.5rem;
+  }
+  body .Projets .ProjetsContent .Cards .Cardlink02 .Card02 .ImageCard img {
+    width: fit-content;
+  }
+  body .Projets .ProjetsContent .Cards .Cardlink02 .Card02 .TagsCards {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    gap: 1.25rem;
+    padding: 0.625rem 0 2.5rem 0;
+    text-align: center;
+  }
+  body .Projets .ProjetsContent .Cards .Cardlink02 .Card02 .TagsCards .Tag01 {
+    border: 2px solid #FFFFFF;
+    padding: 0.625rem 1.25rem;
+    border-radius: 22.5rem;
+  }
+  body .Projets .ProjetsContent .Cards .Cardlink02 .Card02 .TagsCards .Tag01 p {
+    color: #FFFFFF;
+    font-family: "Chakra Petch", sans-serif;
+    font-weight: 600;
+    font-size: 1.5rem;
+  }
+  body .Projets .ProjetsContent .Cards .Cardlink02 .Card02 .TagsCards .Tag02 {
+    border: 2px solid #FFFFFF;
+    padding: 0.625rem 1.25rem;
+    border-radius: 22.5rem;
+  }
+  body .Projets .ProjetsContent .Cards .Cardlink02 .Card02 .TagsCards .Tag02 p {
+    color: #FFFFFF;
+    font-family: "Chakra Petch", sans-serif;
+    font-weight: 600;
+    font-size: 1.5rem;
+  }
+  body .Projets .ProjetsContent .Cards .Cardlink02 .Card02 .TagsCards .Tag03 {
+    border: 2px solid #FFFFFF;
+    padding: 0.625rem 1.25rem;
+    border-radius: 22.5rem;
+  }
+  body .Projets .ProjetsContent .Cards .Cardlink02 .Card02 .TagsCards .Tag03 p {
+    color: #FFFFFF;
+    font-family: "Chakra Petch", sans-serif;
+    font-weight: 600;
+    font-size: 1.5rem;
+  }
+  body .Projets .ProjetsContent .Cards .Cardlink02 .Card02 .arrowclick {
+    display: none;
+  }
+  body .Projets .ProjetsContent .Cards .Cardlink02:hover {
+    border: 2px solid #68FFFF;
+  }
+  body .Projets .ProjetsContent .Cards .Cardlink03 {
+    display: flex;
+    flex-direction: column;
+    background-color: #301A4B;
+    justify-content: space-around;
+    text-decoration: none;
+    border-radius: 0.5rem;
+    width: 45%;
+    border: 2px solid #07060E;
+  }
+  body .Projets .ProjetsContent .Cards .Cardlink03 .Card03 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 40px;
+  }
+  body .Projets .ProjetsContent .Cards .Cardlink03 .Card03 .TitleCard h2 {
+    color: #FFFFFF;
+    font-family: "Chakra Petch";
+    font-weight: 600;
+    font-size: 40px;
+  }
+  body .Projets .ProjetsContent .Cards .Cardlink03 .Card03 .ImageCard img {
+    width: 100%;
+  }
+  body .Projets .ProjetsContent .Cards .Cardlink03 .Card03 .TagsCards {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    gap: 1.25rem;
+    padding: 0.625rem 0 2.5rem 0;
+    text-align: center;
+  }
+  body .Projets .ProjetsContent .Cards .Cardlink03 .Card03 .TagsCards .Tag01 {
+    border: 2px solid #FFFFFF;
+    padding: 0.625rem 1.25rem;
+    border-radius: 22.5rem;
+  }
+  body .Projets .ProjetsContent .Cards .Cardlink03 .Card03 .TagsCards .Tag01 p {
+    color: #FFFFFF;
+    font-family: "Chakra Petch", sans-serif;
+    font-weight: 600;
+    font-size: 1.5rem;
+  }
+  body .Projets .ProjetsContent .Cards .Cardlink03 .Card03 .TagsCards .Tag02 {
+    border: 2px solid #FFFFFF;
+    padding: 0.625rem 1.25rem;
+    border-radius: 22.5rem;
+  }
+  body .Projets .ProjetsContent .Cards .Cardlink03 .Card03 .TagsCards .Tag02 p {
+    color: #FFFFFF;
+    font-family: "Chakra Petch", sans-serif;
+    font-weight: 600;
+    font-size: 1.5rem;
+  }
+  body .Projets .ProjetsContent .Cards .Cardlink03 .Card03 .TagsCards .Tag03 {
+    border: 2px solid #FFFFFF;
+    padding: 0.625rem 1.25rem;
+    border-radius: 22.5rem;
+  }
+  body .Projets .ProjetsContent .Cards .Cardlink03 .Card03 .TagsCards .Tag03 p {
+    color: #FFFFFF;
+    font-family: "Chakra Petch", sans-serif;
+    font-weight: 600;
+    font-size: 1.5rem;
+  }
+  body .Projets .ProjetsContent .Cards .Cardlink03 .Card03 .arrowclick {
+    display: none;
+  }
+  body .Projets .ProjetsContent .Cards .Cardlink03:hover {
+    border: 2px solid #68FFFF;
+  }
+  body .Projets .ProjetsContent .Cards .Cardlink04 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    background-color: #301A4B;
+    text-decoration: none;
+    border-radius: 0.5rem;
+    width: 45%;
+    border: 2px solid #07060E;
+  }
+  body .Projets .ProjetsContent .Cards .Cardlink04 .Card04 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 40px;
+  }
+  body .Projets .ProjetsContent .Cards .Cardlink04 .Card04 .TitleCard h2 {
+    color: #FFFFFF;
+    font-family: "Chakra Petch";
+    font-weight: 600;
+    font-size: 40px;
+    text-align: center;
+  }
+  body .Projets .ProjetsContent .Cards .Cardlink04 .Card04 .ImageCard img {
+    width: 100%;
+  }
+  body .Projets .ProjetsContent .Cards .Cardlink04 .Card04 .TagsCards {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    gap: 1.25rem;
+    padding: 0.625rem 0 2.5rem 0;
+    text-align: center;
+  }
+  body .Projets .ProjetsContent .Cards .Cardlink04 .Card04 .TagsCards .Tag01 {
+    border: 2px solid #FFFFFF;
+    padding: 0.625rem 1.25rem;
+    border-radius: 22.5rem;
+  }
+  body .Projets .ProjetsContent .Cards .Cardlink04 .Card04 .TagsCards .Tag01 p {
+    color: #FFFFFF;
+    font-family: "Chakra Petch", sans-serif;
+    font-weight: 600;
+    font-size: 1.5rem;
+  }
+  body .Projets .ProjetsContent .Cards .Cardlink04 .Card04 .TagsCards .Tag02 {
+    border: 2px solid #FFFFFF;
+    padding: 0.625rem 1.25rem;
+    border-radius: 22.5rem;
+  }
+  body .Projets .ProjetsContent .Cards .Cardlink04 .Card04 .TagsCards .Tag02 p {
+    color: #FFFFFF;
+    font-family: "Chakra Petch", sans-serif;
+    font-weight: 600;
+    font-size: 1.5rem;
+  }
+  body .Projets .ProjetsContent .Cards .Cardlink04 .Card04 .TagsCards .Tag03 {
+    border: 2px solid #FFFFFF;
+    padding: 0.625rem 1.25rem;
+    border-radius: 22.5rem;
+  }
+  body .Projets .ProjetsContent .Cards .Cardlink04 .Card04 .TagsCards .Tag03 p {
+    color: #FFFFFF;
+    font-family: "Chakra Petch", sans-serif;
+    font-weight: 600;
+    font-size: 1.5rem;
+  }
+  body .Projets .ProjetsContent .Cards .Cardlink04 .Card04 .arrowclick {
+    display: none;
+  }
+  body .Projets .ProjetsContent .Cards .Cardlink04:hover {
+    border: 2px solid #68FFFF;
+  }
+  body .Projets .ProjetsContent .ButtonPortfolio {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    margin: 0 0 1.875rem 0;
+  }
+  body .Projets .ProjetsContent .ButtonPortfolio a button {
+    background-color: #301A4B;
+    padding: 1.5rem 1.5rem;
+    width: 100%;
+    border-radius: 0.5rem;
+    border: 2px solid #07060E;
+    color: #A5BBCB;
+    font-family: "Chakra Petch", sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+  }
+  body .Projets .ProjetsContent .ButtonPortfolio a button:hover {
+    border: 2px solid #68FFFF;
+    color: #FFFFFF;
+  }
+  body .separator {
+    display: flex;
+    flex-direction: column;
+    padding: 1.25rem 2.5rem;
+  }
+  body .separator hr {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    border: 1px solid #68FFFF;
+  }
+  body .Apropos .AproposContent {
+    display: flex;
+    flex-direction: column;
+  }
+  body .Apropos .AproposContent .Title {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 2.5rem 0;
+  }
+  body .Apropos .AproposContent .Title h1 {
+    color: #68FFFF;
+    font-family: "Chakra Petch";
+    font-weight: 700;
+    text-align: center;
+    font-size: 2.5rem;
+  }
+  body .Apropos .AproposContent .Content {
+    display: flex;
+    flex-direction: row;
+    margin: 4rem 9rem;
+    gap: 200px;
+    align-items: center;
+  }
+  body .Apropos .AproposContent .Content .TextContent {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+  body .Apropos .AproposContent .Content .TextContent .TextSubTitle {
+    display: flex;
+    align-items: flex-start;
+    padding: 1.25rem 0;
+  }
+  body .Apropos .AproposContent .Content .TextContent .TextSubTitle h2 {
+    color: #9747FF;
+    font-family: "Chakra Petch";
+    font-weight: 600;
+    font-size: 1.5rem;
+  }
+  body .Apropos .AproposContent .Content .TextContent .QuiSuisJeText {
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+    margin: 0 6rem 0 0;
+  }
+  body .Apropos .AproposContent .Content .TextContent .QuiSuisJeText p {
+    color: #FFFFFF;
+    font-family: "Chakra Petch";
+    font-weight: 500;
+    font-size: 0.875rem;
+  }
+  body .Apropos .AproposContent .Content .TextContent .ButtonCV {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 1.875rem 0;
+  }
+  body .Apropos .AproposContent .Content .TextContent .ButtonCV a button {
+    background-color: #301A4B;
+    padding: 1.5rem 1.5rem;
+    width: 100%;
+    border-radius: 0.5rem;
+    border: 2px solid #07060E;
+    color: #A5BBCB;
+    font-family: "Chakra Petch", sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+  }
+  body .Apropos .AproposContent .Content .TextContent .ButtonCV a button:hover {
+    border: 2px solid #68FFFF;
+    color: #FFFFFF;
+  }
+  body .Apropos .AproposContent .Content .ProfilPic a img {
+    width: 100%;
+    border-radius: 0.5rem;
+    border: 0.25rem solid #07060E;
+  }
+  body .Apropos .AproposContent .Content .ProfilPic img:hover {
+    border: 0.25rem solid #9747FF;
+  }
+  body footer {
+    background-color: #0A0817;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+  body footer .TopContentFooter {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 4rem 9rem;
+  }
+  body footer .TopContentFooter .LeftContent {
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+    justify-content: center;
+  }
+  body footer .TopContentFooter .LeftContent .TopLeftContent {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+  body footer .TopContentFooter .LeftContent .TopLeftContent .LogoFooter {
+    display: flex;
+    width: 5.1875rem;
+    height: auto;
+    justify-content: center;
+    align-items: center;
+  }
+  body footer .TopContentFooter .LeftContent .TopLeftContent .TextFooter {
+    display: flex;
+    flex-direction: column;
+    margin: 0 4rem;
+  }
+  body footer .TopContentFooter .LeftContent .TopLeftContent .TextFooter p {
+    color: #FFFFFF;
+    font-family: "Inter";
+    font-weight: 500;
+    font-size: 0.75rem;
+  }
+  body footer .TopContentFooter .LeftContent .SocialsIcons {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 4rem;
+  }
+  body footer .TopContentFooter .LeftContent .SocialsIcons a .Bento {
+    background-color: #0A0817;
+    padding: 20px;
+    border-radius: 360px;
+    border: 2px solid #0A0817;
+  }
+  body footer .TopContentFooter .LeftContent .SocialsIcons a .Bento:hover {
+    background-color: #301A4B;
+    padding: 20px;
+    border-radius: 360px;
+    border: 2px solid #68FFFF;
+  }
+  body footer .TopContentFooter .LeftContent .SocialsIcons a .Behance {
+    background-color: #0A0817;
+    padding: 20px;
+    border-radius: 360px;
+    border: 2px solid #0A0817;
+  }
+  body footer .TopContentFooter .LeftContent .SocialsIcons a .Behance:hover {
+    background-color: #301A4B;
+    padding: 20px;
+    border-radius: 360px;
+    border: 2px solid #68FFFF;
+  }
+  body footer .TopContentFooter .LeftContent .SocialsIcons a .Linkedin {
+    background-color: #0A0817;
+    padding: 20px;
+    border-radius: 360px;
+    border: 2px solid #0A0817;
+  }
+  body footer .TopContentFooter .LeftContent .SocialsIcons a .Linkedin:hover {
+    background-color: #301A4B;
+    padding: 20px;
+    border-radius: 360px;
+    border: 2px solid #68FFFF;
+  }
+  body footer .TopContentFooter .LeftContent .SocialsIcons a .Github {
+    background-color: #0A0817;
+    padding: 20px;
+    border-radius: 360px;
+    border: 2px solid #0A0817;
+  }
+  body footer .TopContentFooter .LeftContent .SocialsIcons a .Github:hover {
+    background-color: #301A4B;
+    padding: 20px;
+    border-radius: 360px;
+    border: 2px solid #68FFFF;
+  }
+  body footer .TopContentFooter .RightContent .Menu nav ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    text-align: right;
+    gap: 20px;
+  }
+  body footer .TopContentFooter .RightContent .Menu nav ul li .Titlefooternav {
+    color: #FFFFFF;
+    font-family: "Chakra Petch";
+    font-weight: 700;
+  }
+  body footer .TopContentFooter .RightContent .Menu nav ul li .homefooter {
+    color: #68FFFF;
+    font-family: "Chakra Petch";
+    font-weight: 500;
+    text-decoration: none;
+  }
+  body footer .TopContentFooter .RightContent .Menu nav ul li .homefooter:hover {
+    border-bottom: 1px solid #68FFFF;
+  }
+  body footer .TopContentFooter .RightContent .Menu nav ul li .portfoliofooter {
+    color: #A5BBCB;
+    font-family: "Chakra Petch";
+    font-weight: 400;
+    text-decoration: none;
+  }
+  body footer .TopContentFooter .RightContent .Menu nav ul li .portfoliofooter:hover {
+    border-bottom: 1px solid #68FFFF;
+    color: #FFFFFF;
+  }
+  body footer .TopContentFooter .RightContent .Menu nav ul li .aboutfooter {
+    color: #A5BBCB;
+    font-family: "Chakra Petch";
+    font-weight: 400;
+    text-decoration: none;
+  }
+  body footer .TopContentFooter .RightContent .Menu nav ul li .aboutfooter:hover {
+    border-bottom: 1px solid #68FFFF;
+    color: #FFFFFF;
+  }
+  body footer .TopContentFooter .RightContent .Menu nav ul li .contactfooter {
+    color: #A5BBCB;
+    font-family: "Chakra Petch";
+    font-weight: 400;
+    text-decoration: none;
+  }
+  body footer .TopContentFooter .RightContent .Menu nav ul li .contactfooter:hover {
+    border-bottom: 1px solid #68FFFF;
+    color: #FFFFFF;
+  }
+  body footer .separatorfooter {
+    display: flex;
+    flex-direction: column;
+    margin: 0 9rem;
+  }
+  body footer .separatorfooter hr {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    border: 1px solid #FFFFFF;
+  }
+  body footer .BottomContentFooter {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 0 9rem;
+    padding: 2.5rem 0;
+    gap: 2rem;
+    justify-content: space-between;
+  }
+  body footer .BottomContentFooter .LegalMenu nav ul {
+    display: flex;
+    flex-direction: row;
+    gap: 1.25rem;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  body footer .BottomContentFooter .LegalMenu nav ul li a {
+    text-decoration: none;
+    color: #A5BBCB;
+    font-family: "Inter";
+    font-weight: 400;
+    font-size: 0.875rem;
+  }
+  body footer .BottomContentFooter .LegalMenu nav ul li a:hover {
+    border-bottom: 1px solid #68FFFF;
+    color: #FFFFFF;
+  }
+  body footer .BottomContentFooter .Copyright {
+    display: flex;
+  }
+  body footer .BottomContentFooter .Copyright p {
+    color: #FFFFFF;
+    text-align: center;
+    font-family: "Inter";
+    font-weight: 400;
+    font-size: 16px;
+  }
+}
+
+/*# sourceMappingURL=stylePortfolio.css.map */
