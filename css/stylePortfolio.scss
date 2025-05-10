@@ -109,7 +109,7 @@ body {
                                 display: block;
                                 padding: 1.25rem;
                             }
-                            .home {
+                            .portfolio {
                                 background-color:$Main_purple;
                                 color: $White_Light_shadow;
                             }
@@ -575,13 +575,13 @@ body {
                                     font-weight: 700;
                                 }
                                 .homefooter {
-                                    color: $Secondary_Cyan;
+                                    color: $White_Light_shadow;
                                     font-family: "Chakra Petch";
                                     font-weight: 500;
                                     text-decoration: none;
                                 }
                                 .portfoliofooter {
-                                    color: $White_Light_shadow;
+                                    color: $Secondary_Cyan;
                                     font-family: "Chakra Petch";
                                     font-weight: 400;
                                     text-decoration: none;

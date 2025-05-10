@@ -103,7 +103,7 @@
     display: block;
     padding: 1.25rem;
   }
-  body header .Menu nav ul li .home {
+  body header .Menu nav ul li .portfolio {
     background-color: #301A4B;
     color: #FFFFFF;
   }
@@ -512,13 +512,13 @@
     font-weight: 700;
   }
   body footer .TopContentFooter .RightContent .Menu nav ul li .homefooter {
-    color: #68FFFF;
+    color: #FFFFFF;
     font-family: "Chakra Petch";
     font-weight: 500;
     text-decoration: none;
   }
   body footer .TopContentFooter .RightContent .Menu nav ul li .portfoliofooter {
-    color: #FFFFFF;
+    color: #68FFFF;
     font-family: "Chakra Petch";
     font-weight: 400;
     text-decoration: none;
