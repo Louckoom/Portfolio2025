@@ -653,8 +653,730 @@ body {
     }
     // End of Footer //
 
+    }
 
 }
 
+    /* Media Query for Desktop */
+@media (min-width: 769px){
+    body {
+        background-color: $Background_dark;
+        // Nav Bar //
+        header {
+        background-color: $Elements_Dark;
+        position: fixed;
+        width: 100%;
+        z-index: 100;
+        .MenuContainer {
+            margin: 0 9rem;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            .ReturnHome {
+                display: flex;
+                width: 5.1875rem;
+                height: 5.5rem;
+                padding: 0.75rem;
+                justify-content: center;
+                align-items: center;
+            }
+            .Menu {
+                
+                nav{
+                    
+                    
+                    ul {
+                        display: flex;
+                        list-style-type: none;
+                        li {
+                            display: flex;
+                            padding: 14px;
+                            justify-content: flex-end;
+                            align-items: center;
+                            a {
+                                text-decoration: none;
+                                color: $lightblue;
+                                text-align: center;
+                                font-family: "Chakra Petch";
+                                font-weight: 500;
+                                font-size: 16px;
+                                color: $White_Light_shadow;
+                                border: 2px solid $Elements_Dark;
+                                
+                            }
+                            .home {
+                                color: $lightblue;
+                                padding: 1.125rem 2rem;
+                                border-radius: 0.5rem;
+                                
+                            }
+                            .home:hover {
+                                border: 2px solid $Secondary_Cyan;
+                                color: $White_Light_shadow;
+                            }
+                            .portfolio {
+                                padding: 1.125rem 2rem;
+                                border-radius: 0.5rem;
+                                background-color: $Main_purple;
+                            }
+                            .portfolio:hover {
+                                border: 2px solid $Secondary_Cyan;
+                                color: $White_Light_shadow;
+                            }
+
+                            .about {
+                                padding: 1.125rem 2rem;
+                                border-radius: 0.5rem;
+                                color: $lightblue;
+                            }
+                            .about:hover {
+                                border: 2px solid $Secondary_Cyan;
+                                color: $White_Light_shadow;
+                            }
+                            .contact {
+                                padding: 1.125rem 2rem;
+                                border-radius: 0.5rem;
+                                color: $lightblue;
+                            }
+                            .contact:hover {
+                                border: 2px solid $Secondary_Cyan;
+                                color: $White_Light_shadow;
+                            }
+                        }
+                        
+                    }
+                }
+            }
+        }
+        
+
+        // End of Nav Bar //
+
+        }
+
+        .Hero {
+        .HeroContent {
+            .Title {     
+                display: flex;
+                flex-direction: column;
+                padding: 10rem 0.625rem 10px 0.625rem;
+                align-items: center;
+                gap: 1.875rem;
+                    h1 {
+                        font-size: 2.5rem;
+                        text-align: center;
+                        font-family: "Chakra Petch";
+                        font-weight: 700;
+                        color: $White_Light_shadow;
+                        }
+                    }
+            .Text {
+                p {
+                    color: $Secondary_Cyan;
+                    font-size: 1.5rem;
+                    text-align: center;
+                    font-family: "Chakra Petch";
+                    font-weight: 500;
+                    padding: 0 9rem;
+                }
+            }
+                        
+
+        }
+    }
+
+    // Projets Section //
+        .Projets {
+            .ProjetsContent {
+                display: flex;
+                flex-direction: column;
+                gap: 40px;
+                margin: 2.5rem 9rem;
+                .Title {
+                display: flex;
+                align-items: flex-start;
+                justify-content: center;
+                padding: 3.75rem 0;
+                    h1{
+                        color: $Secondary_Cyan;
+                        font-family: "Chakra Petch";
+                        font-weight: 700;
+                        text-align: center;
+                        font-size: 2.5rem;
+                    }
+                }
+                .Cards {
+                    display: flex;
+                    flex-direction: row;
+                    flex-wrap: wrap;
+                    justify-content: space-between;
+                    gap: 60px;
+                    .Cardlink01 {
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: space-around;
+                        width: 45%;
+                        background-color: $Main_purple;
+                        text-decoration: none;
+                        border-radius: 0.5rem;
+                        border: 2px solid $Background_dark;
+                        .Card01 {
+                            display: flex;
+                            flex-direction: column;
+                            align-items: center;
+                            .TitleCard {
+                                h2 {
+                                    color: $White_Light_shadow;
+                                    font-family: "Chakra Petch";
+                                    font-weight: 600;
+                                    font-size: 40px;
+                                }
+                            }
+                            .ImageCard {
+                                img {
+                                    width: 100%;
+                                }
+                            }
+                            .TagsCards {
+                                display: flex;
+                                flex-wrap: wrap;
+                                flex-direction: row;
+                                justify-content: center;
+                                gap: 1.25rem;
+                                padding: 0.625rem 0 0.625rem 0;
+                                text-align: center;
+                                .Tag01 {
+                                    border: 2px solid $White_Light_shadow;
+                                    padding: 0.625rem 1.25rem;
+                                    border-radius: 22.5rem;
+                                    p{
+                                        color: $White_Light_shadow;
+                                        font-family: "Chakra Petch", sans-serif;
+                                        font-weight: 600;
+                                        font-size: 1.5rem;
+                                    }
+                                }
+                                .Tag02 {
+                                    border: 2px solid $White_Light_shadow;
+                                    padding: 0.625rem 1.25rem;
+                                    border-radius: 22.5rem;
+                                    p{
+                                        color: $White_Light_shadow;
+                                        font-family: "Chakra Petch", sans-serif;
+                                        font-weight: 600;
+                                        font-size: 1.5rem;
+                                    }
+                                }
+                                .Tag03 {
+                                    border: 2px solid $White_Light_shadow;
+                                    padding: 0.625rem 1.25rem;
+                                    border-radius: 22.5rem;
+                                    p{
+                                        color: $White_Light_shadow;
+                                        font-family: "Chakra Petch", sans-serif;
+                                        font-weight: 600;
+                                        font-size: 1.5rem;  
+                                    }
+                                }
+                            }
+                            .arrowclick {
+                                display: none;
+                            }
+                        }
+                    }
+                    .Cardlink01:hover {
+                        border: 2px solid $Secondary_Cyan;
+                    }
+                    .Cardlink02 {
+                        display: flex;
+                        flex-direction: column;
+                        background-color: $Main_purple;
+                        text-decoration: none;
+                        border-radius: 0.5rem;
+                        width: 45%;
+                        border: 2px solid $Background_dark;
+                        .Card02 {
+                            display: flex;
+                            flex-direction: column;
+                            align-items: center;
+                            justify-content: center;
+                            padding: 40px;
+                            .TitleCard {
+                                h2 {
+                                    color: $White_Light_shadow;
+                                    font-family: "Chakra Petch";
+                                    font-weight: 600;
+                                    font-size: 2.5rem;
+                                }
+                            }
+                            .ImageCard {
+                                img {
+                                    width: fit-content;
+                                }
+                            }
+                            .TagsCards {
+                                display: flex;
+                                flex-wrap: wrap;
+                                flex-direction: row;
+                                justify-content: center;
+                                gap: 1.25rem;
+                                padding: 0.625rem 0 2.5rem 0;
+                                text-align: center;
+                                .Tag01 {
+                                    border: 2px solid $White_Light_shadow;
+                                    padding: 0.625rem 1.25rem;
+                                    border-radius: 22.5rem;
+                                    p{
+                                        color: $White_Light_shadow;
+                                        font-family: "Chakra Petch", sans-serif;
+                                        font-weight: 600;
+                                        font-size: 1.5rem;
+                                    }
+                                }
+                                .Tag02 {
+                                    border: 2px solid $White_Light_shadow;
+                                    padding: 0.625rem 1.25rem;
+                                    border-radius: 22.5rem;
+                                    p{
+                                        color: $White_Light_shadow;
+                                        font-family: "Chakra Petch", sans-serif;
+                                        font-weight: 600;
+                                        font-size: 1.5rem;
+                                    }
+                                }
+                                .Tag03 {
+                                    border: 2px solid $White_Light_shadow;
+                                    padding: 0.625rem 1.25rem;
+                                    border-radius: 22.5rem;
+                                    p{
+                                        color: $White_Light_shadow;
+                                        font-family: "Chakra Petch", sans-serif;
+                                        font-weight: 600;
+                                        font-size: 1.5rem;  
+                                    }
+                                }
+                            }
+                            .arrowclick {
+                                display: none;
+                            }
+                        }
+                    }
+                    .Cardlink02:hover {
+                        border: 2px solid $Secondary_Cyan;
+                    }
+                    .Cardlink03 {
+                        display: flex;
+                        flex-direction: column;
+                        background-color: $Main_purple;
+                        justify-content: space-around;
+                        text-decoration: none;
+                        border-radius: 0.5rem;
+                        width: 45%;
+                        border: 2px solid $Background_dark;
+                        .Card03 {
+                            display: flex;
+                            flex-direction: column;
+                            align-items: center;
+                            justify-content: center;
+                            padding: 40px;
+                            .TitleCard {
+                                h2 {
+                                    color: $White_Light_shadow;
+                                    font-family: "Chakra Petch";
+                                    font-weight: 600;
+                                    font-size: 40px;
+                                }
+                            }
+                            .ImageCard {
+                                img {
+                                    width: 100%;
+                                }
+                            }
+                            .TagsCards {
+                                display: flex;
+                                flex-wrap: wrap;
+                                flex-direction: row;
+                                justify-content: center;
+                                gap: 1.25rem;
+                                padding: 0.625rem 0 2.5rem 0;
+                                text-align: center;
+                                .Tag01 {
+                                    border: 2px solid $White_Light_shadow;
+                                    padding: 0.625rem 1.25rem;
+                                    border-radius: 22.5rem;
+                                    p{
+                                        color: $White_Light_shadow;
+                                        font-family: "Chakra Petch", sans-serif;
+                                        font-weight: 600;
+                                        font-size: 1.5rem;
+                                    }
+                                }
+                                .Tag02 {
+                                    border: 2px solid $White_Light_shadow;
+                                    padding: 0.625rem 1.25rem;
+                                    border-radius: 22.5rem;
+                                    p{
+                                        color: $White_Light_shadow;
+                                        font-family: "Chakra Petch", sans-serif;
+                                        font-weight: 600;
+                                        font-size: 1.5rem;
+                                    }
+                                }
+                                .Tag03 {
+                                    border: 2px solid $White_Light_shadow;
+                                    padding: 0.625rem 1.25rem;
+                                    border-radius: 22.5rem;
+                                    p{
+                                        color: $White_Light_shadow;
+                                        font-family: "Chakra Petch", sans-serif;
+                                        font-weight: 600;
+                                        font-size: 1.5rem;  
+                                    }
+                                }
+                            }
+                            .arrowclick {
+                                display: none;
+                            }
+                        }
+                    }
+                    .Cardlink03:hover {
+                        border: 2px solid $Secondary_Cyan;
+                    }
+                    .Cardlink04 {
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: space-around;
+                        background-color: $Main_purple;
+                        text-decoration: none;
+                        border-radius: 0.5rem;
+                        width: 45%;
+                        border: 2px solid $Background_dark;
+                        .Card04 {
+                            display: flex;
+                            flex-direction: column;
+                            align-items: center;
+                            justify-content: center;
+                            padding: 40px;
+                            .TitleCard {
+                                h2 {
+                                    color: $White_Light_shadow;
+                                    font-family: "Chakra Petch";
+                                    font-weight: 600;
+                                    font-size: 40px;
+                                    text-align: center;
+                                }
+                            }
+                            .ImageCard {
+                                img {
+                                    width: 100%;
+                                }
+                            }
+                            .TagsCards {
+                                display: flex;
+                                flex-wrap: wrap;
+                                flex-direction: row;
+                                justify-content: center;
+                                gap: 1.25rem;
+                                padding: 0.625rem 0 2.5rem 0;
+                                text-align: center;
+                                .Tag01 {
+                                    border: 2px solid $White_Light_shadow;
+                                    padding: 0.625rem 1.25rem;
+                                    border-radius: 22.5rem;
+                                    p{
+                                        color: $White_Light_shadow;
+                                        font-family: "Chakra Petch", sans-serif;
+                                        font-weight: 600;
+                                        font-size: 1.5rem;
+                                    }
+                                }
+                                .Tag02 {
+                                    border: 2px solid $White_Light_shadow;
+                                    padding: 0.625rem 1.25rem;
+                                    border-radius: 22.5rem;
+                                    p{
+                                        color: $White_Light_shadow;
+                                        font-family: "Chakra Petch", sans-serif;
+                                        font-weight: 600;
+                                        font-size: 1.5rem;
+                                    }
+                                }
+                                .Tag03 {
+                                    border: 2px solid $White_Light_shadow;
+                                    padding: 0.625rem 1.25rem;
+                                    border-radius: 22.5rem;
+                                    p{
+                                        color: $White_Light_shadow;
+                                        font-family: "Chakra Petch", sans-serif;
+                                        font-weight: 600;
+                                        font-size: 1.5rem;  
+                                    }
+                                }
+                            }
+                            .arrowclick {
+                                display: none;
+                            }
+                        }
+                    }
+                    .Cardlink04:hover {
+                        border: 2px solid $Secondary_Cyan;
+                    }
+                }
+                .ButtonPortfolio {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: flex-end;
+                    margin: 0 0 1.875rem 0;
+                    a {
+                        
+                        button {
+                        background-color: $Main_purple;
+                        padding: 1.5rem 1.5rem;
+                        width: 100%;
+                        border-radius: 0.5rem;
+                        border: 2px solid $Background_dark;
+                        color: $lightblue;
+                        font-family: "Chakra Petch", sans-serif;
+                        font-weight: 700;
+                        font-size: 20px;
+                        }
+                        button:hover {
+                            border: 2px solid $Secondary_Cyan;
+                            color: $White_Light_shadow;
+                        }
+                    }
+                }
+            }
+
+
+        }
+        // End of Projets Section //
+
+        // Footer //
+        footer {
+            background-color: $Elements_Dark;
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            .TopContentFooter {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                margin: 4rem 9rem;
+                .LeftContent {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 4rem;
+                    justify-content: center;
+                    .TopLeftContent {
+                        display: flex;
+                        flex-direction: row;
+                        align-items: center;
+                            .LogoFooter {
+                                display: flex;
+                                width: 5.1875rem;
+                                height: auto;
+                                justify-content: center;
+                                align-items: center;
+                            }
+                            .TextFooter {
+                                display: flex;
+                                flex-direction: column;
+                                margin: 0 4rem;
+                                p {
+                                    color: $White_Light_shadow;
+                                    font-family: "Inter";
+                                    font-weight: 500;
+                                    font-size: 0.75rem;
+                                }
+                            }
+                    }
+                    .SocialsIcons {
+                        display: flex;
+                        flex-direction: row;
+                        align-items: center;
+                        justify-content: flex-start;
+                        gap: 4rem;
+                        a {
+                            .Bento {
+                                background-color: $Elements_Dark;
+                                padding: 20px;
+                                border-radius: 360px;
+                                border: 2px solid $Elements_Dark;
+                            }
+                            .Bento:hover {
+                                background-color: $Main_purple;
+                                padding: 20px;
+                                border-radius: 360px;
+                                border: 2px solid $Secondary_Cyan;
+                            }
+                        }
+                        a {
+                            .Behance {
+                                background-color: $Elements_Dark;
+                                padding: 20px;
+                                border-radius: 360px;
+                                border: 2px solid $Elements_Dark;
+                            }
+                            .Behance:hover {
+                                background-color: $Main_purple;
+                                padding: 20px;
+                                border-radius: 360px;
+                                border: 2px solid $Secondary_Cyan;
+                            }
+                        }
+                        a {
+                            .Linkedin {
+                                background-color: $Elements_Dark;
+                                padding: 20px;
+                                border-radius: 360px;
+                                border: 2px solid $Elements_Dark;
+                            }
+                            .Linkedin:hover {
+                                background-color: $Main_purple;
+                                padding: 20px;
+                                border-radius: 360px;
+                                border: 2px solid $Secondary_Cyan;
+                            }
+                        }
+                        a {
+                            .Github {
+                                background-color: $Elements_Dark;
+                                padding: 20px;
+                                border-radius: 360px;
+                                border: 2px solid $Elements_Dark;
+                            }
+                            .Github:hover {
+                                background-color: $Main_purple;
+                                padding: 20px;
+                                border-radius: 360px;
+                                border: 2px solid $Secondary_Cyan;
+                            }
+                        }
+                        
+                    }
+                }
+                .RightContent {
+                    .Menu {
+                        nav {
+                            ul  {
+                                display: flex;
+                                flex-direction: column;
+                                justify-content: flex-end;
+                                text-align:right;
+                                gap: 20px;
+                                
+                                li {
+                                    .Titlefooternav {
+                                        color: $White_Light_shadow;
+                                        font-family: "Chakra Petch";
+                                        font-weight: 700;
+                                    }
+                                    .homefooter {
+                                        color: $lightblue;
+                                        font-family: "Chakra Petch";
+                                        font-weight: 500;
+                                        text-decoration: none;
+                                    }
+                                    .homefooter:hover {
+                                        border-bottom: 1px solid $Secondary_Cyan;
+                                        color: $White_Light_shadow;
+                                    }
+                                    .portfoliofooter {
+                                        color: $Secondary_Cyan;
+                                        font-family: "Chakra Petch";
+                                        font-weight: 400;
+                                        text-decoration: none;
+                                    }
+                                    .portfoliofooter:hover {
+                                        border-bottom: 1px solid $Secondary_Cyan;
+                                    }
+                                    .aboutfooter {
+                                        color: $lightblue;
+                                        font-family: "Chakra Petch";
+                                        font-weight: 400;
+                                        text-decoration: none;
+                                    }
+                                    .aboutfooter:hover {
+                                        border-bottom: 1px solid $Secondary_Cyan;
+                                        color: $White_Light_shadow;
+                                    }
+                                    .contactfooter {
+                                        color: $lightblue;
+                                        font-family: "Chakra Petch";
+                                        font-weight: 400;
+                                        text-decoration: none;
+                                    }
+                                    .contactfooter:hover {
+                                        border-bottom: 1px solid $Secondary_Cyan;
+                                        color: $White_Light_shadow;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            .separatorfooter {
+                    display: flex;
+                    flex-direction: column;
+                    margin: 0 9rem;
+                    hr {
+                        display: flex;
+                        flex-direction: column;
+                        width: 100%;
+                        border: 1px solid $White_Light_shadow;
+                    }
+            }
+            .BottomContentFooter {
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                flex-wrap: wrap;
+                margin: 0 9rem;
+                padding: 2.5rem 0;
+                gap: 2rem;
+                justify-content: space-between;
+                .LegalMenu {
+                    nav {
+                        ul {
+                        display: flex;
+                        flex-direction: row;
+                        gap: 1.25rem;
+                        justify-content: flex-start;
+                        align-items: center;
+                            li {
+                                a {
+                                    text-decoration: none;
+                                    color: $lightblue;
+                                    font-family: "Inter";
+                                    font-weight: 400;
+                                    font-size: 0.875rem;
+                                }
+                                a:hover {
+                                    border-bottom: 1px solid $Secondary_Cyan;
+                                    color: $White_Light_shadow;
+                                }
+                            }
+                        }
+                    }
+                }
+                .Copyright {
+                    display: flex;
+                    p {
+                        color: $White_Light_shadow;
+                        text-align: center;
+                        font-family: "Inter";
+                        font-weight: 400;
+                        font-size: 16px;
+                    }
+                }
+            }
+        }
+        // End of Footer //
+
+    }
+
 }
+
     
