@@ -129,7 +129,7 @@
   body .Hero .HeroContent {
     display: flex;
     flex-direction: column;
-    padding: 10rem 0.625rem 0.625rem 0.625rem;
+    padding: 8rem 0.625rem 0.625rem 0.625rem;
     align-items: center;
     gap: 1.875rem;
   }
@@ -161,6 +161,66 @@
     font-weight: 500;
     text-align: left;
     padding: 0 1.25rem;
+  }
+  body .AProposContent {
+    display: flex;
+    flex-direction: column;
+    padding: 0 2.5rem;
+  }
+  body .AProposContent .AboutMeContainer {
+    margin-bottom: 3.75rem;
+  }
+  body .AProposContent .AboutMeContainer .ProfilePic {
+    display: flex;
+    flex-direction: column;
+    margin: 2.5rem 0;
+  }
+  body .AProposContent .AboutMeContainer .ProfilePic img {
+    border-radius: 0.5rem;
+    border: 0.25rem solid #9747FF;
+  }
+  body .AProposContent .AboutMeContainer .AboutMeText .TitleAboutMe {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+  }
+  body .AProposContent .AboutMeContainer .AboutMeText .TitleAboutMe h2 {
+    color: #9747FF;
+    font-family: "Chakra Petch";
+    font-weight: 600;
+    text-align: center;
+    font-size: 1.5rem;
+  }
+  body .AProposContent .AboutMeContainer .AboutMeText .TextAboutMe {
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 2.5rem 0;
+  }
+  body .AProposContent .AboutMeContainer .AboutMeText .TextAboutMe p {
+    color: #FFFFFF;
+    font-family: "Chakra Petch";
+    font-weight: 500;
+    text-align: center;
+    font-size: 0.875rem;
+  }
+  body .AProposContent .AboutMeContainer .ButtonCV {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+  }
+  body .AProposContent .AboutMeContainer .ButtonCV a button {
+    background-color: #301A4B;
+    padding: 1.5rem 1.5rem;
+    width: 100%;
+    border-radius: 0.5rem;
+    border: 2px solid #68FFFF;
+    color: #68FFFF;
+    font-family: "Chakra Petch", sans-serif;
+    font-weight: 700;
+    font-size: 20px;
   }
   body footer {
     background-color: #0A0817;
