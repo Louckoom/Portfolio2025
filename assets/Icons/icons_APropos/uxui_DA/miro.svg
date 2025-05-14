@@ -1,0 +1,14 @@
+<svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="miro">
+<g clip-path="url(#clip0_261_294)">
+<path id="Base" d="M36 0H0V36H36V0Z" fill="#FFD02F"/>
+<path id="Path" d="M22.7796 7.5H19.7556L22.4402 11.706L16.7647 7.5H13.7407L16.4254 13.011L10.7491 7.5H7.7251L10.3655 14.6151L7.7251 28.5H10.7491L16.4254 13.6121L13.7407 28.5H16.7647L22.4402 12.307L19.7556 28.5H22.7796L28.5001 10.7126L22.7796 7.5Z" fill="#050038"/>
+</g>
+<rect x="0.5" y="0.5" width="35" height="35" rx="9.5" stroke="black" stroke-opacity="0.1"/>
+</g>
+<defs>
+<clipPath id="clip0_261_294">
+<rect width="36" height="36" rx="10" fill="white"/>
+</clipPath>
+</defs>
+</svg>

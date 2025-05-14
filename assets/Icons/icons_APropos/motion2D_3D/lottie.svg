@@ -1,0 +1,18 @@
+<svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="lottie">
+<g clip-path="url(#clip0_261_708)">
+<path id="Base" d="M36 0H0V36H36V0Z" fill="url(#paint0_linear_261_708)"/>
+<path id="Path" fill-rule="evenodd" clip-rule="evenodd" d="M28.9552 9.13502C29.1013 8.14666 28.4193 7.22866 27.4311 7.0822C23.7018 6.53075 20.1683 9.84439 16.3991 17.0215C13.4397 22.6571 10.7781 25.4897 8.96529 25.3555C7.96969 25.2818 7.10269 26.0297 7.02885 27.0246C6.95584 28.0203 7.70337 28.8876 8.69897 28.9612C12.3686 29.232 15.8548 25.8341 19.6008 18.702C22.5336 13.1163 25.1537 10.3999 26.9026 10.6593C27.8899 10.8041 28.8092 10.1234 28.9552 9.13502Z" fill="white"/>
+</g>
+<rect x="0.5" y="0.5" width="35" height="35" rx="9.5" stroke="black" stroke-opacity="0.1"/>
+</g>
+<defs>
+<linearGradient id="paint0_linear_261_708" x1="-11.188" y1="20.9234" x2="23.2393" y2="43.2997" gradientUnits="userSpaceOnUse">
+<stop stop-color="#2BEAED"/>
+<stop offset="1" stop-color="#0FCCCE"/>
+</linearGradient>
+<clipPath id="clip0_261_708">
+<rect width="36" height="36" rx="10" fill="white"/>
+</clipPath>
+</defs>
+</svg>
