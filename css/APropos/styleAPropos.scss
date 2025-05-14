@@ -853,99 +853,98 @@ body {
         background-color: $Background_dark;
         // Nav Bar //
         header {
-        background-color: $Elements_Dark;
-        position: fixed;
-        width: 100%;
-        z-index: 100;
-        .MenuContainer {
-            margin: 0 9rem;
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            .ReturnHome {
+            background-color: $Elements_Dark;
+            position: fixed;
+            width: 100%;
+            z-index: 100;
+            .MenuContainer {
+                margin: 0 9rem;
                 display: flex;
-                width: 5.1875rem;
-                height: 5.5rem;
-                padding: 0.75rem;
-                justify-content: center;
                 align-items: center;
-            }
-            .Menu {
-                
-                nav{
+                justify-content: space-between;
+                .ReturnHome {
+                    display: flex;
+                    width: 5.1875rem;
+                    height: 5.5rem;
+                    padding: 0.75rem;
+                    justify-content: center;
+                    align-items: center;
+                }
+                .Menu {
                     
-                    
-                    ul {
-                        display: flex;
-                        list-style-type: none;
-                        li {
-                            display: flex;
-                            padding: 14px;
-                            justify-content: flex-end;
-                            align-items: center;
-                            a {
-                                text-decoration: none;
-                                color: $lightblue;
-                                text-align: center;
-                                font-family: "Chakra Petch";
-                                font-weight: 500;
-                                font-size: 16px;
-                                color: $White_Light_shadow;
-                                border: 2px solid $Elements_Dark;
-                                
-                            }
-                            .home {
-                                color: $lightblue;
-                                padding: 1.125rem 2rem;
-                                border-radius: 0.5rem;
-                                
-                            }
-                            .home:hover {
-                                border: 2px solid $Secondary_Cyan;
-                                color: $White_Light_shadow;
-                            }
-                            .portfolio {
-                                padding: 1.125rem 2rem;
-                                border-radius: 0.5rem;
-                                color: $lightblue;
-                                
-                            }
-                            .portfolio:hover {
-                                border: 2px solid $Secondary_Cyan;
-                                color: $White_Light_shadow;
-                            }
-
-                            .about {
-                                padding: 1.125rem 2rem;
-                                border-radius: 0.5rem;
-                                background-color: $Main_purple;
-                            }
-                            .about:hover {
-                                border: 2px solid $Secondary_Cyan;
-                                color: $White_Light_shadow;
-                            }
-                            .contact {
-                                padding: 1.125rem 2rem;
-                                border-radius: 0.5rem;
-                                color: $lightblue;
-                            }
-                            .contact:hover {
-                                border: 2px solid $Secondary_Cyan;
-                                color: $White_Light_shadow;
-                            }
-                        }
+                    nav{
                         
+                        
+                        ul {
+                            display: flex;
+                            list-style-type: none;
+                            li {
+                                display: flex;
+                                padding: 14px;
+                                justify-content: flex-end;
+                                align-items: center;
+                                a {
+                                    text-decoration: none;
+                                    color: $lightblue;
+                                    text-align: center;
+                                    font-family: "Chakra Petch";
+                                    font-weight: 500;
+                                    font-size: 16px;
+                                    color: $White_Light_shadow;
+                                    border: 2px solid $Elements_Dark;
+                                    
+                                }
+                                .home {
+                                    color: $lightblue;
+                                    padding: 1.125rem 2rem;
+                                    border-radius: 0.5rem;
+                                    
+                                }
+                                .home:hover {
+                                    border: 2px solid $Secondary_Cyan;
+                                    color: $White_Light_shadow;
+                                }
+                                .portfolio {
+                                    padding: 1.125rem 2rem;
+                                    border-radius: 0.5rem;
+                                    color: $lightblue;
+                                    
+                                }
+                                .portfolio:hover {
+                                    border: 2px solid $Secondary_Cyan;
+                                    color: $White_Light_shadow;
+                                }
+
+                                .about {
+                                    padding: 1.125rem 2rem;
+                                    border-radius: 0.5rem;
+                                    background-color: $Main_purple;
+                                }
+                                .about:hover {
+                                    border: 2px solid $Secondary_Cyan;
+                                    color: $White_Light_shadow;
+                                }
+                                .contact {
+                                    padding: 1.125rem 2rem;
+                                    border-radius: 0.5rem;
+                                    color: $lightblue;
+                                }
+                                .contact:hover {
+                                    border: 2px solid $Secondary_Cyan;
+                                    color: $White_Light_shadow;
+                                }
+                            }
+                            
+                        }
                     }
                 }
             }
+
         }
-        
 
         // End of Nav Bar //
 
-    }
-
-    // Footer //
+        // Footer //
         footer {
             background-color: $Elements_Dark;
             display: flex;
