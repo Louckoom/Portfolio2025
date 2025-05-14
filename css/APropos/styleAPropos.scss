@@ -171,17 +171,17 @@ body {
                 .text01 {
                     color: $Secondary_Cyan;
                     font-size: 1rem;
-                    font-family: "Chakra Petch";
+                    font-family: "Inter";
                     font-weight: 500;
-                    text-align: left;
+                    text-align: center;
                     padding: 0 1.25rem;
                 }
                 .text02 {
                     color: $Secondary_Cyan;
                     font-size: 1rem;
-                    font-family: "Chakra Petch";
+                    font-family: "Inter";
                     font-weight: 500;
-                    text-align: left;
+                    text-align: center;
                     padding: 0 1.25rem;
                 }
             }
@@ -232,7 +232,7 @@ body {
                     padding: 2.5rem 0;
                     p {
                         color: $White_Light_shadow;
-                        font-family: "Chakra Petch";
+                        font-family: "Inter";
                         font-weight: 500;
                         text-align: center;
                         font-size: 0.875rem;
@@ -264,7 +264,138 @@ body {
 
     // End of About me Section //
 
+    // Services Section //
 
+    .SkillsContainer {
+        .Title {
+            margin-bottom: 3.75rem;
+            h2{
+                font-size: 2.5rem;
+                text-align: center;
+                font-family: "Chakra Petch";
+                font-weight: 700;
+                color: $White_Light_shadow;
+            }
+        }
+        .UXUI_DA_Skills{
+            display: flex;
+            flex-direction: column;
+            .Softprez_UXUI_DA {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                gap: 1.25rem;
+                .TextPart {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 1.25rem;
+                    h3 {
+                        color: $White_Light_shadow;
+                        font-family: "Inter";
+                        font-weight: 600;
+                        text-align: center;
+                        font-size: 1.375rem;
+                    }
+                    p {
+                        color: $White_Light_shadow;
+                        font-family: "Inter";
+                        font-weight: 500;
+                        text-align: center;
+                        font-size: 0.875rem;
+                    }
+                }
+                .IconsPart {
+                    display: flex;
+                    justify-content: center;
+                    flex-wrap: wrap;
+                    gap: 2rem;
+                    margin: 2rem 0;
+                }
+            }
+        }
+        .Services_UXUI_DA {
+            .UXUI_Services_square {
+                border: 0.125rem solid $Secondary_Cyan;
+                padding: 2.5rem;
+                margin: 0 0 60px 0;
+                display: flex;
+                flex-direction: column;
+                .TitlePart{
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    .TitleBlue {
+                        h4 {
+                        color: $Secondary_Cyan;
+                        font-family: "Inter";
+                        font-weight: 600;
+                        text-align: center;
+                        font-size: 1.375rem;
+                        }
+                        
+                    }
+                }
+                .separator {
+                    hr {
+                        margin: 2rem 0 1.5rem 0;
+                    }
+                }
+
+                .ServicesText {
+                    display: flex;
+                    flex-direction: column;
+                    .text {
+                        display: flex;
+                        justify-content: flex-start;
+                        gap: 1.875rem;
+                        margin-top: 22px;
+                    }
+                }
+
+            }
+            .DA_Services_square {
+                border: 0.125rem solid $Secondary_Cyan;
+                padding: 2.5rem;
+                margin: 0 0 60px 0;
+                display: flex;
+                flex-direction: column;
+                .TitlePart{
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    .TitleBlue {
+                        h4 {
+                        color: $Secondary_Cyan;
+                        font-family: "Inter";
+                        font-weight: 600;
+                        text-align: center;
+                        font-size: 1.375rem;
+                        }
+                        
+                    }
+                }
+                .separator {
+                    hr {
+                        margin: 2rem 0 1.5rem 0;
+                    }
+                }
+
+                .ServicesText {
+                    display: flex;
+                    flex-direction: column;
+                    .text {
+                        display: flex;
+                        justify-content: flex-start;
+                        gap: 1.875rem;
+                        margin-top: 22px;
+                    }
+                }
+
+            }
+        }
+    }
+
+    // End of Service Section //
 
 
 
