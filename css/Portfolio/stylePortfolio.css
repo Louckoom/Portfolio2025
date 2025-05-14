@@ -517,13 +517,13 @@
   body footer .TopContentFooter .RightContent .Menu nav ul li .homefooter {
     color: #FFFFFF;
     font-family: "Chakra Petch";
-    font-weight: 500;
+    font-weight: 400;
     text-decoration: none;
   }
   body footer .TopContentFooter .RightContent .Menu nav ul li .portfoliofooter {
     color: #68FFFF;
     font-family: "Chakra Petch";
-    font-weight: 400;
+    font-weight: 500;
     text-decoration: none;
   }
   body footer .TopContentFooter .RightContent .Menu nav ul li .aboutfooter {
@@ -1138,7 +1138,7 @@
   body footer .TopContentFooter .RightContent .Menu nav ul li .homefooter {
     color: #A5BBCB;
     font-family: "Chakra Petch";
-    font-weight: 500;
+    font-weight: 400;
     text-decoration: none;
   }
   body footer .TopContentFooter .RightContent .Menu nav ul li .homefooter:hover {
@@ -1148,11 +1148,12 @@
   body footer .TopContentFooter .RightContent .Menu nav ul li .portfoliofooter {
     color: #68FFFF;
     font-family: "Chakra Petch";
-    font-weight: 400;
+    font-weight: 500;
     text-decoration: none;
   }
   body footer .TopContentFooter .RightContent .Menu nav ul li .portfoliofooter:hover {
     border-bottom: 1px solid #68FFFF;
+    color: #68FFFF;
   }
   body footer .TopContentFooter .RightContent .Menu nav ul li .aboutfooter {
     color: #A5BBCB;

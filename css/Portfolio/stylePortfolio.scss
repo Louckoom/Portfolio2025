@@ -578,13 +578,13 @@ body {
                                 .homefooter {
                                     color: $White_Light_shadow;
                                     font-family: "Chakra Petch";
-                                    font-weight: 500;
+                                    font-weight: 400;
                                     text-decoration: none;
                                 }
                                 .portfoliofooter {
                                     color: $Secondary_Cyan;
                                     font-family: "Chakra Petch";
-                                    font-weight: 400;
+                                    font-weight: 500;
                                     text-decoration: none;
                                 }
                                 .aboutfooter {
@@ -1278,7 +1278,7 @@ body {
                                     .homefooter {
                                         color: $lightblue;
                                         font-family: "Chakra Petch";
-                                        font-weight: 500;
+                                        font-weight: 400;
                                         text-decoration: none;
                                     }
                                     .homefooter:hover {
@@ -1288,11 +1288,12 @@ body {
                                     .portfoliofooter {
                                         color: $Secondary_Cyan;
                                         font-family: "Chakra Petch";
-                                        font-weight: 400;
+                                        font-weight: 500;
                                         text-decoration: none;
                                     }
                                     .portfoliofooter:hover {
                                         border-bottom: 1px solid $Secondary_Cyan;
+                                        color: $Secondary_Cyan;
                                     }
                                     .aboutfooter {
                                         color: $lightblue;

@@ -241,24 +241,23 @@
     color: #FFFFFF;
     font-family: "Chakra Petch";
     font-weight: 700;
-    text-decoration: none;
   }
   body footer .TopContentFooter .RightContent .Menu nav ul li .homefooter {
     color: #FFFFFF;
     font-family: "Chakra Petch";
-    font-weight: 500;
+    font-weight: 400;
     text-decoration: none;
   }
   body footer .TopContentFooter .RightContent .Menu nav ul li .portfoliofooter {
-    color: #68FFFF;
+    color: #FFFFFF;
     font-family: "Chakra Petch";
     font-weight: 400;
     text-decoration: none;
   }
   body footer .TopContentFooter .RightContent .Menu nav ul li .aboutfooter {
-    color: #FFFFFF;
+    color: #68FFFF;
     font-family: "Chakra Petch";
-    font-weight: 400;
+    font-weight: 500;
     text-decoration: none;
   }
   body footer .TopContentFooter .RightContent .Menu nav ul li .contactfooter {

@@ -277,7 +277,6 @@ body {
                 .Menu {
                     padding: 20px 0;
                     nav {
-                        
                         ul  {
                             display: flex;
                             flex-direction: column;
@@ -291,24 +290,23 @@ body {
                                     color: $White_Light_shadow;
                                     font-family: "Chakra Petch";
                                     font-weight: 700;
-                                    text-decoration: none;
                                 }
                                 .homefooter {
                                     color: $White_Light_shadow;
                                     font-family: "Chakra Petch";
-                                    font-weight: 500;
+                                    font-weight: 400;
                                     text-decoration: none;
                                 }
                                 .portfoliofooter {
-                                    color: $Secondary_Cyan;
+                                    color: $White_Light_shadow;
                                     font-family: "Chakra Petch";
                                     font-weight: 400;
                                     text-decoration: none;
                                 }
                                 .aboutfooter {
-                                    color: $White_Light_shadow;
+                                    color: $Secondary_Cyan;
                                     font-family: "Chakra Petch";
-                                    font-weight: 400;
+                                    font-weight: 500;
                                     text-decoration: none;
                                 }
                                 .contactfooter {
