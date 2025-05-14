@@ -268,69 +268,155 @@
     gap: 2rem;
     margin: 2rem 0;
   }
-  body .SkillsContainer .Services_UXUI_DA .UXUI_Services_square {
+  body .SkillsContainer .UXUI_DA_Skills .Services_UXUI_DA .UXUI_Services_square {
     border: 0.125rem solid #68FFFF;
     padding: 2.5rem;
     margin: 0 0 60px 0;
     display: flex;
     flex-direction: column;
   }
-  body .SkillsContainer .Services_UXUI_DA .UXUI_Services_square .TitlePart {
+  body .SkillsContainer .UXUI_DA_Skills .Services_UXUI_DA .UXUI_Services_square .TitlePart {
     display: flex;
     justify-content: space-between;
     align-items: center;
   }
-  body .SkillsContainer .Services_UXUI_DA .UXUI_Services_square .TitlePart .TitleBlue h4 {
+  body .SkillsContainer .UXUI_DA_Skills .Services_UXUI_DA .UXUI_Services_square .TitlePart .TitleBlue h4 {
     color: #68FFFF;
     font-family: "Inter";
     font-weight: 600;
     text-align: center;
     font-size: 1.375rem;
   }
-  body .SkillsContainer .Services_UXUI_DA .UXUI_Services_square .separator hr {
-    margin: 2rem 0 1.5rem 0;
+  body .SkillsContainer .UXUI_DA_Skills .Services_UXUI_DA .UXUI_Services_square .separator hr {
+    margin: 2rem 0 0.75rem 0;
   }
-  body .SkillsContainer .Services_UXUI_DA .UXUI_Services_square .ServicesText {
+  body .SkillsContainer .UXUI_DA_Skills .Services_UXUI_DA .UXUI_Services_square .ServicesText {
     display: flex;
     flex-direction: column;
   }
-  body .SkillsContainer .Services_UXUI_DA .UXUI_Services_square .ServicesText .text {
+  body .SkillsContainer .UXUI_DA_Skills .Services_UXUI_DA .UXUI_Services_square .ServicesText .text {
     display: flex;
     justify-content: flex-start;
     gap: 1.875rem;
     margin-top: 22px;
+    align-items: center;
   }
-  body .SkillsContainer .Services_UXUI_DA .DA_Services_square {
+  body .SkillsContainer .UXUI_DA_Skills .Services_UXUI_DA .UXUI_Services_square .ServicesText .text p {
+    font-size: 14px;
+    font-family: "Inter";
+    font-weight: 500;
+  }
+  body .SkillsContainer .UXUI_DA_Skills .Services_UXUI_DA .DA_Services_square {
     border: 0.125rem solid #68FFFF;
     padding: 2.5rem;
     margin: 0 0 60px 0;
     display: flex;
     flex-direction: column;
   }
-  body .SkillsContainer .Services_UXUI_DA .DA_Services_square .TitlePart {
+  body .SkillsContainer .UXUI_DA_Skills .Services_UXUI_DA .DA_Services_square .TitlePart {
     display: flex;
     justify-content: space-between;
     align-items: center;
   }
-  body .SkillsContainer .Services_UXUI_DA .DA_Services_square .TitlePart .TitleBlue h4 {
+  body .SkillsContainer .UXUI_DA_Skills .Services_UXUI_DA .DA_Services_square .TitlePart .TitleBlue h4 {
     color: #68FFFF;
+    font-family: "Inter";
+    font-weight: 600;
+    text-align: left;
+    font-size: 1.5rem;
+  }
+  body .SkillsContainer .UXUI_DA_Skills .Services_UXUI_DA .DA_Services_square .separator hr {
+    margin: 2rem 0 0.75rem 0;
+  }
+  body .SkillsContainer .UXUI_DA_Skills .Services_UXUI_DA .DA_Services_square .ServicesText {
+    display: flex;
+    flex-direction: column;
+  }
+  body .SkillsContainer .UXUI_DA_Skills .Services_UXUI_DA .DA_Services_square .ServicesText .text {
+    display: flex;
+    justify-content: flex-start;
+    gap: 1.875rem;
+    margin-top: 1.375rem;
+    align-items: center;
+  }
+  body .SkillsContainer .UXUI_DA_Skills .Services_UXUI_DA .DA_Services_square .ServicesText .text p {
+    font-size: 14px;
+    font-family: "Inter";
+    font-weight: 500;
+  }
+  body .SkillsContainer .Skills_2D_3D {
+    display: flex;
+    flex-direction: column;
+  }
+  body .SkillsContainer .Skills_2D_3D .Softprez_2D_3D {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.25rem;
+  }
+  body .SkillsContainer .Skills_2D_3D .Softprez_2D_3D .TextPart {
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+  }
+  body .SkillsContainer .Skills_2D_3D .Softprez_2D_3D .TextPart h3 {
+    color: #FFFFFF;
     font-family: "Inter";
     font-weight: 600;
     text-align: center;
     font-size: 1.375rem;
   }
-  body .SkillsContainer .Services_UXUI_DA .DA_Services_square .separator hr {
-    margin: 2rem 0 1.5rem 0;
+  body .SkillsContainer .Skills_2D_3D .Softprez_2D_3D .TextPart p {
+    color: #FFFFFF;
+    font-family: "Inter";
+    font-weight: 500;
+    text-align: center;
+    font-size: 0.875rem;
   }
-  body .SkillsContainer .Services_UXUI_DA .DA_Services_square .ServicesText {
+  body .SkillsContainer .Skills_2D_3D .Softprez_2D_3D .IconsPart {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+    margin: 2rem 0;
+  }
+  body .SkillsContainer .Skills_2D_3D .Services_2D_3D .Services_square_2D_3D {
+    border: 0.125rem solid #68FFFF;
+    padding: 2.5rem;
+    margin: 0 0 60px 0;
     display: flex;
     flex-direction: column;
   }
-  body .SkillsContainer .Services_UXUI_DA .DA_Services_square .ServicesText .text {
+  body .SkillsContainer .Skills_2D_3D .Services_2D_3D .Services_square_2D_3D .TitlePart {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  body .SkillsContainer .Skills_2D_3D .Services_2D_3D .Services_square_2D_3D .TitlePart .TitleBlue h4 {
+    color: #68FFFF;
+    font-family: "Inter";
+    font-weight: 600;
+    text-align: left;
+    font-size: 1.5rem;
+  }
+  body .SkillsContainer .Skills_2D_3D .Services_2D_3D .Services_square_2D_3D .separator hr {
+    margin: 2rem 0 0.75rem 0;
+  }
+  body .SkillsContainer .Skills_2D_3D .Services_2D_3D .Services_square_2D_3D .ServicesText {
+    display: flex;
+    flex-direction: column;
+  }
+  body .SkillsContainer .Skills_2D_3D .Services_2D_3D .Services_square_2D_3D .ServicesText .text {
     display: flex;
     justify-content: flex-start;
     gap: 1.875rem;
-    margin-top: 22px;
+    margin-top: 1.375rem;
+    align-items: center;
+  }
+  body .SkillsContainer .Skills_2D_3D .Services_2D_3D .Services_square_2D_3D .ServicesText .text p {
+    font-size: 14px;
+    font-family: "Inter";
+    font-weight: 500;
   }
   body footer {
     background-color: #0A0817;
