@@ -791,6 +791,7 @@ body {
                             gap: 20px;
                             
                             li {
+                                list-style: none;
                                 .Titlefooternav {
                                     color: $White_Light_shadow;
                                     font-family: "Chakra Petch";
@@ -847,6 +848,7 @@ body {
                        justify-content: center;
                        align-items: center;
                         li {
+                            list-style: none;
                             a {
                                 text-decoration: none;
                                 color: $White_Light_shadow;
@@ -1700,6 +1702,7 @@ body {
                                 gap: 20px;
                                 
                                 li {
+                                    list-style: none;
                                     .Titlefooternav {
                                         color: $White_Light_shadow;
                                         font-family: "Chakra Petch";
@@ -1779,6 +1782,7 @@ body {
                         justify-content: flex-start;
                         align-items: center;
                             li {
+                                list-style: none;
                                 a {
                                     text-decoration: none;
                                     color: $lightblue;

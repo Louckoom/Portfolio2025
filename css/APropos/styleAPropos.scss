@@ -137,6 +137,7 @@ body {
         }
 
     }
+
     // End of Nav Bar //
 
     // Hero Section //
@@ -165,7 +166,7 @@ body {
                 display: flex;
                 flex-direction: column;
                 margin: 20px;
-                gap: 24px;
+                gap: 22px;
 
                 .text01 {
                     color: $Secondary_Cyan;
@@ -191,7 +192,7 @@ body {
     // End of Hero Section
 
 
-    
+
 
 
 
@@ -203,6 +204,7 @@ body {
         background-color: $Elements_Dark;
         display: flex;
         flex-direction: column;
+        margin-top: 2.5rem;
         .TopContentFooter {
             .LeftContent {
                 .TopLeftContent {
@@ -275,6 +277,7 @@ body {
                 .Menu {
                     padding: 20px 0;
                     nav {
+                        
                         ul  {
                             display: flex;
                             flex-direction: column;
@@ -283,19 +286,21 @@ body {
                             gap: 20px;
                             
                             li {
+                                list-style: none;
                                 .Titlefooternav {
                                     color: $White_Light_shadow;
                                     font-family: "Chakra Petch";
                                     font-weight: 700;
+                                    text-decoration: none;
                                 }
                                 .homefooter {
-                                    color: $Secondary_Cyan;
+                                    color: $White_Light_shadow;
                                     font-family: "Chakra Petch";
                                     font-weight: 500;
                                     text-decoration: none;
                                 }
                                 .portfoliofooter {
-                                    color: $White_Light_shadow;
+                                    color: $Secondary_Cyan;
                                     font-family: "Chakra Petch";
                                     font-weight: 400;
                                     text-decoration: none;
@@ -339,6 +344,7 @@ body {
                        justify-content: center;
                        align-items: center;
                         li {
+                            list-style: none;
                             a {
                                 text-decoration: none;
                                 color: $White_Light_shadow;

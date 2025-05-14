@@ -707,6 +707,9 @@
     align-items: center;
     gap: 20px;
   }
+  body footer .TopContentFooter .RightContent .Menu nav ul li {
+    list-style: none;
+  }
   body footer .TopContentFooter .RightContent .Menu nav ul li .Titlefooternav {
     color: #FFFFFF;
     font-family: "Chakra Petch";
@@ -753,6 +756,9 @@
     gap: 1.25rem;
     justify-content: center;
     align-items: center;
+  }
+  body footer .BottomContentFooter .LegalMenu nav ul li {
+    list-style: none;
   }
   body footer .BottomContentFooter .LegalMenu nav ul li a {
     text-decoration: none;
@@ -909,7 +915,7 @@
   }
   body .Hero .HeroVideo .BottomHero .SecondTitle p {
     color: #FFFFFF;
-    font-size: 30px;
+    font-size: 1.875rem;
     text-align: center;
     padding: 0 9rem;
   }
@@ -1525,6 +1531,9 @@
     text-align: right;
     gap: 20px;
   }
+  body footer .TopContentFooter .RightContent .Menu nav ul li {
+    list-style: none;
+  }
   body footer .TopContentFooter .RightContent .Menu nav ul li .Titlefooternav {
     color: #FFFFFF;
     font-family: "Chakra Petch";
@@ -1596,6 +1605,9 @@
     gap: 1.25rem;
     justify-content: flex-start;
     align-items: center;
+  }
+  body footer .BottomContentFooter .LegalMenu nav ul li {
+    list-style: none;
   }
   body footer .BottomContentFooter .LegalMenu nav ul li a {
     text-decoration: none;

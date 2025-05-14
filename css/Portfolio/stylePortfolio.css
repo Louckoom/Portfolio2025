@@ -506,6 +506,9 @@
     align-items: center;
     gap: 20px;
   }
+  body footer .TopContentFooter .RightContent .Menu nav ul li {
+    list-style: none;
+  }
   body footer .TopContentFooter .RightContent .Menu nav ul li .Titlefooternav {
     color: #FFFFFF;
     font-family: "Chakra Petch";
@@ -552,6 +555,9 @@
     gap: 1.25rem;
     justify-content: center;
     align-items: center;
+  }
+  body footer .BottomContentFooter .LegalMenu nav ul li {
+    list-style: none;
   }
   body footer .BottomContentFooter .LegalMenu nav ul li a {
     text-decoration: none;
@@ -658,7 +664,7 @@
   body .Hero .HeroContent .Title {
     display: flex;
     flex-direction: column;
-    padding: 10rem 0.625rem 10px 0.625rem;
+    padding: 10rem 0.625rem 0.625rem 0.625rem;
     align-items: center;
     gap: 1.875rem;
   }
@@ -1121,6 +1127,9 @@
     text-align: right;
     gap: 20px;
   }
+  body footer .TopContentFooter .RightContent .Menu nav ul li {
+    list-style: none;
+  }
   body footer .TopContentFooter .RightContent .Menu nav ul li .Titlefooternav {
     color: #FFFFFF;
     font-family: "Chakra Petch";
@@ -1192,6 +1201,9 @@
     gap: 1.25rem;
     justify-content: flex-start;
     align-items: center;
+  }
+  body footer .BottomContentFooter .LegalMenu nav ul li {
+    list-style: none;
   }
   body footer .BottomContentFooter .LegalMenu nav ul li a {
     text-decoration: none;
