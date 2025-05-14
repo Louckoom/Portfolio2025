@@ -711,5 +711,290 @@
     font-size: 16px;
   }
 }
+/* Media Query for Desktop */
+@media (min-width: 769px) {
+  body {
+    background-color: #07060E;
+  }
+  body header {
+    background-color: #0A0817;
+    position: fixed;
+    width: 100%;
+    z-index: 100;
+  }
+  body header .MenuContainer {
+    margin: 0 9rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  body header .MenuContainer .ReturnHome {
+    display: flex;
+    width: 5.1875rem;
+    height: 5.5rem;
+    padding: 0.75rem;
+    justify-content: center;
+    align-items: center;
+  }
+  body header .MenuContainer .Menu nav ul {
+    display: flex;
+    list-style-type: none;
+  }
+  body header .MenuContainer .Menu nav ul li {
+    display: flex;
+    padding: 14px;
+    justify-content: flex-end;
+    align-items: center;
+  }
+  body header .MenuContainer .Menu nav ul li a {
+    text-decoration: none;
+    color: #A5BBCB;
+    text-align: center;
+    font-family: "Chakra Petch";
+    font-weight: 500;
+    font-size: 16px;
+    color: #FFFFFF;
+    border: 2px solid #0A0817;
+  }
+  body header .MenuContainer .Menu nav ul li .home {
+    color: #A5BBCB;
+    padding: 1.125rem 2rem;
+    border-radius: 0.5rem;
+  }
+  body header .MenuContainer .Menu nav ul li .home:hover {
+    border: 2px solid #68FFFF;
+    color: #FFFFFF;
+  }
+  body header .MenuContainer .Menu nav ul li .portfolio {
+    padding: 1.125rem 2rem;
+    border-radius: 0.5rem;
+    color: #A5BBCB;
+  }
+  body header .MenuContainer .Menu nav ul li .portfolio:hover {
+    border: 2px solid #68FFFF;
+    color: #FFFFFF;
+  }
+  body header .MenuContainer .Menu nav ul li .about {
+    padding: 1.125rem 2rem;
+    border-radius: 0.5rem;
+    background-color: #301A4B;
+  }
+  body header .MenuContainer .Menu nav ul li .about:hover {
+    border: 2px solid #68FFFF;
+    color: #FFFFFF;
+  }
+  body header .MenuContainer .Menu nav ul li .contact {
+    padding: 1.125rem 2rem;
+    border-radius: 0.5rem;
+    color: #A5BBCB;
+  }
+  body header .MenuContainer .Menu nav ul li .contact:hover {
+    border: 2px solid #68FFFF;
+    color: #FFFFFF;
+  }
+  body footer {
+    background-color: #0A0817;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+  body footer .TopContentFooter {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 4rem 9rem;
+  }
+  body footer .TopContentFooter .LeftContent {
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+    justify-content: center;
+  }
+  body footer .TopContentFooter .LeftContent .TopLeftContent {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+  body footer .TopContentFooter .LeftContent .TopLeftContent .LogoFooter {
+    display: flex;
+    width: 5.1875rem;
+    height: auto;
+    justify-content: center;
+    align-items: center;
+  }
+  body footer .TopContentFooter .LeftContent .TopLeftContent .TextFooter {
+    display: flex;
+    flex-direction: column;
+    margin: 0 4rem;
+  }
+  body footer .TopContentFooter .LeftContent .TopLeftContent .TextFooter p {
+    color: #FFFFFF;
+    font-family: "Inter";
+    font-weight: 500;
+    font-size: 0.75rem;
+  }
+  body footer .TopContentFooter .LeftContent .SocialsIcons {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 4rem;
+  }
+  body footer .TopContentFooter .LeftContent .SocialsIcons a .Bento {
+    background-color: #0A0817;
+    padding: 20px;
+    border-radius: 360px;
+    border: 2px solid #0A0817;
+  }
+  body footer .TopContentFooter .LeftContent .SocialsIcons a .Bento:hover {
+    background-color: #301A4B;
+    padding: 20px;
+    border-radius: 360px;
+    border: 2px solid #68FFFF;
+  }
+  body footer .TopContentFooter .LeftContent .SocialsIcons a .Behance {
+    background-color: #0A0817;
+    padding: 20px;
+    border-radius: 360px;
+    border: 2px solid #0A0817;
+  }
+  body footer .TopContentFooter .LeftContent .SocialsIcons a .Behance:hover {
+    background-color: #301A4B;
+    padding: 20px;
+    border-radius: 360px;
+    border: 2px solid #68FFFF;
+  }
+  body footer .TopContentFooter .LeftContent .SocialsIcons a .Linkedin {
+    background-color: #0A0817;
+    padding: 20px;
+    border-radius: 360px;
+    border: 2px solid #0A0817;
+  }
+  body footer .TopContentFooter .LeftContent .SocialsIcons a .Linkedin:hover {
+    background-color: #301A4B;
+    padding: 20px;
+    border-radius: 360px;
+    border: 2px solid #68FFFF;
+  }
+  body footer .TopContentFooter .LeftContent .SocialsIcons a .Github {
+    background-color: #0A0817;
+    padding: 20px;
+    border-radius: 360px;
+    border: 2px solid #0A0817;
+  }
+  body footer .TopContentFooter .LeftContent .SocialsIcons a .Github:hover {
+    background-color: #301A4B;
+    padding: 20px;
+    border-radius: 360px;
+    border: 2px solid #68FFFF;
+  }
+  body footer .TopContentFooter .RightContent .Menu nav ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    text-align: right;
+    gap: 20px;
+  }
+  body footer .TopContentFooter .RightContent .Menu nav ul li {
+    list-style: none;
+  }
+  body footer .TopContentFooter .RightContent .Menu nav ul li .Titlefooternav {
+    color: #FFFFFF;
+    font-family: "Chakra Petch";
+    font-weight: 700;
+  }
+  body footer .TopContentFooter .RightContent .Menu nav ul li .homefooter {
+    color: #A5BBCB;
+    font-family: "Chakra Petch";
+    font-weight: 400;
+    text-decoration: none;
+  }
+  body footer .TopContentFooter .RightContent .Menu nav ul li .homefooter:hover {
+    border-bottom: 1px solid #68FFFF;
+    color: #FFFFFF;
+  }
+  body footer .TopContentFooter .RightContent .Menu nav ul li .portfoliofooter {
+    color: #A5BBCB;
+    font-family: "Chakra Petch";
+    font-weight: 400;
+    text-decoration: none;
+  }
+  body footer .TopContentFooter .RightContent .Menu nav ul li .portfoliofooter:hover {
+    border-bottom: 1px solid #68FFFF;
+    color: #FFFFFF;
+  }
+  body footer .TopContentFooter .RightContent .Menu nav ul li .aboutfooter {
+    color: #68FFFF;
+    font-family: "Chakra Petch";
+    font-weight: 500;
+    text-decoration: none;
+  }
+  body footer .TopContentFooter .RightContent .Menu nav ul li .aboutfooter:hover {
+    border-bottom: 1px solid #68FFFF;
+    color: #68FFFF;
+  }
+  body footer .TopContentFooter .RightContent .Menu nav ul li .contactfooter {
+    color: #A5BBCB;
+    font-family: "Chakra Petch";
+    font-weight: 400;
+    text-decoration: none;
+  }
+  body footer .TopContentFooter .RightContent .Menu nav ul li .contactfooter:hover {
+    border-bottom: 1px solid #68FFFF;
+    color: #FFFFFF;
+  }
+  body footer .separatorfooter {
+    display: flex;
+    flex-direction: column;
+    margin: 0 9rem;
+  }
+  body footer .separatorfooter hr {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    border: 1px solid #FFFFFF;
+  }
+  body footer .BottomContentFooter {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 0 9rem;
+    padding: 2.5rem 0;
+    gap: 2rem;
+    justify-content: space-between;
+  }
+  body footer .BottomContentFooter .LegalMenu nav ul {
+    display: flex;
+    flex-direction: row;
+    gap: 1.25rem;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  body footer .BottomContentFooter .LegalMenu nav ul li {
+    list-style: none;
+  }
+  body footer .BottomContentFooter .LegalMenu nav ul li a {
+    text-decoration: none;
+    color: #A5BBCB;
+    font-family: "Inter";
+    font-weight: 400;
+    font-size: 0.875rem;
+  }
+  body footer .BottomContentFooter .LegalMenu nav ul li a:hover {
+    border-bottom: 1px solid #68FFFF;
+    color: #FFFFFF;
+  }
+  body footer .BottomContentFooter .Copyright {
+    display: flex;
+  }
+  body footer .BottomContentFooter .Copyright p {
+    color: #FFFFFF;
+    text-align: center;
+    font-family: "Inter";
+    font-weight: 400;
+    font-size: 16px;
+  }
+}
 
 /*# sourceMappingURL=styleAPropos.css.map */
