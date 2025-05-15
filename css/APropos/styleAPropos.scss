@@ -14,7 +14,7 @@ $lightpurple: #9747FF;
 }
 
   /* Media Query for Mobile */
-@media (max-width: 768px) {
+@media (max-width: 1429px) {
 
 @keyframes slideDown {
         0% {
@@ -326,7 +326,7 @@ body {
         
             
                 .UXUI_Services_square {
-                    border: 0.125rem solid $Secondary_Cyan;
+                    border: 0.125rem solid $lightblue;
                     padding: 2.5rem;
                     border-radius: 8px;
                     background-color: $Elements_Dark;
@@ -373,7 +373,7 @@ body {
 
                 }
                 .DA_Services_square {
-                    border: 0.125rem solid $Secondary_Cyan;
+                    border: 0.125rem solid $lightblue;
                     padding: 2.5rem;
                     border-radius: 8px;
                     background-color: $Elements_Dark;
@@ -469,7 +469,7 @@ body {
             }
             .Services_2D_3D {
                 .Services_square_2D_3D {
-                    border: 0.125rem solid $Secondary_Cyan;
+                    border: 0.125rem solid $lightblue;
                     padding: 2.5rem;
                     border-radius: 8px;
                     background-color: $Elements_Dark;
@@ -567,7 +567,7 @@ body {
             }
             .Services_ProjectManagement {
                 .ProjectManagement_Services_square {
-                    border: 0.125rem solid $Secondary_Cyan;
+                    border: 0.125rem solid $lightblue;
                     padding: 2.5rem;
                     border-radius: 8px;
                     background-color: $Elements_Dark;
@@ -665,7 +665,7 @@ body {
             }
             .Services_DevWeb {
                 .DevWeb_Services_square {
-                    border: 0.125rem solid $Secondary_Cyan;
+                    border: 0.125rem solid $lightblue;
                     padding: 2.5rem;
                     border-radius: 8px;
                     background-color: $Elements_Dark;
@@ -901,7 +901,7 @@ body {
 }
 
 /* Media Query for Desktop */
-@media (min-width: 769px){
+@media (min-width: 1430px){
     body {
         background-color: $Background_dark;
         // Nav Bar //
@@ -1050,6 +1050,7 @@ body {
     .AProposContent {
         display: flex;
         flex-direction: column;
+        flex-wrap: wrap;
         margin: 0 10.8rem;
         .AboutMeContainer {
             display: grid;
@@ -1075,7 +1076,6 @@ body {
                 display: flex;
                 flex-direction: column;
                 justify-content: space-evenly;
-                margin-right: 20rem;
                 grid-area: 1 / 1 / 3 / 2;
                 .TitleAboutMe {
                     grid-area: 1 / 1 / 2 / 2;
@@ -1095,7 +1095,7 @@ body {
                         color: $White_Light_shadow;
                         font-family: "Inter";
                         font-weight: 400;
-                        font-size: 1.5rem;
+                        font-size: 1rem;
                     }
                 }
             }
@@ -1133,15 +1133,18 @@ body {
     .SkillsContainer {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
-        grid-template-rows: 0.2fr repeat(2, 1fr);
+        grid-template-rows: 0.2fr repeat(2, 0.4fr);
         grid-column-gap: 5rem;
+        grid-row-gap: 4rem;
         align-items: space-evenly;
+        flex-wrap: wrap;
         grid-area: 1 / 1 / 4 / 4;
         .Title {
             grid-area: 1 / 1 / 2 / 4;
             display: flex;
             flex-direction: column;
             justify-content: center;
+            padding: 4rem 0;
             h2{
                 font-size: 2.5rem;
                 text-align: center;
@@ -1166,7 +1169,7 @@ body {
                 .TextPart {
                     display: flex;
                     flex-direction: column;
-                    gap: 1.25rem;
+                    gap: 1.5rem;
                     h3 {
                         color: $Secondary_Cyan;
                         font-family: "Inter";
@@ -1178,7 +1181,6 @@ body {
                         color: $White_Light_shadow;
                         font-family: "Inter";
                         font-weight: 500;
-                        margin: 0 6rem;
                         text-align: center;
                         font-size: 1.125rem;
                     }
@@ -1205,7 +1207,7 @@ body {
         
             
                 .UXUI_Services_square {
-                    border: 0.125rem solid $Secondary_Cyan;
+                    border: 0.125rem solid $lightblue;
                     border-radius: 8px;
                     background-color: $Elements_Dark;
                     padding: 2.5rem;
@@ -1251,7 +1253,7 @@ body {
 
                 }
                 .DA_Services_square {
-                    border: 0.125rem solid $Secondary_Cyan;
+                    border: 0.125rem solid $lightblue;
                     border-radius: 8px;
                     background-color: $Elements_Dark;
                     padding: 2.5rem;
@@ -1309,7 +1311,7 @@ body {
                 display: flex;
                 flex-direction: column;
                 align-items: center;
-                gap: 1.25rem;
+                gap: 1.5rem;
                 .TextPart {
                     display: flex;
                     flex-direction: column;
@@ -1325,7 +1327,6 @@ body {
                         color: $White_Light_shadow;
                         font-family: "Inter";
                         font-weight: 500;
-                        margin: 0 6rem;
                         text-align: center;
                         font-size: 1.125rem;
                     }
@@ -1335,7 +1336,7 @@ body {
                     justify-content: center;
                     flex-wrap: wrap;
                     gap: 2rem;
-                    margin: 2rem 0 3.8rem 0;
+                    margin: 2rem 0 4rem 0;
                     .Icon {
                     display: flex;
                     align-items: center;
@@ -1351,7 +1352,7 @@ body {
             }
             .Services_2D_3D {
                 .Services_square_2D_3D {
-                    border: 0.125rem solid $Secondary_Cyan;
+                    border: 0.125rem solid $lightblue;
                     padding: 2.5rem;
                     border-radius: 8px;
                     background-color: $Elements_Dark;
@@ -1404,12 +1405,12 @@ body {
         .ProjectManagement_Skills{
             display: flex;
             flex-direction: column;
-            grid-area: 3 / 3 / 4 / 4;
+            grid-area: 3 / 2 / 4 / 3;
             .Softprez_ProjectManagement {
                 display: flex;
                 flex-direction: column;
                 align-items: center;
-                gap: 1.25rem;
+                gap: 1.5rem;
                 .TextPart {
                     display: flex;
                     flex-direction: column;
@@ -1425,7 +1426,6 @@ body {
                         color: $White_Light_shadow;
                         font-family: "Inter";
                         font-weight: 500;
-                        margin: 0 6rem;
                         text-align: center;
                         font-size: 1.125rem;
                     }
@@ -1435,7 +1435,7 @@ body {
                     justify-content: center;
                     flex-wrap: wrap;
                     gap: 2rem;
-                    margin: 2rem 0 5rem 0;
+                    margin: 2rem 0 4rem 0;
                     .Icon {
                     display: flex;
                     align-items: center;
@@ -1451,7 +1451,7 @@ body {
             }
             .Services_ProjectManagement {
                 .ProjectManagement_Services_square {
-                    border: 0.125rem solid $Secondary_Cyan;
+                    border: 0.125rem solid $lightblue;
                     padding: 2.5rem;
                     border-radius: 8px;
                     background-color: $Elements_Dark;
@@ -1504,12 +1504,12 @@ body {
         .DevWeb_Skills{
             display: flex;
             flex-direction: column;
-            grid-area: 3 / 2 / 4 / 3;
+            grid-area: 3 / 3 / 4 / 4;
             .Softprez_DevWeb {
                 display: flex;
                 flex-direction: column;
                 align-items: center;
-                gap: 1.25rem;
+                gap: 1.5rem;
                 .TextPart {
                     display: flex;
                     flex-direction: column;
@@ -1525,7 +1525,6 @@ body {
                         color: $White_Light_shadow;
                         font-family: "Inter";
                         font-weight: 500;
-                        margin: 0 6rem;
                         text-align: center;
                         font-size: 1.125rem;
                     }
@@ -1535,7 +1534,7 @@ body {
                     justify-content: center;
                     flex-wrap: wrap;
                     gap: 2rem;
-                    margin: 2rem 0 3.8rem 0;
+                    margin: 2rem 0 4rem 0;
                     .Icon {
                     display: flex;
                     align-items: center;
@@ -1551,7 +1550,7 @@ body {
             }
             .Services_DevWeb {
                 .DevWeb_Services_square {
-                    border: 0.125rem solid $Secondary_Cyan;
+                    border: 0.125rem solid $lightblue;
                     padding: 2.5rem;
                     border-radius: 8px;
                     background-color: $Elements_Dark;

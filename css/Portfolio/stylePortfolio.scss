@@ -12,7 +12,7 @@ $lightpurple: #9747FF;
 
 }
    /* Media Query for Mobile */
-@media (max-width: 768px) {
+@media (max-width: 1429px) {
 
 @keyframes slideDown {
         0% {
@@ -172,6 +172,7 @@ body {
     // Projets Section //
     .Projets {
         .ProjetsContent {
+            margin: 2rem 0;
             .Title {
             display: flex;
             align-items: flex-start;
@@ -195,7 +196,7 @@ body {
                     gap: 0.5rem;
                     padding: 1.25rem 0;
                     margin: 0 2.5rem;
-                    background-color: $Main_purple;
+                    background-color: $Elements_Dark;
                     text-decoration: none;
                     border-radius: 0.5rem;
                     border: 2px solid $Secondary_Cyan;
@@ -267,7 +268,7 @@ body {
                     gap: 0.5rem;
                     padding: 1.25rem 0;
                     margin: 0 2.5rem;
-                    background-color: $Main_purple;
+                    background-color: $Elements_Dark;
                     text-decoration: none;
                     border-radius: 0.5rem;
                     border: 2px solid $Secondary_Cyan;
@@ -339,7 +340,7 @@ body {
                     gap: 0.5rem;
                     padding: 1.25rem 0;
                     margin: 0 2.5rem;
-                    background-color: $Main_purple;
+                    background-color: $Elements_Dark;
                     text-decoration: none;
                     border-radius: 0.5rem;
                     border: 2px solid $Secondary_Cyan;
@@ -411,7 +412,7 @@ body {
                     gap: 0.5rem;
                     padding: 1.25rem 0;
                     margin: 0 2.5rem;
-                    background-color: $Main_purple;
+                    background-color: $Elements_Dark;
                     text-decoration: none;
                     border-radius: 0.5rem;
                     border: 2px solid $Secondary_Cyan;
@@ -660,7 +661,7 @@ body {
 }
 
     /* Media Query for Desktop */
-@media (min-width: 769px){
+@media (min-width: 1430px){
     body {
         background-color: $Background_dark;
         // Nav Bar //
@@ -773,6 +774,7 @@ body {
                         }
                     }
             .Text {
+                margin: 2.5rem 0 4rem 0;
                 p {
                     color: $Secondary_Cyan;
                     font-size: 1.5rem;
@@ -811,17 +813,18 @@ body {
                     display: flex;
                     flex-direction: row;
                     flex-wrap: wrap;
-                    justify-content: space-between;
+                    align-items: normal;
+                    justify-content: center;
                     gap: 60px;
                     .Cardlink01 {
                         display: flex;
                         flex-direction: column;
                         justify-content: space-around;
                         width: 45%;
-                        background-color: $Main_purple;
+                        background-color: $Elements_Dark;
                         text-decoration: none;
                         border-radius: 0.5rem;
-                        border: 2px solid $Background_dark;
+                        border: 2px solid $lightblue;
                         .Card01 {
                             display: flex;
                             flex-direction: column;
@@ -892,11 +895,11 @@ body {
                     .Cardlink02 {
                         display: flex;
                         flex-direction: column;
-                        background-color: $Main_purple;
+                        background-color: $Elements_Dark;
                         text-decoration: none;
                         border-radius: 0.5rem;
                         width: 45%;
-                        border: 2px solid $Background_dark;
+                        border: 2px solid $lightblue;
                         .Card02 {
                             display: flex;
                             flex-direction: column;
@@ -913,7 +916,7 @@ body {
                             }
                             .ImageCard {
                                 img {
-                                    width: fit-content;
+                                    width: 100%;
                                 }
                             }
                             .TagsCards {
@@ -969,12 +972,12 @@ body {
                     .Cardlink03 {
                         display: flex;
                         flex-direction: column;
-                        background-color: $Main_purple;
+                        background-color: $Elements_Dark;
                         justify-content: space-around;
                         text-decoration: none;
                         border-radius: 0.5rem;
                         width: 45%;
-                        border: 2px solid $Background_dark;
+                        border: 2px solid $lightblue;
                         .Card03 {
                             display: flex;
                             flex-direction: column;
@@ -1048,11 +1051,11 @@ body {
                         display: flex;
                         flex-direction: column;
                         justify-content: space-around;
-                        background-color: $Main_purple;
+                        background-color: $Elements_Dark;
                         text-decoration: none;
                         border-radius: 0.5rem;
                         width: 45%;
-                        border: 2px solid $Background_dark;
+                        border: 2px solid $lightblue;
                         .Card04 {
                             display: flex;
                             flex-direction: column;

@@ -14,7 +14,7 @@ $lightpurple: #9747FF;
 
   
   /* Media Query for Mobile */
-@media (max-width: 768px) {
+@media (max-width: 1429px) {
 
 @keyframes slideDown {
         0% {
@@ -30,7 +30,8 @@ body {
     background-color: $Background_dark;
     width: 100%;
     img {
-        width:40%;
+        width:auto;
+        height:auto;
     }
     hr {
         width: 40%;
@@ -141,9 +142,12 @@ body {
 
     // Hero Section //
     .Hero {
-        height: 120vh;
+        height: 100vh;
+        position: relative;
+        overflow: hidden;
         display: flex;
         flex-direction: column;
+        justify-content: space-evenly;
         .HeroVideo {
             display: flex;
             flex-direction: column;
@@ -194,7 +198,7 @@ body {
                 align-items: center;
                 justify-content: flex-end;
                 gap: 4.375rem;
-                height: 50vh;
+                height: auto;
                 .SecondTitle {
                     font-family: "Chakra Petch";
                     font-weight: 700;
@@ -209,7 +213,9 @@ body {
                     padding: 0;
                     gap: 40px;
                     display: flex;
-                    flex-direction: column;
+                    flex-wrap: wrap;
+                    flex-direction: row;
+                    justify-content: center;
 
 
                     .UXUI {
@@ -367,7 +373,7 @@ body {
                     gap: 0.5rem;
                     padding: 1.25rem 0;
                     margin: 0 2.5rem;
-                    background-color: $Main_purple;
+                    background-color: $Elements_Dark;
                     text-decoration: none;
                     border-radius: 0.5rem;
                     border: 2px solid $Secondary_Cyan;
@@ -439,7 +445,7 @@ body {
                     gap: 0.5rem;
                     padding: 1.25rem 0;
                     margin: 0 2.5rem;
-                    background-color: $Main_purple;
+                    background-color: $Elements_Dark;
                     text-decoration: none;
                     border-radius: 0.5rem;
                     border: 2px solid $Secondary_Cyan;
@@ -649,14 +655,14 @@ body {
                             font-family: "Chakra Petch";
                             font-weight: 600;
                             text-align: center;
-                            font-size: 1.5rem;
+                            font-size: 2.5rem;
                         }
                     }
                     .QuiSuisJeText {
                         display: flex;
                         flex-direction: column;
                         gap: 1.25rem;
-                        align-items: flex-start;
+                        align-items: center;
                         justify-content: center;
                         padding: 2.5rem 0;
                         p {
@@ -664,7 +670,7 @@ body {
                             font-family: "Chakra Petch";
                             font-weight: 500;
                             text-align: center;
-                            font-size: 0.875rem;
+                            font-size: 1rem;
                         }
                     }
                     .ButtonCV {
@@ -881,7 +887,7 @@ body {
 }
 
 /* Media Query for Desktop */
-@media (min-width: 769px){
+@media (min-width: 1430px){
     body {
         background-color: $Background_dark;
         // Nav Bar //
@@ -978,9 +984,10 @@ body {
         // Hero Section //
         .Hero {
             .HeroVideo {
+                height: 100vh;
                 display: flex;
                 flex-direction: column;
-                gap: auto;
+                justify-content: space-evenly;
                 video { 
                     position:absolute;
                     top:0;
@@ -991,13 +998,12 @@ body {
                     z-index: -10000; 
                 }
                 .TopHero {
-                    height: 50vh;
                     .MainTitle {
                         display: flex;
                         flex-direction: column;
-                        padding: 9rem;
+                        padding: 10rem 0;
                         align-items: center;
-                        gap: 30px;;
+                        gap: 1.875rem;;
                         h1 {
                             font-size: 4.5rem;
                             font-family: "Chakra Petch";
@@ -1020,7 +1026,7 @@ body {
                     display: flex;
                     flex-direction: column;
                     align-items: center;
-                    justify-content: flex-end;
+                    justify-content: space-evenly;
                     gap: 70px;
                     height: 50vh;
                     .SecondTitle {
@@ -1219,11 +1225,11 @@ body {
                     .Cardlink02 {
                         display: flex;
                         flex-direction: column;
-                        background-color: $Main_purple;
+                        background-color: $Elements_Dark;
                         text-decoration: none;
                         border-radius: 0.5rem;
                         width: 45%;
-                        border: 2px solid $Background_dark;
+                        border: 2px solid $lightblue;
                         .Card02 {
                             display: flex;
                             flex-direction: column;
@@ -1296,12 +1302,12 @@ body {
                     .Cardlink03 {
                         display: flex;
                         flex-direction: column;
-                        background-color: $Main_purple;
+                        background-color: $Elements_Dark;
                         justify-content: space-around;
                         text-decoration: none;
                         border-radius: 0.5rem;
                         width: 45%;
-                        border: 2px solid $Background_dark;
+                        border: 2px solid $lightblue;
                         .Card03 {
                             display: flex;
                             flex-direction: column;
@@ -1514,7 +1520,7 @@ body {
                     display: flex;
                     flex-direction: row;
                     margin: 4rem 9rem;
-                    gap: 200px;
+                    gap: 20rem;
                     align-items: center;
                     .TextContent{
                         display: flex;
@@ -1572,8 +1578,11 @@ body {
                     }
                     .ProfilPic {
                         a {
+                        display: flex;
+                        justify-content: flex-end;
+                        align-items: center;  
                             img {
-                                width: 100%;
+                                width: 80%;
                                 border-radius: 0.5rem;
                                 border: 0.25rem solid $Background_dark;
                                 

@@ -5,7 +5,7 @@
 }
 
 /* Media Query for Mobile */
-@media (max-width: 768px) {
+@media (max-width: 1429px) {
   @keyframes slideDown {
     0% {
       transform: translateY(-100%); /* Start above the viewport */
@@ -280,7 +280,7 @@
     text-align: center;
   }
   body .SkillsContainer .UXUI_DA_Skills .UXUI_Services_square {
-    border: 0.125rem solid #68FFFF;
+    border: 0.125rem solid #A5BBCB;
     padding: 2.5rem;
     border-radius: 8px;
     background-color: #0A0817;
@@ -320,7 +320,7 @@
     font-weight: 500;
   }
   body .SkillsContainer .UXUI_DA_Skills .DA_Services_square {
-    border: 0.125rem solid #68FFFF;
+    border: 0.125rem solid #A5BBCB;
     padding: 2.5rem;
     border-radius: 8px;
     background-color: #0A0817;
@@ -407,7 +407,7 @@
     text-align: center;
   }
   body .SkillsContainer .Skills_2D_3D .Services_2D_3D .Services_square_2D_3D {
-    border: 0.125rem solid #68FFFF;
+    border: 0.125rem solid #A5BBCB;
     padding: 2.5rem;
     border-radius: 8px;
     background-color: #0A0817;
@@ -494,7 +494,7 @@
     text-align: center;
   }
   body .SkillsContainer .ProjectManagement_Skills .Services_ProjectManagement .ProjectManagement_Services_square {
-    border: 0.125rem solid #68FFFF;
+    border: 0.125rem solid #A5BBCB;
     padding: 2.5rem;
     border-radius: 8px;
     background-color: #0A0817;
@@ -581,7 +581,7 @@
     text-align: center;
   }
   body .SkillsContainer .DevWeb_Skills .Services_DevWeb .DevWeb_Services_square {
-    border: 0.125rem solid #68FFFF;
+    border: 0.125rem solid #A5BBCB;
     padding: 2.5rem;
     border-radius: 8px;
     background-color: #0A0817;
@@ -766,7 +766,7 @@
   }
 }
 /* Media Query for Desktop */
-@media (min-width: 769px) {
+@media (min-width: 1430px) {
   body {
     background-color: #07060E;
   }
@@ -885,6 +885,7 @@
   body .AProposContent {
     display: flex;
     flex-direction: column;
+    flex-wrap: wrap;
     margin: 0 10.8rem;
   }
   body .AProposContent .AboutMeContainer {
@@ -911,7 +912,6 @@
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
-    margin-right: 20rem;
     grid-area: 1/1/3/2;
   }
   body .AProposContent .AboutMeContainer .AboutMeText .TitleAboutMe {
@@ -933,7 +933,7 @@
     color: #FFFFFF;
     font-family: "Inter";
     font-weight: 400;
-    font-size: 1.5rem;
+    font-size: 1rem;
   }
   body .AProposContent .AboutMeContainer .ButtonCV {
     display: flex;
@@ -957,9 +957,11 @@
   body .SkillsContainer {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: 0.2fr repeat(2, 1fr);
+    grid-template-rows: 0.2fr repeat(2, 0.4fr);
     grid-column-gap: 5rem;
+    grid-row-gap: 4rem;
     align-items: space-evenly;
+    flex-wrap: wrap;
     grid-area: 1/1/4/4;
   }
   body .SkillsContainer .Title {
@@ -967,6 +969,7 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
+    padding: 4rem 0;
   }
   body .SkillsContainer .Title h2 {
     font-size: 2.5rem;
@@ -993,7 +996,7 @@
   body .SkillsContainer .UXUI_DA_Skills .Softprez_UXUI_DA .TextPart {
     display: flex;
     flex-direction: column;
-    gap: 1.25rem;
+    gap: 1.5rem;
   }
   body .SkillsContainer .UXUI_DA_Skills .Softprez_UXUI_DA .TextPart h3 {
     color: #68FFFF;
@@ -1006,7 +1009,6 @@
     color: #FFFFFF;
     font-family: "Inter";
     font-weight: 500;
-    margin: 0 6rem;
     text-align: center;
     font-size: 1.125rem;
   }
@@ -1029,7 +1031,7 @@
     text-align: center;
   }
   body .SkillsContainer .UXUI_DA_Skills .UXUI_Services_square {
-    border: 0.125rem solid #68FFFF;
+    border: 0.125rem solid #A5BBCB;
     border-radius: 8px;
     background-color: #0A0817;
     padding: 2.5rem;
@@ -1068,7 +1070,7 @@
     font-weight: 500;
   }
   body .SkillsContainer .UXUI_DA_Skills .DA_Services_square {
-    border: 0.125rem solid #68FFFF;
+    border: 0.125rem solid #A5BBCB;
     border-radius: 8px;
     background-color: #0A0817;
     padding: 2.5rem;
@@ -1117,7 +1119,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 1.25rem;
+    gap: 1.5rem;
   }
   body .SkillsContainer .Skills_2D_3D .Softprez_2D_3D .TextPart {
     display: flex;
@@ -1135,7 +1137,6 @@
     color: #FFFFFF;
     font-family: "Inter";
     font-weight: 500;
-    margin: 0 6rem;
     text-align: center;
     font-size: 1.125rem;
   }
@@ -1144,7 +1145,7 @@
     justify-content: center;
     flex-wrap: wrap;
     gap: 2rem;
-    margin: 2rem 0 3.8rem 0;
+    margin: 2rem 0 4rem 0;
   }
   body .SkillsContainer .Skills_2D_3D .Softprez_2D_3D .IconsPart .Icon {
     display: flex;
@@ -1158,7 +1159,7 @@
     text-align: center;
   }
   body .SkillsContainer .Skills_2D_3D .Services_2D_3D .Services_square_2D_3D {
-    border: 0.125rem solid #68FFFF;
+    border: 0.125rem solid #A5BBCB;
     padding: 2.5rem;
     border-radius: 8px;
     background-color: #0A0817;
@@ -1200,13 +1201,13 @@
   body .SkillsContainer .ProjectManagement_Skills {
     display: flex;
     flex-direction: column;
-    grid-area: 3/3/4/4;
+    grid-area: 3/2/4/3;
   }
   body .SkillsContainer .ProjectManagement_Skills .Softprez_ProjectManagement {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 1.25rem;
+    gap: 1.5rem;
   }
   body .SkillsContainer .ProjectManagement_Skills .Softprez_ProjectManagement .TextPart {
     display: flex;
@@ -1224,7 +1225,6 @@
     color: #FFFFFF;
     font-family: "Inter";
     font-weight: 500;
-    margin: 0 6rem;
     text-align: center;
     font-size: 1.125rem;
   }
@@ -1233,7 +1233,7 @@
     justify-content: center;
     flex-wrap: wrap;
     gap: 2rem;
-    margin: 2rem 0 5rem 0;
+    margin: 2rem 0 4rem 0;
   }
   body .SkillsContainer .ProjectManagement_Skills .Softprez_ProjectManagement .IconsPart .Icon {
     display: flex;
@@ -1247,7 +1247,7 @@
     text-align: center;
   }
   body .SkillsContainer .ProjectManagement_Skills .Services_ProjectManagement .ProjectManagement_Services_square {
-    border: 0.125rem solid #68FFFF;
+    border: 0.125rem solid #A5BBCB;
     padding: 2.5rem;
     border-radius: 8px;
     background-color: #0A0817;
@@ -1289,13 +1289,13 @@
   body .SkillsContainer .DevWeb_Skills {
     display: flex;
     flex-direction: column;
-    grid-area: 3/2/4/3;
+    grid-area: 3/3/4/4;
   }
   body .SkillsContainer .DevWeb_Skills .Softprez_DevWeb {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 1.25rem;
+    gap: 1.5rem;
   }
   body .SkillsContainer .DevWeb_Skills .Softprez_DevWeb .TextPart {
     display: flex;
@@ -1313,7 +1313,6 @@
     color: #FFFFFF;
     font-family: "Inter";
     font-weight: 500;
-    margin: 0 6rem;
     text-align: center;
     font-size: 1.125rem;
   }
@@ -1322,7 +1321,7 @@
     justify-content: center;
     flex-wrap: wrap;
     gap: 2rem;
-    margin: 2rem 0 3.8rem 0;
+    margin: 2rem 0 4rem 0;
   }
   body .SkillsContainer .DevWeb_Skills .Softprez_DevWeb .IconsPart .Icon {
     display: flex;
@@ -1336,7 +1335,7 @@
     text-align: center;
   }
   body .SkillsContainer .DevWeb_Skills .Services_DevWeb .DevWeb_Services_square {
-    border: 0.125rem solid #68FFFF;
+    border: 0.125rem solid #A5BBCB;
     padding: 2.5rem;
     border-radius: 8px;
     background-color: #0A0817;

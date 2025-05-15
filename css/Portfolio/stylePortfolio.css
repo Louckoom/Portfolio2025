@@ -4,7 +4,7 @@
 }
 
 /* Media Query for Mobile */
-@media (max-width: 768px) {
+@media (max-width: 1429px) {
   @keyframes slideDown {
     0% {
       transform: translateY(-100%); /* Start above the viewport */
@@ -144,6 +144,9 @@
     padding: 1.25rem;
     font-size: 1rem;
   }
+  body .Projets .ProjetsContent {
+    margin: 2rem 0;
+  }
   body .Projets .ProjetsContent .Title {
     display: flex;
     align-items: flex-start;
@@ -168,7 +171,7 @@
     gap: 0.5rem;
     padding: 1.25rem 0;
     margin: 0 2.5rem;
-    background-color: #301A4B;
+    background-color: #0A0817;
     text-decoration: none;
     border-radius: 0.5rem;
     border: 2px solid #68FFFF;
@@ -236,7 +239,7 @@
     gap: 0.5rem;
     padding: 1.25rem 0;
     margin: 0 2.5rem;
-    background-color: #301A4B;
+    background-color: #0A0817;
     text-decoration: none;
     border-radius: 0.5rem;
     border: 2px solid #68FFFF;
@@ -304,7 +307,7 @@
     gap: 0.5rem;
     padding: 1.25rem 0;
     margin: 0 2.5rem;
-    background-color: #301A4B;
+    background-color: #0A0817;
     text-decoration: none;
     border-radius: 0.5rem;
     border: 2px solid #68FFFF;
@@ -372,7 +375,7 @@
     gap: 0.5rem;
     padding: 1.25rem 0;
     margin: 0 2.5rem;
-    background-color: #301A4B;
+    background-color: #0A0817;
     text-decoration: none;
     border-radius: 0.5rem;
     border: 2px solid #68FFFF;
@@ -581,7 +584,7 @@
   }
 }
 /* Media Query for Desktop */
-@media (min-width: 769px) {
+@media (min-width: 1430px) {
   body {
     background-color: #07060E;
   }
@@ -675,6 +678,9 @@
     font-weight: 700;
     color: #FFFFFF;
   }
+  body .Hero .HeroContent .Text {
+    margin: 2.5rem 0 4rem 0;
+  }
   body .Hero .HeroContent .Text p {
     color: #68FFFF;
     font-size: 1.5rem;
@@ -706,7 +712,8 @@
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-between;
+    align-items: normal;
+    justify-content: center;
     gap: 60px;
   }
   body .Projets .ProjetsContent .Cards .Cardlink01 {
@@ -714,10 +721,10 @@
     flex-direction: column;
     justify-content: space-around;
     width: 45%;
-    background-color: #301A4B;
+    background-color: #0A0817;
     text-decoration: none;
     border-radius: 0.5rem;
-    border: 2px solid #07060E;
+    border: 2px solid #A5BBCB;
   }
   body .Projets .ProjetsContent .Cards .Cardlink01 .Card01 {
     display: flex;
@@ -784,11 +791,11 @@
   body .Projets .ProjetsContent .Cards .Cardlink02 {
     display: flex;
     flex-direction: column;
-    background-color: #301A4B;
+    background-color: #0A0817;
     text-decoration: none;
     border-radius: 0.5rem;
     width: 45%;
-    border: 2px solid #07060E;
+    border: 2px solid #A5BBCB;
   }
   body .Projets .ProjetsContent .Cards .Cardlink02 .Card02 {
     display: flex;
@@ -804,7 +811,7 @@
     font-size: 2.5rem;
   }
   body .Projets .ProjetsContent .Cards .Cardlink02 .Card02 .ImageCard img {
-    width: fit-content;
+    width: 100%;
   }
   body .Projets .ProjetsContent .Cards .Cardlink02 .Card02 .TagsCards {
     display: flex;
@@ -857,12 +864,12 @@
   body .Projets .ProjetsContent .Cards .Cardlink03 {
     display: flex;
     flex-direction: column;
-    background-color: #301A4B;
+    background-color: #0A0817;
     justify-content: space-around;
     text-decoration: none;
     border-radius: 0.5rem;
     width: 45%;
-    border: 2px solid #07060E;
+    border: 2px solid #A5BBCB;
   }
   body .Projets .ProjetsContent .Cards .Cardlink03 .Card03 {
     display: flex;
@@ -932,11 +939,11 @@
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    background-color: #301A4B;
+    background-color: #0A0817;
     text-decoration: none;
     border-radius: 0.5rem;
     width: 45%;
-    border: 2px solid #07060E;
+    border: 2px solid #A5BBCB;
   }
   body .Projets .ProjetsContent .Cards .Cardlink04 .Card04 {
     display: flex;

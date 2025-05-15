@@ -4,7 +4,7 @@
 }
 
 /* Media Query for Mobile */
-@media (max-width: 768px) {
+@media (max-width: 1429px) {
   @keyframes slideDown {
     0% {
       transform: translateY(-100%); /* Start above the viewport */
@@ -20,7 +20,8 @@
     width: 100%;
   }
   body img {
-    width: 40%;
+    width: auto;
+    height: auto;
   }
   body hr {
     width: 40%;
@@ -123,9 +124,12 @@
     display: flex; /* Show the menu when active */
   }
   body .Hero {
-    height: 120vh;
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
     display: flex;
     flex-direction: column;
+    justify-content: space-evenly;
   }
   body .Hero .HeroVideo {
     display: flex;
@@ -175,7 +179,7 @@
     align-items: center;
     justify-content: flex-end;
     gap: 4.375rem;
-    height: 50vh;
+    height: auto;
   }
   body .Hero .HeroVideo .BottomHero .SecondTitle {
     font-family: "Chakra Petch";
@@ -191,7 +195,9 @@
     padding: 0;
     gap: 40px;
     display: flex;
-    flex-direction: column;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
   }
   body .Hero .HeroVideo .BottomHero .TagsHero .UXUI {
     align-items: center;
@@ -333,7 +339,7 @@
     gap: 0.5rem;
     padding: 1.25rem 0;
     margin: 0 2.5rem;
-    background-color: #301A4B;
+    background-color: #0A0817;
     text-decoration: none;
     border-radius: 0.5rem;
     border: 2px solid #68FFFF;
@@ -401,7 +407,7 @@
     gap: 0.5rem;
     padding: 1.25rem 0;
     margin: 0 2.5rem;
-    background-color: #301A4B;
+    background-color: #0A0817;
     text-decoration: none;
     border-radius: 0.5rem;
     border: 2px solid #68FFFF;
@@ -592,13 +598,13 @@
     font-family: "Chakra Petch";
     font-weight: 600;
     text-align: center;
-    font-size: 1.5rem;
+    font-size: 2.5rem;
   }
   body .Apropos .AproposContent .Content .TextContent .QuiSuisJeText {
     display: flex;
     flex-direction: column;
     gap: 1.25rem;
-    align-items: flex-start;
+    align-items: center;
     justify-content: center;
     padding: 2.5rem 0;
   }
@@ -607,7 +613,7 @@
     font-family: "Chakra Petch";
     font-weight: 500;
     text-align: center;
-    font-size: 0.875rem;
+    font-size: 1rem;
   }
   body .Apropos .AproposContent .Content .TextContent .ButtonCV {
     display: flex;
@@ -783,7 +789,7 @@
   }
 }
 /* Media Query for Desktop */
-@media (min-width: 769px) {
+@media (min-width: 1430px) {
   body {
     background-color: #07060E;
   }
@@ -864,9 +870,10 @@
     color: #FFFFFF;
   }
   body .Hero .HeroVideo {
+    height: 100vh;
     display: flex;
     flex-direction: column;
-    gap: auto;
+    justify-content: space-evenly;
   }
   body .Hero .HeroVideo video {
     position: absolute;
@@ -877,15 +884,12 @@
     object-fit: cover;
     z-index: -10000;
   }
-  body .Hero .HeroVideo .TopHero {
-    height: 50vh;
-  }
   body .Hero .HeroVideo .TopHero .MainTitle {
     display: flex;
     flex-direction: column;
-    padding: 9rem;
+    padding: 10rem 0;
     align-items: center;
-    gap: 30px;
+    gap: 1.875rem;
   }
   body .Hero .HeroVideo .TopHero .MainTitle h1 {
     font-size: 4.5rem;
@@ -906,7 +910,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: flex-end;
+    justify-content: space-evenly;
     gap: 70px;
     height: 50vh;
   }
@@ -1097,11 +1101,11 @@
   body .Projets .ProjetsContent .Cards .Cardlink02 {
     display: flex;
     flex-direction: column;
-    background-color: #301A4B;
+    background-color: #0A0817;
     text-decoration: none;
     border-radius: 0.5rem;
     width: 45%;
-    border: 2px solid #07060E;
+    border: 2px solid #A5BBCB;
   }
   body .Projets .ProjetsContent .Cards .Cardlink02 .Card02 {
     display: flex;
@@ -1170,12 +1174,12 @@
   body .Projets .ProjetsContent .Cards .Cardlink03 {
     display: flex;
     flex-direction: column;
-    background-color: #301A4B;
+    background-color: #0A0817;
     justify-content: space-around;
     text-decoration: none;
     border-radius: 0.5rem;
     width: 45%;
-    border: 2px solid #07060E;
+    border: 2px solid #A5BBCB;
   }
   body .Projets .ProjetsContent .Cards .Cardlink03 .Card03 {
     display: flex;
@@ -1369,7 +1373,7 @@
     display: flex;
     flex-direction: row;
     margin: 4rem 9rem;
-    gap: 200px;
+    gap: 20rem;
     align-items: center;
   }
   body .Apropos .AproposContent .Content .TextContent {
@@ -1421,8 +1425,13 @@
     border: 2px solid #68FFFF;
     color: #FFFFFF;
   }
+  body .Apropos .AproposContent .Content .ProfilPic a {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
   body .Apropos .AproposContent .Content .ProfilPic a img {
-    width: 100%;
+    width: 80%;
     border-radius: 0.5rem;
     border: 0.25rem solid #07060E;
   }
