@@ -144,6 +144,17 @@
     padding: 2rem;
     font-size: 1rem;
   }
+  body .Hero .HeroContent .ButtonHome a button {
+    background-color: #301A4B;
+    padding: 1.5rem 1.5rem;
+    width: 100%;
+    border-radius: 0.5rem;
+    border: 2px solid #68FFFF;
+    color: #68FFFF;
+    font-family: "Chakra Petch", sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+  }
   body .Formulaire {
     margin: 1.5rem 3rem;
   }
@@ -465,6 +476,22 @@
     font-family: "Chakra Petch";
     font-weight: 500;
     padding: 0 9rem;
+  }
+  body .Hero .HeroContent .ButtonHome a button {
+    margin: 2rem 0;
+    background-color: #301A4B;
+    padding: 1.5rem 1.5rem;
+    width: fit-content;
+    border-radius: 0.5rem;
+    border: 2px solid #07060E;
+    color: #A5BBCB;
+    font-family: "Chakra Petch", sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+  }
+  body .Hero .HeroContent .ButtonHome a button:hover {
+    border: 2px solid #68FFFF;
+    color: #FFFFFF;
   }
   body .Formulaire {
     margin: 1.5rem 9rem;
