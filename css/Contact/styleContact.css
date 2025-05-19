@@ -144,6 +144,11 @@
     padding: 2rem;
     font-size: 1rem;
   }
+  body .Hero .HeroContent .ButtonHome {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
   body .Hero .HeroContent .ButtonHome a button {
     background-color: #301A4B;
     padding: 1.5rem 1.5rem;
@@ -476,6 +481,11 @@
     font-family: "Chakra Petch";
     font-weight: 500;
     padding: 0 9rem;
+  }
+  body .Hero .HeroContent .ButtonHome {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
   body .Hero .HeroContent .ButtonHome a button {
     margin: 2rem 0;
