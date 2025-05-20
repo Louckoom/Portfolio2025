@@ -1,0 +1,12 @@
+---
+deployment:
+  tasks:
+    - export DEPLOYPATH=/home/example/public_html/
+    - /bin/cp index.html $DEPLOYPATH
+    - /bin/cp README.md $DEPLOYPATH
+    - /bin/cp assets $DEPLOYPATH
+    - /bin/cp css $DEPLOYPATH
+    - /bin/cp Design $DEPLOYPATH
+    - /bin/cp js $DEPLOYPATH
+    - /bin/cp Pages $DEPLOYPATH
+    - /bin/cp ProjectsPages $DEPLOYPATH
