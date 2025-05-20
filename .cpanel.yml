@@ -1,7 +1,10 @@
 ---
 deployment:
   tasks:
+<<<<<<< HEAD
     - export DEPLOYPATH=/home/sc1zemi8556/repositories/Portfolio2025
+=======
+>>>>>>> b724d1697c75ffd52853479290a06c7314d10648
     - /bin/cp index.html $DEPLOYPATH
     - /bin/cp README.md $DEPLOYPATH
     - /bin/cp assets $DEPLOYPATH
