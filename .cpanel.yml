@@ -1,7 +1,7 @@
 ---
 deployment:
   tasks:
-    - export DEPLOYPATH=home/sc1zemi8556/websites
+    - export DEPLOYPATH=/home/sc1zemi8556/Websites
     - /bin/cp index.html $DEPLOYPATH
     - /bin/cp README.md $DEPLOYPATH
     - /bin/cp assets $DEPLOYPATH
