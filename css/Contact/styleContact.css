@@ -708,7 +708,7 @@
   }
   body footer .TopContentFooter .RightContent .Menu nav ul li .portfoliofooter:hover {
     border-bottom: 1px solid #68FFFF;
-    color: #68FFFF;
+    color: #FFFFFF;
   }
   body footer .TopContentFooter .RightContent .Menu nav ul li .aboutfooter {
     color: #A5BBCB;
@@ -728,7 +728,7 @@
   }
   body footer .TopContentFooter .RightContent .Menu nav ul li .contactfooter:hover {
     border-bottom: 1px solid #68FFFF;
-    color: #FFFFFF;
+    color: #68FFFF;
   }
   body footer .separatorfooter {
     display: flex;
