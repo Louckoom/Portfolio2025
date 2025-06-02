@@ -1,0 +1,661 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* Media Query for Mobile */
+@media (max-width: 1279px) {
+  @keyframes slideDown {
+    0% {
+      transform: translateY(-100%); /* Start above the viewport */
+      opacity: 0;
+    }
+    100% {
+      transform: translateY(0); /* End at its normal position */
+      opacity: 1;
+    }
+  }
+  body {
+    background-color: #07060E;
+    width: 100%;
+  }
+  body img {
+    width: 40%;
+  }
+  body hr {
+    width: 40%;
+  }
+  body header {
+    background-color: #0A0817;
+    position: fixed;
+    z-index: 100;
+    width: 100%;
+  }
+  body header .MenuContainer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  body header .MenuContainer .ReturnHome {
+    display: flex;
+    width: 5.1875rem;
+    height: auto;
+    padding: 1.25rem;
+    justify-content: center;
+    align-items: center;
+  }
+  body header .Menu {
+    overflow: visible; /* Add this to prevent clipping */
+    z-index: 2;
+    display: flex;
+    width: 5.1875rem;
+    height: auto;
+    padding: 0;
+    justify-content: center;
+    align-items: center;
+    /* Burger Menu CSS */
+    /* Active State Styles */
+  }
+  body header .Menu .burger-menu {
+    width: 1.875rem;
+    height: 1.5625rem;
+    cursor: pointer;
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  body header .Menu .burger-menu .bar {
+    width: 100%;
+    height: 0.1875rem;
+    background-color: #FFFFFF;
+    transition: transform 0.3s ease;
+  }
+  body header .Menu nav {
+    display: none; /* Hide navigation menu by default on mobile */
+    flex-direction: column; /* Stack navigation items vertically */
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #0A0817;
+    width: 100%;
+    box-shadow: 0 0.125rem 0.3125rem rgba(0, 0, 0, 0.2);
+    animation: slideDown 1s ease-in-out;
+  }
+  body header .Menu nav ul {
+    flex-direction: column; /* Stack navigation items vertically */
+    align-items: center; /* Center navigation items */
+    justify-content: center;
+    border-bottom: 2px solid #68FFFF;
+  }
+  body header .Menu nav ul li {
+    justify-content: center; /* Center navigation items */
+    text-align: center;
+    border-top: 2px solid #68FFFF;
+    position: relative;
+    width: 100%; /* Make navigation items full width */
+  }
+  body header .Menu nav ul li a {
+    color: #A5BBCB;
+    text-decoration: none;
+    font-family: "Chakra Petch", sans-serif;
+    font-weight: 700;
+    display: block;
+    padding: 1.25rem;
+  }
+  body header .Menu nav ul li .contact {
+    background-color: #301A4B;
+    color: #FFFFFF;
+  }
+  body header .Menu .burger-menu.active {
+    justify-content: space-evenly;
+  }
+  body header .Menu .burger-menu.active .bar:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 5px);
+  }
+  body header .Menu .burger-menu.active .bar:nth-child(2) {
+    opacity: 0;
+  }
+  body header .Menu .burger-menu.active .bar:nth-child(3) {
+    transform: rotate(-45deg) translate(5px, -5px);
+  }
+  body header .Menu nav.active {
+    display: flex; /* Show the menu when active */
+  }
+  body .Hero .HeroContent .Title {
+    display: flex;
+    flex-direction: column;
+    padding: 7.5rem 0.625rem 1.375rem 0.625rem;
+    align-items: center;
+    gap: 1.875rem;
+  }
+  body .Hero .HeroContent .Title h1 {
+    font-size: 2.5rem;
+    text-align: center;
+    font-family: "Chakra Petch";
+    font-weight: 700;
+    color: #FFFFFF;
+  }
+  body .Hero .HeroContent .Text p {
+    color: #68FFFF;
+    text-align: center;
+    font-family: "Chakra Petch";
+    font-weight: 500;
+    padding: 2rem;
+    font-size: 1rem;
+  }
+  body .Hero .HeroContent .ButtonHome {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  body .Hero .HeroContent .ButtonHome a button {
+    background-color: #301A4B;
+    padding: 1.5rem 1.5rem;
+    width: 100%;
+    border-radius: 0.5rem;
+    border: 2px solid #68FFFF;
+    color: #68FFFF;
+    font-family: "Chakra Petch", sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+  }
+  body footer {
+    background-color: #0A0817;
+    display: flex;
+    flex-direction: column;
+    margin-top: 2.5rem;
+  }
+  body footer .TopContentFooter .LeftContent .TopLeftContent {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  body footer .TopContentFooter .LeftContent .TopLeftContent .LogoFooter {
+    display: flex;
+    width: 5.1875rem;
+    height: auto;
+    padding: 1.25rem;
+    justify-content: center;
+    align-items: center;
+  }
+  body footer .TopContentFooter .LeftContent .TopLeftContent .TextFooter {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin: 1.25rem 2.5rem;
+  }
+  body footer .TopContentFooter .LeftContent .TopLeftContent .TextFooter p {
+    color: #FFFFFF;
+    font-family: "Inter";
+    font-weight: 500;
+    font-size: 0.75rem;
+  }
+  body footer .TopContentFooter .LeftContent .SocialsIcons {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin: 20px 40px;
+  }
+  body footer .TopContentFooter .LeftContent .SocialsIcons a .Bento {
+    background-color: #301A4B;
+    padding: 20px;
+    border-radius: 360px;
+    border: 2px solid #68FFFF;
+  }
+  body footer .TopContentFooter .LeftContent .SocialsIcons a .Behance {
+    background-color: #301A4B;
+    padding: 20px;
+    border-radius: 360px;
+    border: 2px solid #68FFFF;
+  }
+  body footer .TopContentFooter .LeftContent .SocialsIcons a .Linkedin {
+    background-color: #301A4B;
+    padding: 20px;
+    border-radius: 360px;
+    border: 2px solid #68FFFF;
+  }
+  body footer .TopContentFooter .LeftContent .SocialsIcons a .Github {
+    background-color: #301A4B;
+    padding: 20px;
+    border-radius: 360px;
+    border: 2px solid #68FFFF;
+  }
+  body footer .TopContentFooter .RightContent .Menu {
+    padding: 20px 0;
+  }
+  body footer .TopContentFooter .RightContent .Menu nav ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+  }
+  body footer .TopContentFooter .RightContent .Menu nav ul li {
+    list-style: none;
+  }
+  body footer .TopContentFooter .RightContent .Menu nav ul li .Titlefooternav {
+    color: #FFFFFF;
+    font-family: "Chakra Petch";
+    font-weight: 700;
+  }
+  body footer .TopContentFooter .RightContent .Menu nav ul li .homefooter {
+    color: #FFFFFF;
+    font-family: "Chakra Petch";
+    font-weight: 400;
+    text-decoration: none;
+  }
+  body footer .TopContentFooter .RightContent .Menu nav ul li .portfoliofooter {
+    color: #FFFFFF;
+    font-family: "Chakra Petch";
+    font-weight: 400;
+    text-decoration: none;
+  }
+  body footer .TopContentFooter .RightContent .Menu nav ul li .aboutfooter {
+    color: #FFFFFF;
+    font-family: "Chakra Petch";
+    font-weight: 400;
+    text-decoration: none;
+  }
+  body footer .TopContentFooter .RightContent .Menu nav ul li .contactfooter {
+    color: #68FFFF;
+    font-family: "Chakra Petch";
+    font-weight: 500;
+    text-decoration: none;
+  }
+  body footer .separatorfooter {
+    display: flex;
+    flex-direction: column;
+    padding: 2.5rem 2.5rem;
+  }
+  body footer .separatorfooter hr {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    border: 1px solid #FFFFFF;
+  }
+  body footer .BottomContentFooter .LegalMenu nav ul {
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+    justify-content: center;
+    align-items: center;
+  }
+  body footer .BottomContentFooter .LegalMenu nav ul li {
+    list-style: none;
+  }
+  body footer .BottomContentFooter .LegalMenu nav ul li a {
+    text-decoration: none;
+    color: #FFFFFF;
+    font-family: "Inter";
+    font-weight: 400;
+    font-size: 0.875rem;
+  }
+  body footer .BottomContentFooter .Copyright {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2.5rem;
+  }
+  body footer .BottomContentFooter .Copyright p {
+    color: #FFFFFF;
+    text-align: center;
+    font-family: "Inter";
+    font-weight: 500;
+    font-size: 16px;
+  }
+}
+/* Media Query for Desktop */
+@media (min-width: 1280px) {
+  body {
+    background-color: #07060E;
+  }
+  body header {
+    background-color: #0A0817;
+    position: fixed;
+    width: 100%;
+    z-index: 100;
+  }
+  body header .MenuContainer {
+    margin: 0 9rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  body header .MenuContainer .ReturnHome {
+    display: flex;
+    width: 5.1875rem;
+    height: 5.5rem;
+    padding: 0.75rem;
+    justify-content: center;
+    align-items: center;
+  }
+  body header .MenuContainer .Menu nav ul {
+    display: flex;
+    list-style-type: none;
+  }
+  body header .MenuContainer .Menu nav ul li {
+    display: flex;
+    padding: 14px;
+    justify-content: flex-end;
+    align-items: center;
+  }
+  body header .MenuContainer .Menu nav ul li a {
+    text-decoration: none;
+    color: #A5BBCB;
+    text-align: center;
+    font-family: "Chakra Petch";
+    font-weight: 500;
+    font-size: 16px;
+    color: #FFFFFF;
+    border: 2px solid #0A0817;
+  }
+  body header .MenuContainer .Menu nav ul li .home {
+    color: #A5BBCB;
+    padding: 1.125rem 2rem;
+    border-radius: 0.5rem;
+  }
+  body header .MenuContainer .Menu nav ul li .home:hover {
+    border: 2px solid #68FFFF;
+    color: #FFFFFF;
+  }
+  body header .MenuContainer .Menu nav ul li .portfolio {
+    padding: 1.125rem 2rem;
+    border-radius: 0.5rem;
+    color: #A5BBCB;
+  }
+  body header .MenuContainer .Menu nav ul li .portfolio:hover {
+    border: 2px solid #68FFFF;
+    color: #FFFFFF;
+  }
+  body header .MenuContainer .Menu nav ul li .about {
+    padding: 1.125rem 2rem;
+    border-radius: 0.5rem;
+    color: #A5BBCB;
+  }
+  body header .MenuContainer .Menu nav ul li .about:hover {
+    border: 2px solid #68FFFF;
+    color: #FFFFFF;
+  }
+  body header .MenuContainer .Menu nav ul li .contact {
+    padding: 1.125rem 2rem;
+    border-radius: 0.5rem;
+    color: #A5BBCB;
+  }
+  body header .MenuContainer .Menu nav ul li .contact:hover {
+    border: 2px solid #68FFFF;
+    color: #FFFFFF;
+  }
+  body .Hero .HeroContent .Title {
+    display: flex;
+    flex-direction: column;
+    padding: 10rem 0.625rem 0.625rem 0.625rem;
+    align-items: center;
+    gap: 1.875rem;
+  }
+  body .Hero .HeroContent .Title h1 {
+    font-size: 2.5rem;
+    text-align: center;
+    font-family: "Chakra Petch";
+    font-weight: 700;
+    color: #FFFFFF;
+  }
+  body .Hero .HeroContent .Title2 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1.875rem;
+  }
+  body .Hero .HeroContent .Title2 h2 {
+    font-size: 2.5rem;
+    text-align: left;
+    font-family: "Chakra Petch";
+    font-weight: 700;
+    color: #68FFFF;
+    padding: 0 9rem;
+  }
+  body .Hero .HeroContent .Text {
+    margin: 2.5rem 0 4rem 0;
+  }
+  body .Hero .HeroContent .Text p {
+    color: #FFFFFF;
+    font-size: 1.5rem;
+    text-align: left;
+    font-family: "Chakra Petch";
+    font-weight: 500;
+    padding: 0 9rem;
+  }
+  body .Hero .HeroContent .ButtonHome {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  body .Hero .HeroContent .ButtonHome a button {
+    margin: 2rem 0;
+    background-color: #301A4B;
+    padding: 1.5rem 1.5rem;
+    width: fit-content;
+    border-radius: 0.5rem;
+    border: 2px solid #07060E;
+    color: #A5BBCB;
+    font-family: "Chakra Petch", sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+  }
+  body .Hero .HeroContent .ButtonHome a button:hover {
+    border: 2px solid #68FFFF;
+    color: #FFFFFF;
+  }
+  body footer {
+    background-color: #0A0817;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+  body footer .TopContentFooter {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 4rem 9rem;
+  }
+  body footer .TopContentFooter .LeftContent {
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+    justify-content: center;
+  }
+  body footer .TopContentFooter .LeftContent .TopLeftContent {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+  body footer .TopContentFooter .LeftContent .TopLeftContent .LogoFooter {
+    display: flex;
+    width: 5.1875rem;
+    height: auto;
+    justify-content: center;
+    align-items: center;
+  }
+  body footer .TopContentFooter .LeftContent .TopLeftContent .TextFooter {
+    display: flex;
+    flex-direction: column;
+    margin: 0 4rem;
+  }
+  body footer .TopContentFooter .LeftContent .TopLeftContent .TextFooter p {
+    color: #FFFFFF;
+    font-family: "Inter";
+    font-weight: 500;
+    font-size: 0.75rem;
+  }
+  body footer .TopContentFooter .LeftContent .SocialsIcons {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 4rem;
+  }
+  body footer .TopContentFooter .LeftContent .SocialsIcons a .Bento {
+    background-color: #0A0817;
+    padding: 20px;
+    border-radius: 360px;
+    border: 2px solid #0A0817;
+  }
+  body footer .TopContentFooter .LeftContent .SocialsIcons a .Bento:hover {
+    background-color: #301A4B;
+    padding: 20px;
+    border-radius: 360px;
+    border: 2px solid #68FFFF;
+  }
+  body footer .TopContentFooter .LeftContent .SocialsIcons a .Behance {
+    background-color: #0A0817;
+    padding: 20px;
+    border-radius: 360px;
+    border: 2px solid #0A0817;
+  }
+  body footer .TopContentFooter .LeftContent .SocialsIcons a .Behance:hover {
+    background-color: #301A4B;
+    padding: 20px;
+    border-radius: 360px;
+    border: 2px solid #68FFFF;
+  }
+  body footer .TopContentFooter .LeftContent .SocialsIcons a .Linkedin {
+    background-color: #0A0817;
+    padding: 20px;
+    border-radius: 360px;
+    border: 2px solid #0A0817;
+  }
+  body footer .TopContentFooter .LeftContent .SocialsIcons a .Linkedin:hover {
+    background-color: #301A4B;
+    padding: 20px;
+    border-radius: 360px;
+    border: 2px solid #68FFFF;
+  }
+  body footer .TopContentFooter .LeftContent .SocialsIcons a .Github {
+    background-color: #0A0817;
+    padding: 20px;
+    border-radius: 360px;
+    border: 2px solid #0A0817;
+  }
+  body footer .TopContentFooter .LeftContent .SocialsIcons a .Github:hover {
+    background-color: #301A4B;
+    padding: 20px;
+    border-radius: 360px;
+    border: 2px solid #68FFFF;
+  }
+  body footer .TopContentFooter .RightContent .Menu nav ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    text-align: right;
+    gap: 20px;
+  }
+  body footer .TopContentFooter .RightContent .Menu nav ul li {
+    list-style: none;
+  }
+  body footer .TopContentFooter .RightContent .Menu nav ul li .Titlefooternav {
+    color: #FFFFFF;
+    font-family: "Chakra Petch";
+    font-weight: 700;
+  }
+  body footer .TopContentFooter .RightContent .Menu nav ul li .homefooter {
+    color: #A5BBCB;
+    font-family: "Chakra Petch";
+    font-weight: 400;
+    text-decoration: none;
+  }
+  body footer .TopContentFooter .RightContent .Menu nav ul li .homefooter:hover {
+    border-bottom: 1px solid #68FFFF;
+    color: #FFFFFF;
+  }
+  body footer .TopContentFooter .RightContent .Menu nav ul li .portfoliofooter {
+    color: #A5BBCB;
+    font-family: "Chakra Petch";
+    font-weight: 400;
+    text-decoration: none;
+  }
+  body footer .TopContentFooter .RightContent .Menu nav ul li .portfoliofooter:hover {
+    border-bottom: 1px solid #68FFFF;
+    color: #FFFFFF;
+  }
+  body footer .TopContentFooter .RightContent .Menu nav ul li .aboutfooter {
+    color: #A5BBCB;
+    font-family: "Chakra Petch";
+    font-weight: 400;
+    text-decoration: none;
+  }
+  body footer .TopContentFooter .RightContent .Menu nav ul li .aboutfooter:hover {
+    border-bottom: 1px solid #68FFFF;
+    color: #FFFFFF;
+  }
+  body footer .TopContentFooter .RightContent .Menu nav ul li .contactfooter {
+    color: #A5BBCB;
+    font-family: "Chakra Petch";
+    font-weight: 500;
+    text-decoration: none;
+  }
+  body footer .TopContentFooter .RightContent .Menu nav ul li .contactfooter:hover {
+    border-bottom: 1px solid #68FFFF;
+    color: #FFFFFF;
+  }
+  body footer .separatorfooter {
+    display: flex;
+    flex-direction: column;
+    margin: 0 9rem;
+  }
+  body footer .separatorfooter hr {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    border: 1px solid #FFFFFF;
+  }
+  body footer .BottomContentFooter {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 0 9rem;
+    padding: 2.5rem 0;
+    gap: 2rem;
+    justify-content: space-between;
+  }
+  body footer .BottomContentFooter .LegalMenu nav ul {
+    display: flex;
+    flex-direction: row;
+    gap: 1.25rem;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  body footer .BottomContentFooter .LegalMenu nav ul li {
+    list-style: none;
+  }
+  body footer .BottomContentFooter .LegalMenu nav ul li a {
+    text-decoration: none;
+    color: #A5BBCB;
+    font-family: "Inter";
+    font-weight: 400;
+    font-size: 0.875rem;
+  }
+  body footer .BottomContentFooter .LegalMenu nav ul li a:hover {
+    border-bottom: 1px solid #68FFFF;
+    color: #FFFFFF;
+  }
+  body footer .BottomContentFooter .LegalMenu nav ul li .policonf {
+    color: #68FFFF;
+  }
+  body footer .BottomContentFooter .LegalMenu nav ul li .policonf:hover {
+    color: #68FFFF;
+  }
+  body footer .BottomContentFooter .Copyright {
+    display: flex;
+  }
+  body footer .BottomContentFooter .Copyright p {
+    color: #FFFFFF;
+    text-align: center;
+    font-family: "Inter";
+    font-weight: 400;
+    font-size: 16px;
+  }
+}
+
+/*# sourceMappingURL=stylepoliconf.css.map */
