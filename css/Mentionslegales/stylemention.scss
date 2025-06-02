@@ -1,0 +1,775 @@
+$Main_purple : #301A4B;
+$Secondary_Cyan : #68FFFF;
+$Background_dark : #07060E;
+$Elements_Dark : #0A0817 ;
+$White_Light_shadow: #FFFFFF;
+$lightblue: #A5BBCB;
+$lightpurple: #9747FF;
+
+* {
+    margin: 0;
+    padding: 0;
+
+}
+   /* Media Query for Mobile */
+@media (max-width: 1279px) {
+
+@keyframes slideDown {
+        0% {
+          transform: translateY(-100%); /* Start above the viewport */
+          opacity: 0;
+        }
+        100% {
+          transform: translateY(0); /* End at its normal position */
+          opacity: 1;
+        }
+      }
+body {
+    background-color: $Background_dark;
+    width: 100%;
+    img {
+        width:40%;
+    }
+    hr {
+        width: 40%;
+    }
+    // Nav Bar //
+    header {
+        background-color: $Elements_Dark;
+        position: fixed;
+        z-index: 100;
+        width: 100%; 
+        .MenuContainer {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            .ReturnHome {
+                display: flex;
+                width: 5.1875rem;
+                height: auto;
+                padding: 1.25rem;
+                justify-content: center;
+                align-items: center;
+            }
+        }
+  
+        .Menu {
+                overflow: visible;  /* Add this to prevent clipping */
+                z-index: 2;
+                display: flex;
+                width: 5.1875rem;
+                height: auto;
+                padding: 0;
+                justify-content: center;
+                align-items: center;
+                
+        /* Burger Menu CSS */
+            .burger-menu {
+                width: 1.875rem;
+                height: 1.5625rem;
+                cursor: pointer;
+                display: flex;
+                position: relative;
+                flex-direction: column;
+                justify-content: space-between;
+                    .bar {
+                        width: 100%;
+                        height: 0.1875rem;
+                        background-color: $White_Light_shadow;
+                        transition: transform 0.3s ease;
+                        } 
+            }
+            nav {
+                display: none; /* Hide navigation menu by default on mobile */
+                flex-direction: column; /* Stack navigation items vertically */
+                position: absolute;
+                top: 100%;
+                left: 0;
+                background-color: $Elements_Dark;
+                width: 100%;
+                box-shadow: 0 0.125rem 0.3125rem rgba(0, 0, 0, 0.2);
+                animation: slideDown 1s ease-in-out;
+                    ul {
+                    flex-direction: column; /* Stack navigation items vertically */
+                    align-items: center; /* Center navigation items */
+                    justify-content: center;
+                    border-bottom: 2px solid $Secondary_Cyan;
+                    
+                        li {
+                        justify-content: center; /* Center navigation items */
+                        text-align: center;
+                        border-top: 2px solid $Secondary_Cyan;
+                        position: relative;
+                        width: 100%; /* Make navigation items full width */
+                            a {
+                                color: $lightblue;
+                                text-decoration: none;
+                                font-family:"Chakra Petch",sans-serif;
+                                font-weight: 700;
+                                display: block;
+                                padding: 1.25rem;
+                            }
+                            .contact {
+                                background-color:$Main_purple;
+                                color: $White_Light_shadow;
+                            }
+                        }
+                    }
+            }
+            /* Active State Styles */
+            .burger-menu.active {
+            justify-content: space-evenly;
+                .bar:nth-child(1) {
+                transform: rotate(45deg) translate(5px, 5px);
+                }
+                .bar:nth-child(2) {
+                opacity: 0;
+                }
+                .bar:nth-child(3) {
+                transform: rotate(-45deg) translate(5px, -5px);
+                }
+            }
+            nav.active {
+            display: flex; /* Show the menu when active */
+            }
+        }
+
+    }
+
+    // End of Nav Bar //
+
+    // Hero Section //
+
+    .Hero {
+        .HeroContent {
+            .Title {     
+                display: flex;
+                flex-direction: column;
+                padding: 7.5rem 0.625rem 1.375rem 0.625rem;
+                align-items: center;
+                gap: 1.875rem;
+                    h1 {
+                        font-size: 2.5rem;
+                        text-align: center;
+                        font-family: "Chakra Petch";
+                        font-weight: 700;
+                        color: $White_Light_shadow;
+                        }
+                }
+            .Text {
+                p {
+                    color: $Secondary_Cyan;
+                    text-align: center;
+                    font-family: "Chakra Petch";
+                    font-weight: 500;
+                    padding: 2rem;
+                    font-size: 1rem;
+                }
+            }
+            .ButtonHome {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                a {
+                    button {
+                        background-color: $Main_purple;
+                       padding: 1.5rem 1.5rem;
+                       width: 100%;
+                       border-radius: 0.5rem;
+                       border: 2px solid $Secondary_Cyan;
+                       color: $Secondary_Cyan;
+                       font-family: "Chakra Petch", sans-serif;
+                       font-weight: 700;
+                       font-size: 20px;
+                    }
+                }
+            }
+                        
+        }
+    }
+
+
+    //End of Hero Section //
+
+
+
+     // Footer //
+    footer {
+        background-color: $Elements_Dark;
+        display: flex;
+        flex-direction: column;
+        margin-top: 2.5rem;
+        .TopContentFooter {
+            .LeftContent {
+                .TopLeftContent {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                        .LogoFooter {
+                            display: flex;
+                            width: 5.1875rem;
+                            height: auto;
+                            padding: 1.25rem;
+                            justify-content: center;
+                            align-items: center;
+                        }
+                        .TextFooter {
+                            display: flex;
+                            flex-direction: column;
+                            text-align: center;
+                            margin: 1.25rem 2.5rem;
+                            p {
+                                color: $White_Light_shadow;
+                                font-family: "Inter";
+                                font-weight: 500;
+                                font-size: 0.75rem;
+                            }
+                        }
+                }
+                .SocialsIcons {
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+                    justify-content: space-between;
+                    margin: 20px 40px;
+                    a {
+                        .Bento {
+                            background-color: $Main_purple;
+                            padding: 20px;
+                            border-radius: 360px;
+                            border: 2px solid $Secondary_Cyan;
+                        }
+                    }
+                    a {
+                        .Behance {
+                            background-color: $Main_purple;
+                            padding: 20px;
+                            border-radius: 360px;
+                            border: 2px solid $Secondary_Cyan;
+                        }
+                    }
+                    a {
+                        .Linkedin {
+                            background-color: $Main_purple;
+                            padding: 20px;
+                            border-radius: 360px;
+                            border: 2px solid $Secondary_Cyan;
+                        }
+                    }
+                    a {
+                        .Github {
+                            background-color: $Main_purple;
+                            padding: 20px;
+                            border-radius: 360px;
+                            border: 2px solid $Secondary_Cyan;
+                        }
+                    }
+                    
+                }
+            }
+            .RightContent {
+                .Menu {
+                    padding: 20px 0;
+                    nav {
+                        ul  {
+                            display: flex;
+                            flex-direction: column;
+                            justify-content: center;
+                            align-items: center;
+                            gap: 20px;
+                            
+                            li {
+                                list-style: none;
+                                .Titlefooternav {
+                                    color: $White_Light_shadow;
+                                    font-family: "Chakra Petch";
+                                    font-weight: 700;
+                                }
+                                .homefooter {
+                                    color: $White_Light_shadow;
+                                    font-family: "Chakra Petch";
+                                    font-weight: 400;
+                                    text-decoration: none;
+                                }
+                                .portfoliofooter {
+                                    color: $White_Light_shadow;
+                                    font-family: "Chakra Petch";
+                                    font-weight: 400;
+                                    text-decoration: none;
+                                }
+                                .aboutfooter {
+                                    color: $White_Light_shadow;
+                                    font-family: "Chakra Petch";
+                                    font-weight: 400;
+                                    text-decoration: none;
+                                }
+                                .contactfooter {
+                                    color: $Secondary_Cyan;
+                                    font-family: "Chakra Petch";
+                                    font-weight: 500;
+                                    text-decoration: none;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .separatorfooter {
+                display: flex;
+                flex-direction: column;
+                padding: 2.5rem 2.5rem;
+                hr {
+                    display: flex;
+                    flex-direction: column;
+                    width: 100%;
+                    border: 1px solid $White_Light_shadow;
+                }
+        }
+        .BottomContentFooter {
+            .LegalMenu {
+                nav {
+                    ul {
+                       display: flex;
+                       flex-direction: column;
+                       gap: 1.25rem;
+                       justify-content: center;
+                       align-items: center;
+                        li {
+                            list-style: none;
+                            a {
+                                text-decoration: none;
+                                color: $White_Light_shadow;
+                                font-family: "Inter";
+                                font-weight: 400;
+                                font-size: 0.875rem;
+                            }
+                        }
+                    }
+                }
+            }
+            .Copyright {
+                display: flex;
+                       flex-direction: column;
+                       align-items: center;
+                       padding: 2.5rem;
+                p {
+                    color: $White_Light_shadow;
+                    text-align: center;
+                    font-family: "Inter";
+                    font-weight: 500;
+                    font-size: 16px;
+                }
+            }
+        }
+    }
+    // End of Footer //
+
+}
+
+}
+
+/* Media Query for Desktop */
+@media (min-width: 1280px){
+    body {
+        background-color: $Background_dark;
+        // Nav Bar //
+        header {
+        background-color: $Elements_Dark;
+        position: fixed;
+        width: 100%;
+        z-index: 100;
+        .MenuContainer {
+            margin: 0 9rem;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            .ReturnHome {
+                display: flex;
+                width: 5.1875rem;
+                height: 5.5rem;
+                padding: 0.75rem;
+                justify-content: center;
+                align-items: center;
+            }
+            .Menu {
+                
+                nav{
+                    
+                    
+                    ul {
+                        display: flex;
+                        list-style-type: none;
+                        li {
+                            display: flex;
+                            padding: 14px;
+                            justify-content: flex-end;
+                            align-items: center;
+                            a {
+                                text-decoration: none;
+                                color: $lightblue;
+                                text-align: center;
+                                font-family: "Chakra Petch";
+                                font-weight: 500;
+                                font-size: 16px;
+                                color: $White_Light_shadow;
+                                border: 2px solid $Elements_Dark;
+                                
+                            }
+                            .home {
+                                color: $lightblue;
+                                padding: 1.125rem 2rem;
+                                border-radius: 0.5rem;
+                                
+                            }
+                            .home:hover {
+                                border: 2px solid $Secondary_Cyan;
+                                color: $White_Light_shadow;
+                            }
+                            .portfolio {
+                                padding: 1.125rem 2rem;
+                                border-radius: 0.5rem;
+                                color: $lightblue;
+                            }
+                            .portfolio:hover {
+                                border: 2px solid $Secondary_Cyan;
+                                color: $White_Light_shadow;
+                            }
+
+                            .about {
+                                padding: 1.125rem 2rem;
+                                border-radius: 0.5rem;
+                                color: $lightblue;
+                            }
+                            .about:hover {
+                                border: 2px solid $Secondary_Cyan;
+                                color: $White_Light_shadow;
+                            }
+                            .contact {
+                                padding: 1.125rem 2rem;
+                                border-radius: 0.5rem;
+                                color: $lightblue;
+                            }
+                            .contact:hover {
+                                border: 2px solid $Secondary_Cyan;
+                                color: $White_Light_shadow;
+                            }
+                        }
+                        
+                    }
+                }
+            }
+        }
+        
+
+        // End of Nav Bar //
+
+        }
+
+        .Hero {
+        .HeroContent {
+            .Title {     
+                display: flex;
+                flex-direction: column;
+                padding: 10rem 0.625rem 0.625rem 0.625rem;
+                align-items: center;
+                gap: 1.875rem;
+                    h1 {
+                        font-size: 2.5rem;
+                        text-align: center;
+                        font-family: "Chakra Petch";
+                        font-weight: 700;
+                        color: $White_Light_shadow;
+                        }
+                    }
+            .Title2 {
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 1.875rem;
+                h2 {
+                        font-size: 2.5rem;
+                        text-align: left;
+                        font-family: "Chakra Petch";
+                        font-weight: 700;
+                        color: $Secondary_Cyan;
+                        padding: 0 9rem;
+                        }
+            }
+            .Text {
+                margin: 2.5rem 0 4rem 0;
+                p {
+                    color: $White_Light_shadow;
+                    font-size: 1.5rem;
+                    text-align: left;
+                    font-family: "Chakra Petch";
+                    font-weight: 500;
+                    padding: 0 9rem;
+                }
+            }
+            .ButtonHome {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                a {
+                    button {
+                        margin: 2rem 0;
+                        background-color: $Main_purple;
+                        padding: 1.5rem 1.5rem;
+                        width: fit-content;
+                        border-radius: 0.5rem;
+                        border: 2px solid $Background_dark;
+                        color: $lightblue;
+                        font-family: "Chakra Petch", sans-serif;
+                        font-weight: 700;
+                        font-size: 20px;
+                        }
+                        button:hover {
+                            border: 2px solid $Secondary_Cyan;
+                            color: $White_Light_shadow;
+                        }
+                }
+            }
+                        
+
+        }
+    }
+
+
+    // Footer //
+        footer {
+            background-color: $Elements_Dark;
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            .TopContentFooter {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                margin: 4rem 9rem;
+                .LeftContent {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 4rem;
+                    justify-content: center;
+                    .TopLeftContent {
+                        display: flex;
+                        flex-direction: row;
+                        align-items: center;
+                            .LogoFooter {
+                                display: flex;
+                                width: 5.1875rem;
+                                height: auto;
+                                justify-content: center;
+                                align-items: center;
+                            }
+                            .TextFooter {
+                                display: flex;
+                                flex-direction: column;
+                                margin: 0 4rem;
+                                p {
+                                    color: $White_Light_shadow;
+                                    font-family: "Inter";
+                                    font-weight: 500;
+                                    font-size: 0.75rem;
+                                }
+                            }
+                    }
+                    .SocialsIcons {
+                        display: flex;
+                        flex-direction: row;
+                        align-items: center;
+                        justify-content: flex-start;
+                        gap: 4rem;
+                        a {
+                            .Bento {
+                                background-color: $Elements_Dark;
+                                padding: 20px;
+                                border-radius: 360px;
+                                border: 2px solid $Elements_Dark;
+                            }
+                            .Bento:hover {
+                                background-color: $Main_purple;
+                                padding: 20px;
+                                border-radius: 360px;
+                                border: 2px solid $Secondary_Cyan;
+                            }
+                        }
+                        a {
+                            .Behance {
+                                background-color: $Elements_Dark;
+                                padding: 20px;
+                                border-radius: 360px;
+                                border: 2px solid $Elements_Dark;
+                            }
+                            .Behance:hover {
+                                background-color: $Main_purple;
+                                padding: 20px;
+                                border-radius: 360px;
+                                border: 2px solid $Secondary_Cyan;
+                            }
+                        }
+                        a {
+                            .Linkedin {
+                                background-color: $Elements_Dark;
+                                padding: 20px;
+                                border-radius: 360px;
+                                border: 2px solid $Elements_Dark;
+                            }
+                            .Linkedin:hover {
+                                background-color: $Main_purple;
+                                padding: 20px;
+                                border-radius: 360px;
+                                border: 2px solid $Secondary_Cyan;
+                            }
+                        }
+                        a {
+                            .Github {
+                                background-color: $Elements_Dark;
+                                padding: 20px;
+                                border-radius: 360px;
+                                border: 2px solid $Elements_Dark;
+                            }
+                            .Github:hover {
+                                background-color: $Main_purple;
+                                padding: 20px;
+                                border-radius: 360px;
+                                border: 2px solid $Secondary_Cyan;
+                            }
+                        }
+                        
+                    }
+                }
+                .RightContent {
+                    .Menu {
+                        nav {
+                            ul  {
+                                display: flex;
+                                flex-direction: column;
+                                justify-content: flex-end;
+                                text-align:right;
+                                gap: 20px;
+                                
+                                li {
+                                    list-style: none;
+                                    .Titlefooternav {
+                                        color: $White_Light_shadow;
+                                        font-family: "Chakra Petch";
+                                        font-weight: 700;
+                                    }
+                                    .homefooter {
+                                        color: $lightblue;
+                                        font-family: "Chakra Petch";
+                                        font-weight: 400;
+                                        text-decoration: none;
+                                    }
+                                    .homefooter:hover {
+                                        border-bottom: 1px solid $Secondary_Cyan;
+                                        color: $White_Light_shadow;
+                                    }
+                                    .portfoliofooter {
+                                        color: $lightblue;
+                                        font-family: "Chakra Petch";
+                                        font-weight: 400;
+                                        text-decoration: none;
+                                    }
+                                    .portfoliofooter:hover {
+                                        border-bottom: 1px solid $Secondary_Cyan;
+                                        color: $White_Light_shadow;
+                                    }
+                                    .aboutfooter {
+                                        color: $lightblue;
+                                        font-family: "Chakra Petch";
+                                        font-weight: 400;
+                                        text-decoration: none;
+                                    }
+                                    .aboutfooter:hover {
+                                        border-bottom: 1px solid $Secondary_Cyan;
+                                        color: $White_Light_shadow;
+                                    }
+                                    .contactfooter {
+                                        color: $lightblue;
+                                        font-family: "Chakra Petch";
+                                        font-weight: 500;
+                                        text-decoration: none;
+                                    }
+                                    .contactfooter:hover {
+                                        border-bottom: 1px solid $Secondary_Cyan;
+                                        color: $White_Light_shadow;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            .separatorfooter {
+                    display: flex;
+                    flex-direction: column;
+                    margin: 0 9rem;
+                    hr {
+                        display: flex;
+                        flex-direction: column;
+                        width: 100%;
+                        border: 1px solid $White_Light_shadow;
+                    }
+            }
+            .BottomContentFooter {
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                flex-wrap: wrap;
+                margin: 0 9rem;
+                padding: 2.5rem 0;
+                gap: 2rem;
+                justify-content: space-between;
+                .LegalMenu {
+                    nav {
+                        ul {
+                        display: flex;
+                        flex-direction: row;
+                        gap: 1.25rem;
+                        justify-content: flex-start;
+                        align-items: center;
+                            li {
+                                list-style: none;
+                                a {
+                                    text-decoration: none;
+                                    color: $lightblue;
+                                    font-family: "Inter";
+                                    font-weight: 400;
+                                    font-size: 0.875rem;
+                                }
+                                a:hover {
+                                    border-bottom: 1px solid $Secondary_Cyan;
+                                    color: $White_Light_shadow;
+                                }
+                                .mention {
+                                    color: $Secondary_Cyan;
+                                }
+                                .mention:hover {
+                                    color: $Secondary_Cyan;
+                                }
+                            }
+                        }
+                    }
+                }
+                .Copyright {
+                    display: flex;
+                    p {
+                        color: $White_Light_shadow;
+                        text-align: center;
+                        font-family: "Inter";
+                        font-weight: 400;
+                        font-size: 16px;
+                    }
+                }
+            }
+        }
+        // End of Footer //
+
+
+
+}
+
+}
