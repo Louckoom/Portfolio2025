@@ -103,10 +103,6 @@
     display: block;
     padding: 1.25rem;
   }
-  body header .Menu nav ul li .contact {
-    background-color: #301A4B;
-    color: #FFFFFF;
-  }
   body header .Menu .burger-menu.active {
     justify-content: space-evenly;
   }
@@ -131,14 +127,29 @@
   }
   body .Hero .HeroContent .Title h1 {
     font-size: 2.5rem;
+    padding: 2rem;
     text-align: center;
     font-family: "Chakra Petch";
     font-weight: 700;
     color: #FFFFFF;
   }
-  body .Hero .HeroContent .Text p {
+  body .Hero .HeroContent .Title2 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1.875rem;
+    padding: 2rem;
+  }
+  body .Hero .HeroContent .Title2 h2 {
+    font-size: 2.5rem;
+    text-align: left;
+    font-family: "Chakra Petch";
+    font-weight: 700;
     color: #68FFFF;
-    text-align: center;
+  }
+  body .Hero .HeroContent .Text p {
+    color: #FFFFFF;
+    text-align: left;
     font-family: "Chakra Petch";
     font-weight: 500;
     padding: 2rem;
@@ -259,7 +270,7 @@
     text-decoration: none;
   }
   body footer .TopContentFooter .RightContent .Menu nav ul li .contactfooter {
-    color: #68FFFF;
+    color: #FFFFFF;
     font-family: "Chakra Petch";
     font-weight: 500;
     text-decoration: none;
@@ -291,6 +302,9 @@
     font-family: "Inter";
     font-weight: 400;
     font-size: 0.875rem;
+  }
+  body footer .BottomContentFooter .LegalMenu nav ul li .policonf {
+    color: #68FFFF;
   }
   body footer .BottomContentFooter .Copyright {
     display: flex;
