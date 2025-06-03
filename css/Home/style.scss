@@ -712,6 +712,69 @@ body {
     }
     // End of A Propos Section //
 
+    // Contact Section //
+
+    .Contact {
+
+        .ContactContent {
+            display: flex;
+            flex-direction: column;
+            padding: 1.25rem 2.5rem;
+            .Title {
+                display: flex;
+                align-items: flex-start;
+                justify-content: center;
+                padding: 2.5rem 0;
+                h1 {
+                    color: $Secondary_Cyan;
+                    font-family: "Chakra Petch";
+                    font-weight: 700;
+                    text-align: center;
+                    font-size: 2.5rem;
+                }
+            }
+            .ContactText {
+                display: flex;
+                flex-direction: column;
+                gap: 1.25rem;
+                align-items: center;
+                justify-content: center;
+                padding: 2.5rem 0;
+                p {
+                    color: $White_Light_shadow;
+                    font-family: "Chakra Petch";
+                    font-weight: 500;
+                    text-align: center;
+                    font-size: 1rem;
+                }
+            }
+            .ButtonContact {
+                display: flex;
+                flex-direction: column;
+                align-items: stretch;
+                margin: 1.875rem 0;
+                a {
+
+                    button {
+                        background-color: $Main_purple;
+                        padding: 1.5rem 1.5rem;
+                        width: 100%;
+                        border-radius: 0.5rem;
+                        border: 2px solid $Secondary_Cyan;
+                        color: $Secondary_Cyan;
+                        font-family: "Chakra Petch", sans-serif;
+                        font-weight: 700;
+                        font-size: 20px;
+                    }
+                }
+            }
+        }
+    }
+
+    // End of Contact Section //
+
+
+
     // Footer //
     footer {
         background-color: $Elements_Dark;
@@ -1594,6 +1657,72 @@ body {
             }
         }
         // End of A Propos Section //
+
+        // Contact Section //
+
+        .Contact {
+
+            .ContactContent {
+                display: flex;
+                flex-direction: column;
+                gap: 3rem;
+                margin: 4rem 0;
+                .Title {
+                    display: flex;
+                    align-items: flex-start;
+                    justify-content: center;
+                    padding: 2.5rem 0;
+                    h1 {
+                       color: $Secondary_Cyan;
+                        font-family: "Chakra Petch";
+                        font-weight: 700;
+                        text-align: center;
+                        font-size: 2.5rem; 
+                    }
+                }
+                .ContactText {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    gap: 1.25rem;
+                    margin: 0 20rem;
+                    p {
+                        color: $White_Light_shadow;
+                        font-family: "Chakra Petch";
+                        font-weight: 500;
+                        text-align: center;
+                        font-size: 1.5rem;
+                    }
+                }
+                .ButtonContact {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    margin: 1.875rem 0;
+                    a {
+
+                        button {
+                        background-color: $Main_purple;
+                        padding: 1.5rem 1.5rem;
+                        width: 100%;
+                        border-radius: 0.5rem;
+                        border: 2px solid $Background_dark;
+                        color: $lightblue;
+                        font-family: "Chakra Petch", sans-serif;
+                        font-weight: 700;
+                        font-size: 20px;
+                        }
+                        button:hover {
+                            border: 2px solid $Secondary_Cyan;
+                            color: $White_Light_shadow;
+                        }
+                    }
+                }
+            }
+        }
+
+        // End of Contact Section //
+
 
         // Footer //
         footer {

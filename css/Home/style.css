@@ -642,6 +642,56 @@
     border-radius: 0.5rem;
     border: 0.25rem solid #9747FF;
   }
+  body .Contact .ContactContent {
+    display: flex;
+    flex-direction: column;
+    padding: 1.25rem 2.5rem;
+  }
+  body .Contact .ContactContent .Title {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 2.5rem 0;
+  }
+  body .Contact .ContactContent .Title h1 {
+    color: #68FFFF;
+    font-family: "Chakra Petch";
+    font-weight: 700;
+    text-align: center;
+    font-size: 2.5rem;
+  }
+  body .Contact .ContactContent .ContactText {
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+    align-items: center;
+    justify-content: center;
+    padding: 2.5rem 0;
+  }
+  body .Contact .ContactContent .ContactText p {
+    color: #FFFFFF;
+    font-family: "Chakra Petch";
+    font-weight: 500;
+    text-align: center;
+    font-size: 1rem;
+  }
+  body .Contact .ContactContent .ButtonContact {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    margin: 1.875rem 0;
+  }
+  body .Contact .ContactContent .ButtonContact a button {
+    background-color: #301A4B;
+    padding: 1.5rem 1.5rem;
+    width: 100%;
+    border-radius: 0.5rem;
+    border: 2px solid #68FFFF;
+    color: #68FFFF;
+    font-family: "Chakra Petch", sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+  }
   body footer {
     background-color: #0A0817;
     display: flex;
@@ -1435,6 +1485,60 @@
   }
   body .Apropos .AproposContent .Content .ProfilPic img:hover {
     border: 0.25rem solid #9747FF;
+  }
+  body .Contact .ContactContent {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    margin: 4rem 0;
+  }
+  body .Contact .ContactContent .Title {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 2.5rem 0;
+  }
+  body .Contact .ContactContent .Title h1 {
+    color: #68FFFF;
+    font-family: "Chakra Petch";
+    font-weight: 700;
+    text-align: center;
+    font-size: 2.5rem;
+  }
+  body .Contact .ContactContent .ContactText {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.25rem;
+    margin: 0 20rem;
+  }
+  body .Contact .ContactContent .ContactText p {
+    color: #FFFFFF;
+    font-family: "Chakra Petch";
+    font-weight: 500;
+    text-align: center;
+    font-size: 1.5rem;
+  }
+  body .Contact .ContactContent .ButtonContact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 1.875rem 0;
+  }
+  body .Contact .ContactContent .ButtonContact a button {
+    background-color: #301A4B;
+    padding: 1.5rem 1.5rem;
+    width: 100%;
+    border-radius: 0.5rem;
+    border: 2px solid #07060E;
+    color: #A5BBCB;
+    font-family: "Chakra Petch", sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+  }
+  body .Contact .ContactContent .ButtonContact a button:hover {
+    border: 2px solid #68FFFF;
+    color: #FFFFFF;
   }
   body footer {
     background-color: #0A0817;
