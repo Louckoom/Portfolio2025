@@ -5,6 +5,7 @@ $Elements_Dark : #0A0817 ;
 $White_Light_shadow: #FFFFFF;
 $lightblue: #A5BBCB;
 $lightpurple: #9747FF;
+$yellow: #E7E247;
 
 * {
     margin: 0;
@@ -209,10 +210,43 @@ body {
                     padding: 0 2.5rem;
                     p {
                         color: $White_Light_shadow;
-                        font-size: 22px;
+                        font-size: 1.375rem;
                         text-align: center;
                     }
                 }
+
+                .Button_Work {
+
+                        .Button_Worktogether {
+                        margin: 0 2.5rem;
+                        position: relative;
+                        padding: 1.875rem 6.25rem;
+                        background-color: $Elements_Dark;
+                        border-radius: 1.25rem;
+                        border: 0.125rem solid $Secondary_Cyan;
+                        overflow: hidden;
+                        a {
+                        
+                        text-decoration: none;
+                        
+                        
+                    
+                        }
+                        h2 {
+                            font-size: 1.75rem;
+                            font-family: "Chakra Petch";
+                            font-weight: 600;
+                            color: $yellow;
+                            text-decoration: none;
+                            z-index: 2;
+                            text-align: center;
+                        }
+        
+                    
+                    }
+                    }
+
+
                 .TagsHero {
                     padding: 4rem 0;
                     gap: 40px;
@@ -1108,6 +1142,46 @@ body {
                                 padding: 0 9rem;
                             }
                     }
+
+                    
+                    .Button_Work {
+
+                        .Button_Worktogether {
+                        position: relative;
+                        padding: 1.875rem 6.25rem;
+                        background-color: $Elements_Dark;
+                        border-radius: 1.25rem;
+                        overflow: hidden;
+                        a {
+                        
+                        text-decoration: none;
+                        
+                        
+                    
+                        }
+                        h2 {
+                            font-size: 1.75rem;
+                            font-family: "Chakra Petch";
+                            font-weight: 600;
+                            color: $White_Light_shadow;
+                            text-decoration: none;
+                            z-index: 2;
+                        }
+        
+                    
+                    }
+                    }
+                    .Button_Work:Hover {
+                        .Button_Worktogether{
+                            border: 0.125rem solid $Secondary_Cyan;
+                            h2 {
+                                color: $yellow;
+                                
+                            }
+                        }
+                    }
+                    
+                    
                     .TagsHero {
                         gap: 70px;
                         display: flex;

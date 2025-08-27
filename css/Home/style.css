@@ -192,7 +192,28 @@
   }
   body .Hero .HeroVideo .BottomHero .SecondTitle p {
     color: #FFFFFF;
-    font-size: 22px;
+    font-size: 1.375rem;
+    text-align: center;
+  }
+  body .Hero .HeroVideo .BottomHero .Button_Work .Button_Worktogether {
+    margin: 0 2.5rem;
+    position: relative;
+    padding: 1.875rem 6.25rem;
+    background-color: #0A0817;
+    border-radius: 1.25rem;
+    border: 0.125rem solid #68FFFF;
+    overflow: hidden;
+  }
+  body .Hero .HeroVideo .BottomHero .Button_Work .Button_Worktogether a {
+    text-decoration: none;
+  }
+  body .Hero .HeroVideo .BottomHero .Button_Work .Button_Worktogether h2 {
+    font-size: 1.75rem;
+    font-family: "Chakra Petch";
+    font-weight: 600;
+    color: #E7E247;
+    text-decoration: none;
+    z-index: 2;
     text-align: center;
   }
   body .Hero .HeroVideo .BottomHero .TagsHero {
@@ -979,6 +1000,30 @@
     font-size: 1.875rem;
     text-align: center;
     padding: 0 9rem;
+  }
+  body .Hero .HeroVideo .BottomHero .Button_Work .Button_Worktogether {
+    position: relative;
+    padding: 1.875rem 6.25rem;
+    background-color: #0A0817;
+    border-radius: 1.25rem;
+    overflow: hidden;
+  }
+  body .Hero .HeroVideo .BottomHero .Button_Work .Button_Worktogether a {
+    text-decoration: none;
+  }
+  body .Hero .HeroVideo .BottomHero .Button_Work .Button_Worktogether h2 {
+    font-size: 1.75rem;
+    font-family: "Chakra Petch";
+    font-weight: 600;
+    color: #FFFFFF;
+    text-decoration: none;
+    z-index: 2;
+  }
+  body .Hero .HeroVideo .BottomHero .Button_Work:Hover .Button_Worktogether {
+    border: 0.125rem solid #68FFFF;
+  }
+  body .Hero .HeroVideo .BottomHero .Button_Work:Hover .Button_Worktogether h2 {
+    color: #E7E247;
   }
   body .Hero .HeroVideo .BottomHero .TagsHero {
     gap: 70px;
