@@ -1119,7 +1119,7 @@ body {
                         a {
                             text-decoration: none;
                             margin: auto;
-                            
+
                             h2 {
                             color: $White_Light_shadow;
                             margin: auto;
@@ -1164,7 +1164,9 @@ body {
 
                     
                     .Button_Work {
-
+                        a {
+                        
+                        text-decoration: none;
                         .Button_Worktogether {
                         position: relative;
                         padding: 1.875rem 6.25rem;
@@ -1172,13 +1174,7 @@ body {
                         border-radius: 1.25rem;
                         border: 0.125rem solid transparent;
                         overflow: hidden;
-                        a {
                         
-                        text-decoration: none;
-                        
-                        
-                    
-                        }
                         h2 {
                             font-size: 1.75rem;
                             font-family: "Chakra Petch";
@@ -1190,6 +1186,10 @@ body {
         
                     
                     }
+                        
+                    
+                        }
+                        
                     }
                     .Button_Work:Hover {
                         .Button_Worktogether{

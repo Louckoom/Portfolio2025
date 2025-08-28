@@ -1014,7 +1014,10 @@
     text-align: center;
     padding: 0 9rem;
   }
-  body .Hero .HeroVideo .BottomHero .Button_Work .Button_Worktogether {
+  body .Hero .HeroVideo .BottomHero .Button_Work a {
+    text-decoration: none;
+  }
+  body .Hero .HeroVideo .BottomHero .Button_Work a .Button_Worktogether {
     position: relative;
     padding: 1.875rem 6.25rem;
     background-color: #0A0817;
@@ -1022,10 +1025,7 @@
     border: 0.125rem solid transparent;
     overflow: hidden;
   }
-  body .Hero .HeroVideo .BottomHero .Button_Work .Button_Worktogether a {
-    text-decoration: none;
-  }
-  body .Hero .HeroVideo .BottomHero .Button_Work .Button_Worktogether h2 {
+  body .Hero .HeroVideo .BottomHero .Button_Work a .Button_Worktogether h2 {
     font-size: 1.75rem;
     font-family: "Chakra Petch";
     font-weight: 600;
