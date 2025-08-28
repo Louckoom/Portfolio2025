@@ -1125,6 +1125,7 @@ body {
                             padding: 2.5rem 2.5rem;
                             border-radius: 1.25rem;
                             opacity: 90%;
+                            border: 2px solid transparent;
                             font-family: "Chakra Petch";
                             background-color: $Elements_Dark;
                             font-weight: 700;
@@ -1168,6 +1169,7 @@ body {
                         padding: 1.875rem 6.25rem;
                         background-color: $Elements_Dark;
                         border-radius: 1.25rem;
+                        border: 0.125rem solid transparent;
                         overflow: hidden;
                         a {
                         
