@@ -185,11 +185,11 @@ body {
                     a {
                         text-decoration: none;
                         h2 {
-                        color: $Secondary_Cyan;
+                        color: $yellow;
                         
                         background-color: $Elements_Dark;
-                        padding: 24px;
-                        border: 2px solid $yellow;
+                        padding: 32px;
+                        border: 2px solid $Secondary_Cyan;
                         border-radius: 1.25rem;
                         opacity: 90%;
                         text-align: center;
@@ -221,34 +221,33 @@ body {
                 }
 
                 .Button_Work {
-
+                    a {
+                        
+                        text-decoration: none;
                         .Button_Worktogether {
                         margin: 0 2.5rem;
                         position: relative;
-                        padding: 1.875rem 6.25rem;
+                        padding: 20px 30px;
                         background-color: $Elements_Dark;
                         border-radius: 1.25rem;
                         border: 0.125rem solid $Secondary_Cyan;
                         overflow: hidden;
-                        a {
                         
-                        text-decoration: none;
-                        
-                        
-                    
-                        }
                         h2 {
                             font-size: 1.75rem;
                             font-family: "Chakra Petch";
                             font-weight: 600;
                             color: $yellow;
                             text-decoration: none;
-                            z-index: 2;
                             text-align: center;
                         }
         
                     
                     }
+                        
+                    
+                        }
+                        
                     }
 
 
@@ -266,7 +265,7 @@ body {
                         justify-content: center;
                         color:$White_Light_shadow;
                         border: 2px solid $lightpurple;
-                        padding: 20px 80px;
+                        padding: 20px 60px;
                         font-family: "Inter",sans-serif;
                         font-size: 20px;
                         font-weight: 600;
@@ -277,7 +276,7 @@ body {
                     .Story {
                         color:$White_Light_shadow;
                         border: 2px solid $yellow;
-                        padding: 20px 80px;
+                        padding: 20px 60px;
                         font-family: "Inter",sans-serif;
                         font-size: 20px;
                         font-weight: 600;
@@ -290,7 +289,7 @@ body {
                     .FrontEnd {
                         color:$White_Light_shadow;
                         border: 2px solid $Secondary_Cyan;
-                        padding: 20px 80px;
+                        padding: 20px 60px;
                         font-family: "Inter",sans-serif;
                         font-size: 20px;
                         font-weight: 600;
@@ -303,7 +302,7 @@ body {
                     .Graphisme {
                         color:$White_Light_shadow;
                         border: 2px solid $lightpurple;
-                        padding: 20px 80px;
+                        padding: 20px 60px;
                         font-family: "Inter",sans-serif;
                         font-size: 20px;
                         font-weight: 600;
